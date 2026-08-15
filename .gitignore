@@ -3,3 +3,5 @@ __pycache__/
 .env
 uploads/
 *.pyc
+.pytest_cache/
+.vscode/
