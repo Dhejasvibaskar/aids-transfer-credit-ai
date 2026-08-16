@@ -108,10 +108,25 @@ Return exactly this JSON shape:
   "suggested_bridge_module": "<a short suggested bridge module title covering the gaps, or null if no gap exists>",
   "narrative": "<2-3 sentence plain-language explanation of this recommendation, suitable for a department head to read directly>"
 }}
+
+Important rules for edge cases:
+- Only suggest a bridge_module if the missing topics are narrow enough
+  that ONE additional module could realistically cover them (roughly
+  {MAX_MISSING_TOPICS_FOR_BRIDGE} topics or fewer). If more topics than
+  that are missing, set suggested_bridge_module to null and say plainly
+  in the narrative that the gap is too broad for a single bridge module
+  — do not invent an overly broad or vague "bridge module" just to fill
+  the field.
+- If coverage is very low (near 0%) or no meaningful topics were
+  matched at all, do not describe partial learning outcomes that don't
+  exist. Be direct that little or nothing was demonstrated to overlap,
+  rather than softening the assessment.
+- Never state a learning outcome as matched if no corresponding topic
+  in the results actually supports it.
 """
 
 
-def _call_gemini(prompt: str, model: str = "gemini-2.5-flash") -> str | None:
+def _call_gemini(prompt: str, model: str = "gemini-2.0-flash") -> str | None:
     """Call the Gemini API. Returns None (triggering fallback) if the
     SDK isn't installed, no API key is set, or the call fails — rather
     than raising and breaking the pipeline."""
@@ -138,6 +153,13 @@ def _parse_gemini_json(text: str) -> dict:
     return json.loads(cleaned.strip())
 
 
+# A "bridge module" is meant to be ONE additional module that closes the
+# gap. If more topics than this are missing, no single module could
+# realistically cover that much ground — suggesting one anyway would be
+# misleading the HOD into thinking a small top-up fixes a large gap.
+MAX_MISSING_TOPICS_FOR_BRIDGE = 2
+
+
 def _fallback_reasoning(
     coverage_pct: float,
     recommended_status: str,
@@ -150,14 +172,25 @@ def _fallback_reasoning(
     learning_outcomes_match = status_to_outcome.get(recommended_status, "none")
 
     bridge = None
+    gap_too_broad_for_bridge = False
     if recommended_status == "partial" and missing_units:
-        bridge = f"Bridge module covering: {', '.join(missing_units[:2])}"
+        if len(missing_units) <= MAX_MISSING_TOPICS_FOR_BRIDGE:
+            bridge = f"Bridge module covering: {', '.join(missing_units)}"
+        else:
+            # Edge case: "no bridge module possible" — the gap spans too
+            # many topics for one module to plausibly close.
+            gap_too_broad_for_bridge = True
 
     narrative = f"Coverage came out to {coverage_pct}%, giving a recommended status of '{recommended_status}'. "
-    narrative += (
-        f"{len(missing_units)} topic(s) were not sufficiently covered."
-        if missing_units else "All required topics were covered."
-    )
+    if missing_units:
+        narrative += f"{len(missing_units)} topic(s) were not sufficiently covered."
+        if gap_too_broad_for_bridge:
+            narrative += (
+                " The gap spans too many topics for a single bridge module — "
+                "a full retake or multiple supplementary modules would be needed."
+            )
+    else:
+        narrative += "All required topics were covered."
 
     return {
         "learning_outcomes_match": learning_outcomes_match,
@@ -206,7 +239,6 @@ def generate(
 
     ai_fields = None
     raw_response = _call_gemini(prompt)
-  
     if raw_response is not None:
         try:
             ai_fields = _parse_gemini_json(raw_response)

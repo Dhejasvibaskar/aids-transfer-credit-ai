@@ -125,6 +125,74 @@ class TestFallbackReasoning:
         assert "partial" in result["narrative"]
 
 
+class TestBridgeModuleGapTooLarge:
+    """Aug 14 edge case: 'no bridge module possible' — when too many
+    topics are missing, no single module should be suggested."""
+
+    def test_small_gap_still_suggests_bridge(self):
+        # 2 missing topics = at the threshold, bridge should still be suggested.
+        result = _fallback_reasoning(60.0, "partial", ["Unit A", "Unit B"])
+        assert result["suggested_bridge_module"] is not None
+
+    def test_large_gap_suggests_no_bridge(self):
+        # 5 missing topics — too broad for one module.
+        missing = ["Unit A", "Unit B", "Unit C", "Unit D", "Unit E"]
+        result = _fallback_reasoning(30.0, "partial", missing)
+        assert result["suggested_bridge_module"] is None
+
+    def test_large_gap_narrative_explains_why(self):
+        missing = ["Unit A", "Unit B", "Unit C", "Unit D"]
+        result = _fallback_reasoning(20.0, "partial", missing)
+        assert "too many topics" in result["narrative"] or "single bridge module" in result["narrative"]
+
+
+class TestVeryLowCoverageHonesty:
+    """Aug 14 edge case: very low coverage should read as low, not be
+    softened into sounding like partial credit was earned."""
+
+    def test_near_zero_coverage_maps_to_redo_not_partial(self):
+        # Confirms decision_engine + reasoning_generator agree: very low
+        # coverage should never present as "partial" learning outcomes.
+        result = _fallback_reasoning(2.0, "redo", ["Unit A", "Unit B", "Unit C"])
+        assert result["learning_outcomes_match"] == "none"
+        assert result["suggested_bridge_module"] is None
+
+    def test_narrative_mentions_low_coverage_number(self):
+        result = _fallback_reasoning(2.0, "redo", ["Unit A"])
+        assert "2.0" in result["narrative"]
+
+
+class TestMissingLearningOutcomesEntirely:
+    """Aug 14 edge case: zero topics matched at all — reasoning must stay
+    honest rather than fabricating partial overlap."""
+
+    def test_zero_coverage_all_units_missing(self):
+        all_missing = ["Unit 1", "Unit 2", "Unit 3"]
+        result = generate(
+            [{"target_text": u, "best_match_text": None, "similarity": 0.0, "covered": False}
+             for u in all_missing],
+            coverage_pct=0.0,
+            recommended_status="redo",
+        )
+        assert result["overlap_pct"] == 0.0
+        assert result["missing_units"] == all_missing
+        assert result["learning_outcomes_match"] == "none"
+        assert result["suggested_bridge_module"] is None
+
+
+class TestGenerateWideGapEndToEnd:
+    """Confirms the full generate() call (not just the fallback helper
+    directly) respects the new bridge-module gap threshold."""
+
+    def test_wide_gap_through_full_generate_call(self):
+        wide_gap_results = [
+            {"target_text": f"Unit {i}", "best_match_text": None, "similarity": 0.1, "covered": False}
+            for i in range(5)
+        ]
+        result = generate(wide_gap_results, coverage_pct=15.0, recommended_status="partial")
+        assert result["suggested_bridge_module"] is None
+
+
 class TestGenerateEndToEnd:
     """Full generate() calls — run with no GEMINI_API_KEY set, so these
     exercise the real fallback path end-to-end, matching how the system
