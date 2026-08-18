@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aids-transfer-credit-ai"
+version = "0.1.0"
+description = "AIDS Department Transfer Credit Evaluation System — AI core (Person B)"
+requires-python = ">=3.11"
+dependencies = [
+    "sentence-transformers",
+    "google-genai",
+    "numpy",
+    "psycopg2-binary",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["decision_engine", "matching_engine", "reasoning_generator", "evaluation_pipeline"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["embeddings*"]

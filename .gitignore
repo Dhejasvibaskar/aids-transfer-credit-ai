@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 venv/
 <<<<<<< HEAD
 .env
@@ -11,3 +12,26 @@ __pycache__/
 uploads/
 *.pyc
 >>>>>>> master
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment / secrets
+.env
+*.env.local
+
+# Model cache (downloaded on first run, don't commit)
+.cache/
+models/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+>>>>>>> dd8881af3ee5ec89d8509403a316bd43b5885fce
