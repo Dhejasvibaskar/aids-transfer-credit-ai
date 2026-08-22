@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CredRoute | Course Review</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+</head>
+
+<body class="dashboard-body">
+
+<nav class="credroute-navbar">
+
+    <div class="navbar-left">
+
+        <img
+            src="/static/images/rec-logo.png"
+            alt="REC Logo"
+            class="navbar-logo"
+        >
+
+        <div>
+            <div class="navbar-title">CredRoute</div>
+            <div class="navbar-subtitle">
+                AI-Assisted Transfer Credit Evaluation
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navbar-right">
+
+        <a
+            href="/evaluations/{{ evaluation.student_id | default(1) }}"
+            class="logout-btn"
+        >
+            ← Student Courses
+        </a>
+
+        <a
+            href="/logout"
+            class="logout-btn"
+        >
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+
+<main class="review-page-container">
+
+    <!-- HEADER -->
+    <section class="review-page-header">
+
+        <p class="dashboard-eyebrow">
+            HOD REVIEW
+        </p>
+
+        <h1>
+            Course Equivalency Evaluation
+        </h1>
+
+        <p>
+            Review the AI-generated recommendation and supporting
+            evidence before making the final academic decision.
+        </p>
+
+    </section>
+
+
+    <!-- STUDENT / COURSE MAPPING -->
+    <section class="dark-review-card">
+
+        <div class="review-top-row">
+
+            <div>
+                <span class="review-label">Student</span>
+
+                <h3>
+                    {{ evaluation.student_name | default("Demo Student") }}
+                </h3>
+            </div>
+
+            <span class="evaluation-pill">
+                Evaluation #{{ evaluation.id | default("101") }}
+            </span>
+
+        </div>
+
+
+        <div class="course-comparison-grid">
+
+            <div class="dark-course-box">
+
+                <span class="review-label">
+                    Source University Course
+                </span>
+
+                <h4>
+                    {{ evaluation.source_course_name | default("Data Structures and Algorithms") }}
+                </h4>
+
+                {% if evaluation.source_credits %}
+                <p>
+                    {{ evaluation.source_credits }} Credits
+                </p>
+                {% endif %}
+
+            </div>
+
+
+            <div class="course-arrow">
+                →
+            </div>
+
+
+            <div class="dark-course-box">
+
+                <span class="review-label">
+                    REC Target Course
+                </span>
+
+                <h4>
+                    {{ evaluation.target_course_name | default("Data Structures") }}
+                </h4>
+
+                {% if evaluation.target_credits %}
+                <p>
+                    {{ evaluation.target_credits }} Credits
+                </p>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COVERAGE -->
+    <section class="dark-review-card">
+
+        <div class="coverage-review-grid">
+
+            <div>
+
+                <span class="review-label">
+                    Syllabus Coverage
+                </span>
+
+                <div class="coverage-score">
+                    {{ evaluation.coverage_pct | default(87) }}%
+                </div>
+
+            </div>
+
+
+            <div class="coverage-review-right">
+
+                <div class="review-coverage-track">
+
+                    <div
+                        class="review-coverage-progress"
+                        style="width: {{ evaluation.coverage_pct | default(87) }}%;">
+                    </div>
+
+                </div>
+
+                <p>
+                    Percentage of REC target topics supported
+                    by the submitted source syllabus.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TOPIC COMPARISON -->
+    <section class="topic-review-grid">
+
+        <!-- MATCHED -->
+        <div class="dark-review-card">
+
+            <h3 class="review-section-heading">
+                Matched Topics
+            </h3>
+
+
+            {% if evaluation.matched_topics %}
+
+                {% for topic in evaluation.matched_topics %}
+
+                <div class="dark-topic-row">
+                    <span class="topic-check">✓</span>
+                    <span>{{ topic }}</span>
+                </div>
+
+                {% endfor %}
+
+            {% else %}
+
+                <div class="dark-topic-row">
+                    <span class="topic-check">✓</span>
+                    <span>Arrays and Linked Lists</span>
+                </div>
+
+                <div class="dark-topic-row">
+                    <span class="topic-check">✓</span>
+                    <span>Stacks and Queues</span>
+                </div>
+
+                <div class="dark-topic-row">
+                    <span class="topic-check">✓</span>
+                    <span>Trees</span>
+                </div>
+
+                <div class="dark-topic-row">
+                    <span class="topic-check">✓</span>
+                    <span>Graph Traversal</span>
+                </div>
+
+            {% endif %}
+
+        </div>
+
+
+        <!-- MISSING -->
+        <div class="dark-review-card">
+
+            <h3 class="review-section-heading">
+                Missing / Partial Topics
+            </h3>
+
+
+            {% if evaluation.missing_topics %}
+
+                {% for topic in evaluation.missing_topics %}
+
+                <div class="dark-topic-row">
+                    <span class="topic-missing">✕</span>
+                    <span>{{ topic }}</span>
+                </div>
+
+                {% endfor %}
+
+            {% else %}
+
+                <div class="dark-topic-row">
+                    <span class="topic-missing">✕</span>
+                    <span>Advanced Graph Algorithms</span>
+                </div>
+
+            {% endif %}
+
+        </div>
+
+    </section>
+
+
+    <!-- AI RECOMMENDATION -->
+    <section class="dark-review-card">
+
+        <h3 class="review-section-heading">
+            AI Recommendation
+        </h3>
+
+
+        {% set recommendation = evaluation.recommended_status | default("accept") %}
+
+        {% if recommendation == "accept" %}
+
+        <div class="dark-recommendation-box recommendation-accept">
+
+            <span class="status-pill status-accept">
+                ACCEPT
+            </span>
+
+            <p>
+                Syllabus coverage satisfies the configured
+                equivalency threshold.
+            </p>
+
+        </div>
+
+        {% elif recommendation == "partial" %}
+
+        <div class="dark-recommendation-box recommendation-partial">
+
+            <span class="status-pill status-partial">
+                PARTIAL
+            </span>
+
+            <p>
+                Significant syllabus overlap exists, but additional
+                review or bridge coursework may be required.
+            </p>
+
+        </div>
+
+        {% else %}
+
+        <div class="dark-recommendation-box recommendation-redo">
+
+            <span class="status-pill status-redo">
+                REDO
+            </span>
+
+            <p>
+                Current syllabus coverage does not meet the
+                required equivalency threshold.
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </section>
+
+
+    <!-- AI REASONING -->
+    <section class="dark-review-card">
+
+        <h3 class="review-section-heading">
+            AI Reasoning
+        </h3>
+
+        <div class="dark-reasoning-box">
+
+            {{ evaluation.reasoning |
+                default(
+                    "The submitted source course demonstrates strong semantic coverage of the REC target syllabus, with a limited content gap requiring academic consideration."
+                )
+            }}
+
+        </div>
+
+        <p class="reasoning-note">
+            AI-generated reasoning is advisory and does not
+            constitute the final academic decision.
+        </p>
+
+    </section>
+
+
+    <!-- FINAL DECISION -->
+    <section class="dark-review-card final-decision-card">
+
+        <p class="dashboard-eyebrow text-center">
+            FINAL ACADEMIC DECISION
+        </p>
+
+        <h2>
+            HOD Review
+        </h2>
+
+        <p class="final-decision-text">
+            The AI recommendation above is advisory.
+            The final decision must be made by the authorized academic reviewer.
+        </p>
+
+
+        {% if evaluation.final_decision %}
+
+        <div class="current-decision-box">
+            Current Final Decision:
+            <strong>
+                {{ evaluation.final_decision | capitalize }}
+            </strong>
+        </div>
+
+        {% endif %}
+
+
+        <div
+            id="decisionMessage"
+            aria-live="polite"
+        ></div>
+
+
+        <div
+            id="decisionControls"
+            data-evaluation-id="{{ evaluation.id | default(101) }}"
+            class="final-decision-actions"
+        >
+
+            <button
+                type="button"
+                id="approveBtn"
+                class="decision-approve-btn"
+            >
+                ✓ Approve
+            </button>
+
+
+            <button
+                type="button"
+                id="overrideBtn"
+                class="decision-override-btn"
+            >
+                Override
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="/static/js/review.js"></script>
+
+</body>
+</html>
