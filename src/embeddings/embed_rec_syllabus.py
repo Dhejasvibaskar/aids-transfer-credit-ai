@@ -38,12 +38,11 @@ Usage:
 
 import argparse
 import json
-import os
 
 
 
 
-from embeddings.embed_topics import get_embeddings_batch
+from src.embeddings.embed_topics import get_embeddings_batch
 
 
 # Placeholder data so this script is runnable today, before the real REC
@@ -147,47 +146,55 @@ def embed_rec_syllabus(syllabus: list[dict], conn=None, dry_run: bool = False) -
 
 
     return results
-
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Embed REC's permanent target syllabus.")
-    parser.add_argument("--input", type=str, default=None,
-                         help="Path to REC syllabus JSON. Uses placeholder data if omitted.")
-    parser.add_argument("--dry-run", action="store_true",
-                         help="Compute embeddings without writing to the DB.")
+    parser = argparse.ArgumentParser(
+        description="Embed REC's permanent target syllabus."
+    )
+
+    parser.add_argument(
+        "--input",
+        type=str,
+        default=None,
+        help="Path to REC syllabus JSON. Uses placeholder data if omitted."
+    )
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Compute embeddings without writing to the DB."
+    )
+
     args = parser.parse_args()
 
     syllabus = load_syllabus(args.input)
 
     conn = None
+
     if not args.dry_run:
         import psycopg2
-        database_url = os.getenv("DATABASE_URL")
-        if database_url:
-            conn = psycopg2.connect(database_url, connect_timeout=10)
-        else:
-            required_env = ("PGDATABASE", "PGUSER", "PGPASSWORD")
-            missing_env = [name for name in required_env if not os.getenv(name)]
-            if missing_env:
-                raise RuntimeError(
-                    "Missing database connection settings: "
-                    + ", ".join(missing_env)
-                    + ". Set DATABASE_URL or the PGDATABASE/PGUSER/PGPASSWORD env vars."
-                )
+        from pipeline import DB_CONFIG
 
-            conn = psycopg2.connect(
-                dbname=os.environ["PGDATABASE"],
-                user=os.environ["PGUSER"],
-                password=os.environ["PGPASSWORD"],
-                host=os.getenv("PGHOST", "localhost"),
-                port=os.getenv("PGPORT", "5432"),
-                connect_timeout=10,
+        conn = psycopg2.connect(**DB_CONFIG)
+
+    try:
+        results = embed_rec_syllabus(
+            syllabus,
+            conn=conn,
+            dry_run=args.dry_run
+        )
+
+        print(
+            f"\nDone. Embedded {len(results)} topics across "
+            f"{len(set(r['course_id'] for r in results))} course(s)."
+        )
+
+        if args.dry_run and results:
+            print("(dry run — nothing written to DB)")
+            print(
+                f"Sample embedding length: "
+                f"{len(results[0]['embedding'])}"
             )
-    results = embed_rec_syllabus(syllabus, conn=conn, dry_run=args.dry_run)
 
-    print(f"\nDone. Embedded {len(results)} topics across "
-          f"{len(set(r['course_id'] for r in results))} course(s).")
-  
-    if args.dry_run and results:
-        print("(dry run — nothing written to DB)")
-        print(f"Sample embedding length: {len(results[0]['embedding'])}")
+    finally:
+        if conn is not None:
+            conn.close()

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CredRoute — HOD Login</title>
+</head>
+
+<body style="
+    font-family: sans-serif;
+    max-width: 450px;
+    margin: 60px auto;
+">
+
+<h2>HOD Login</h2>
+
+{% if request.query_params.get("error") %}
+
+<p style="color:red;">
+    Invalid username or password.
+</p>
+
+{% endif %}
+
+<form
+    action="/login"
+    method="post"
+>
+
+    <label>Username</label>
+    <br>
+
+    <input
+        type="text"
+        name="username"
+        required
+    >
+
+    <br><br>
+
+    <label>Password</label>
+    <br>
+
+    <input
+        type="password"
+        name="password"
+        required
+    >
+
+    <br><br>
+
+    <button type="submit">
+        Login
+    </button>
+
+</form>
+
+<br>
+
+<a href="/">
+    Back to evaluation
+</a>
+
+</body>
+</html>

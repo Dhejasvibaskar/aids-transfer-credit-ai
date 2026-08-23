@@ -27,7 +27,7 @@ Usage as a module (real pipeline, once wired up):
     pooled = embed_source_topics(["Deep learning fundamentals...", ...])
 """
 
-from embeddings.embed_topics import get_embeddings_batch
+from src.embeddings.embed_topics import get_embeddings_batch
 
 
 def embed_source_topics(topic_texts: list[str]) -> list[dict]:

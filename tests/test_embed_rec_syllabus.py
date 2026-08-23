@@ -16,8 +16,8 @@ import json
 import pytest
 from unittest.mock import MagicMock
 
-import embeddings.embed_rec_syllabus as embed_rec_syllabus
-from embeddings.embed_rec_syllabus import (
+import src.embeddings.embed_rec_syllabus as embed_rec_syllabus
+from src.embeddings.embed_rec_syllabus import (
     load_syllabus,
     embed_rec_syllabus as embed_rec_syllabus_fn,
     validate_syllabus,

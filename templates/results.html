@@ -1,27 +1,775 @@
 <!DOCTYPE html>
-<html>
-<head><title>Evaluation Results</title></head>
-<body style="font-family: sans-serif; max-width: 800px; margin: 40px auto;">
-  <h2>Evaluation Results</h2>
+<html lang="en">
 
-  <form method="get">
-    <label>Acceptance threshold: <span id="thresh-val">{{ threshold }}</span>%</label><br>
-    <input type="range" name="threshold" min="50" max="100" value="{{ threshold }}"
-           oninput="document.getElementById('thresh-val').textContent = this.value"
-           onchange="this.form.submit()">
-  </form>
+<head>
+    <meta charset="UTF-8">
 
-  <table style="border-collapse: collapse; width: 100%;">
-    <tr><th>Course</th><th>Coverage %</th><th>Status</th><th>Missing Units</th><th>Reasoning</th></tr>
-    {% for r in results %}
-    <tr>
-      <td>{{ r.course }}</td>
-      <td>{{ r.coverage_pct }}%</td>
-      <td>{{ 'ACCEPT' if r.coverage_pct >= threshold else 'REDO' }}</td>
-      <td>{{ r.missing_units | join(', ') if r.missing_units else '—' }}</td>
-      <td>{{ r.reasoning }}</td>
-    </tr>
-    {% endfor %}
-  </table>
+    <title>
+        CredRoute - Evaluation Results
+    </title>
+</head>
+
+
+<body style="
+    font-family: sans-serif;
+    max-width: 1100px;
+    margin: 40px auto;
+">
+
+<h1>
+    Transfer Credit Evaluation
+</h1>
+
+
+<p>
+    Acceptance threshold:
+    <strong>
+        {{ threshold }}%
+    </strong>
+</p>
+
+
+{% if not result.eligible %}
+
+    <h3 style="color: red;">
+        Student is not eligible for credit transfer
+    </h3>
+
+    <ul>
+
+        {% for reason in result.reasons %}
+
+            <li>
+                {{ reason }}
+            </li>
+
+        {% endfor %}
+
+    </ul>
+
+
+{% else %}
+
+
+    <!-- ========================================================= -->
+    <!-- STUDENT INFORMATION -->
+    <!-- ========================================================= -->
+
+    <h2>
+        Student Summary
+    </h2>
+
+    <p>
+        Student:
+        <strong>
+            {{ result.student_name or "Unknown" }}
+        </strong>
+    </p>
+
+
+    <p>
+        Evaluated through:
+        <strong>
+            Semester {{ result.completed_semester }}
+        </strong>
+    </p>
+
+
+    <p>
+        Transcript files processed:
+        <strong>
+            {{ result.transcript_count }}
+        </strong>
+    </p>
+
+
+    <!-- ========================================================= -->
+    <!-- HOD SUMMARY -->
+    <!-- ========================================================= -->
+
+    <hr>
+
+    <h2>
+        Transfer Credit Summary
+    </h2>
+
+
+    <table style="
+        border-collapse: collapse;
+        width: 600px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    ">
+
+        <tr>
+
+            <th style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: left;
+            ">
+                Result
+            </th>
+
+            <th style="
+                border: 1px solid #ccc;
+                padding: 12px;
+            ">
+                Courses
+            </th>
+
+        </tr>
+
+
+        <tr>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                color: green;
+            ">
+                <strong>
+                    ACCEPTED
+                </strong>
+            </td>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: center;
+            ">
+                {{ result.summary.accepted }}
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                color: orange;
+            ">
+                <strong>
+                    PARTIAL / HOD REVIEW
+                </strong>
+            </td>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: center;
+            ">
+                {{ result.summary.partial }}
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                color: red;
+            ">
+                <strong>
+                    REDO REQUIRED
+                </strong>
+            </td>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: center;
+            ">
+                {{ result.summary.redo }}
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+            ">
+                <strong>
+                    TOTAL COURSES EVALUATED
+                </strong>
+            </td>
+
+            <td style="
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: center;
+            ">
+                {{ result.summary.total }}
+            </td>
+
+        </tr>
+
+    </table>
+
+
+    <!-- ========================================================= -->
+    <!-- COURSES TO REDO -->
+    <!-- ========================================================= -->
+
+    <h2 style="color: red;">
+        Courses to Redo
+    </h2>
+
+
+    {% if result.redo_courses %}
+
+        <table style="
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        ">
+
+            <tr>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Semester
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Course
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Coverage
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Reason
+                </th>
+
+            </tr>
+
+
+            {% for course in result.redo_courses %}
+
+                <tr>
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: center;
+                    ">
+                        {{ course.semester }}
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+
+                        <strong>
+                            {{ course.course_code }}
+                        </strong>
+
+                        <br>
+
+                        {{ course.course }}
+
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: center;
+                    ">
+                        {{ course.coverage_pct }}%
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        {{ course.reasoning.narrative }}
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+
+        </table>
+
+    {% else %}
+
+        <p style="color: green;">
+            No redo courses are required through
+            Semester {{ result.completed_semester }}.
+        </p>
+
+    {% endif %}
+
+
+    <!-- ========================================================= -->
+    <!-- ACCEPTED COURSES -->
+    <!-- ========================================================= -->
+
+    <h2 style="color: green;">
+        Accepted Courses
+    </h2>
+
+
+    {% if result.accepted_courses %}
+
+        <table style="
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        ">
+
+            <tr>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Semester
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Course
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Coverage
+                </th>
+
+            </tr>
+
+
+            {% for course in result.accepted_courses %}
+
+                <tr>
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: center;
+                    ">
+                        {{ course.semester }}
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+
+                        <strong>
+                            {{ course.course_code }}
+                        </strong>
+
+                        <br>
+
+                        {{ course.course }}
+
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: center;
+                    ">
+                        {{ course.coverage_pct }}%
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+
+        </table>
+
+    {% else %}
+
+        <p>
+            No courses were automatically accepted.
+        </p>
+
+    {% endif %}
+
+
+    <!-- ========================================================= -->
+    <!-- PARTIAL / REVIEW -->
+    <!-- ========================================================= -->
+
+    <h2 style="color: orange;">
+        Partial / HOD Review
+    </h2>
+
+
+    {% if result.partial_courses %}
+
+        <table style="
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        ">
+
+            <tr>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Semester
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Course
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Coverage
+                </th>
+
+                <th style="
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                ">
+                    Missing Units
+                </th>
+
+            </tr>
+
+
+            {% for course in result.partial_courses %}
+
+                <tr>
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: center;
+                    ">
+                        {{ course.semester }}
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+
+                        <strong>
+                            {{ course.course_code }}
+                        </strong>
+
+                        <br>
+
+                        {{ course.course }}
+
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: center;
+                    ">
+                        {{ course.coverage_pct }}%
+                    </td>
+
+
+                    <td style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+
+                        {% if course.reasoning.missing_units %}
+
+                            <ul>
+
+                                {% for unit in course.reasoning.missing_units %}
+
+                                    <li>
+                                        {{ unit }}
+                                    </li>
+
+                                {% endfor %}
+
+                            </ul>
+
+                        {% else %}
+
+                            None
+
+                        {% endif %}
+
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+
+        </table>
+
+    {% else %}
+
+        <p>
+            No courses require partial/HOD review.
+        </p>
+
+    {% endif %}
+
+
+    <!-- ========================================================= -->
+    <!-- FULL DETAILED EVALUATION -->
+    <!-- ========================================================= -->
+
+    <hr>
+
+    <h2>
+        Detailed Course Evaluation
+    </h2>
+
+
+    {% if result.courses %}
+
+        <table style="
+            border-collapse: collapse;
+            width: 100%;
+        ">
+
+            <thead>
+
+                <tr>
+
+                    <th style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        Sem
+                    </th>
+
+                    <th style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        Course
+                    </th>
+
+                    <th style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        Coverage %
+                    </th>
+
+                    <th style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        Status
+                    </th>
+
+                    <th style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        Missing Units
+                    </th>
+
+                    <th style="
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                    ">
+                        Reasoning
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                {% for course in result.courses %}
+
+                    <tr>
+
+                        <td style="
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                            text-align: center;
+                        ">
+                            {{ course.semester }}
+                        </td>
+
+
+                        <td style="
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                        ">
+
+                            <strong>
+                                {{ course.course_code }}
+                            </strong>
+
+                            <br>
+
+                            {{ course.course }}
+
+                        </td>
+
+
+                        <td style="
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                            text-align: center;
+                        ">
+                            {{ course.coverage_pct }}%
+                        </td>
+
+
+                        <td style="
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                        ">
+
+                            {% if course.recommended_status == "accept" %}
+
+                                <strong style="color: green;">
+                                    ACCEPT
+                                </strong>
+
+                            {% elif course.recommended_status == "partial" %}
+
+                                <strong style="color: orange;">
+                                    PARTIAL
+                                </strong>
+
+                            {% else %}
+
+                                <strong style="color: red;">
+                                    REDO
+                                </strong>
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <td style="
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                        ">
+
+                            {% if course.reasoning.missing_units %}
+
+                                <ul>
+
+                                    {% for unit in course.reasoning.missing_units %}
+
+                                        <li>
+                                            {{ unit }}
+                                        </li>
+
+                                    {% endfor %}
+
+                                </ul>
+
+                            {% else %}
+
+                                None
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <td style="
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                        ">
+
+                            {{ course.reasoning.narrative }}
+
+                            {% if course.reasoning.suggested_bridge_module %}
+
+                                <br><br>
+
+                                <strong>
+                                    Suggested Bridge Module:
+                                </strong>
+
+                                {{ course.reasoning.suggested_bridge_module }}
+
+                            {% endif %}
+
+                        </td>
+
+                    </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+
+    {% else %}
+
+        <p style="color: red;">
+            No course evaluation results were generated.
+        </p>
+
+    {% endif %}
+
+
+{% endif %}
+
+
+<br><br>
+
+<a href="/">
+    Run Another Evaluation
+</a>
+
+&nbsp; | &nbsp;
+
+<a href="/login">
+    HOD Review
+</a>
+
+
 </body>
+
 </html>

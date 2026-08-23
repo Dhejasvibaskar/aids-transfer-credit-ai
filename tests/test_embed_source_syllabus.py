@@ -12,8 +12,8 @@ Run with:
 
 import pytest
 
-import embeddings.embed_source_syllabus as embed_source_syllabus
-from embeddings.embed_source_syllabus import embed_source_topics
+import src.embeddings.embed_source_syllabus as embed_source_syllabus
+from src.embeddings.embed_source_syllabus import embed_source_topics
 
 
 def fake_get_embeddings_batch(texts):

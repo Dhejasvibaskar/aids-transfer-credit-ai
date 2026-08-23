@@ -1,0 +1,2515 @@
+[
+  {
+    "course_id": 157,
+    "course_code": "HS23111",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "DEVELOPING COMPREHENSION SKILLS: Listening: Introduction to Informational listening – Listening to Podcasts, News Reading: Short Narratives and Skimming Passages. Speaking: Introducing Oneself, Narrating a Story / Incident. Writing: Sequential Writing (Jumbled Sentences), Process Description Grammar: Verbs – Main & Auxiliary: Simple Tenses – Form, Function and Meaning. Vocabulary: Word formation – Prefix, Suffix, Compound Words."
+      },
+      {
+        "unit_no": 2,
+        "text": "LISTENING AND EXTENDED READING: Listening: Deep Listening – Listening to Talk Shows and Debates Reading: In-depth Reading - Scanning Passages Speaking: Describing Current Issues, Happenings, etc.., Writing: Note Making, Note Taking – Paragraph Writing Grammar: Continuous Tenses, Prepositions, Articles Vocabulary: One Word Substitutes, Phrasal Verbs."
+      },
+      {
+        "unit_no": 3,
+        "text": "FORMAL WRITING AND VERBAL ABILITY: Listening: Listening to Lectures and Taking Notes Reading: Interpretation of Tables, Charts and Graphs Speaking: SWOT Analysis on Oneself Writing: Formal Letter Writing and Email Writing Grammar: Perfect Tenses, Phrases and Clauses, Discourse Markers Vocabulary : Verbal Analogy / Cloze Exercise"
+      },
+      {
+        "unit_no": 4,
+        "text": "ENHANCING SPEAKING ABILITY: Listening: Listening to eminent voices of one's interest (Martin Luther King, APJ Abdul Kalam, etc..) Reading: Timed Reading, Filling KWL Chart. Speaking: Just a Minute, Impromptu Writing: Check-list, Instructions. Grammar: ‘Wh' Questions / ‘Yes' or ‘No' Questions, Imperatives Vocabulary: Synonyms, Antonyms, Different forms of the same words."
+      },
+      {
+        "unit_no": 5,
+        "text": "LANGUAGE FOR WORKPLACE: Listening: Extensive Listening (Audio books, rendering of poems, etc.) Reading: Extensive reading (Jigsaw Reading, Short Stories, Novels) Speaking: Short Presentations on Technical Topics Writing: Recommendations, Essay Writing Grammar: Impersonal Passive, Reported Speech, Concord Vocabulary : Informal Vocabulary and Formal Substitutes"
+      }
+    ]
+  },
+  {
+    "course_id": 158,
+    "course_code": "MA23116",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "MATRICES AND QUADRATIC FORMS: Matrices : Types - Symmetric and Skew – symmetric matrices, Hermitian matrix, Unitary matrix and Orthogonal matrices – Rank, Inverse and Trace of a matrix - Eigen values and eigenvectors- Diagonalization of matrices using orthogonal transformation - Quadratic forms - Reduction to canonical form using orthogonal transformation."
+      },
+      {
+        "unit_no": 2,
+        "text": "VECTOR SPACES: Vector spaces – Subspaces – Linear combinations and system of Linear equations – Linear independence and Linear dependence – Bases and Dimensions – Linear Transformation – Matrix representation of Linear Transformation - Null space, Range and dimension theorem."
+      },
+      {
+        "unit_no": 3,
+        "text": "INNER PRODUCT SPACES: Inner product and norms - Gram Schmidt orthonormalization process - Modified Gram Schmidt ortho-normalization process - QR Factorization-Singular value decomposition -Principal component analysis."
+      },
+      {
+        "unit_no": 4,
+        "text": "INFORMATION THEORY: Measure of Information, Entropy, Source coding theorem - Shannon-Fano codes & Huffman codes, Discrete Memory less channel, Mutual information, Channel Capacity, Shannon-Hartley theorem."
+      },
+      {
+        "unit_no": 5,
+        "text": "FUNCTIONS OF SEVERAL VARIABLES: Partial differentiation–Total derivative–Change of variables–Jacobians–Partial differentiation of implicit functions– Taylor's series for functions of two variables–Maxima and minima of functions of two variables–Lagrange's method of undetermined multipliers."
+      }
+    ]
+  },
+  {
+    "course_id": 159,
+    "course_code": "PH23132",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "LASERS AND FIBRE OPTICS: Lasers: Population of energy levels, Einstein's A and B coefficients derivation – resonant cavity, optical amplification (qualitative) –Nd-YAG Laser, Semiconductor lasers: Homojunction and Heterojunction- Applications of Lasers and Holography. Fiber optics: principle, numerical aperture and acceptance angle - types of optical fibers (material, refractive index, mode) – losses associated with optical fibers -Fibre optic communication system - fiber optic sensors: pressure and displacement."
+      },
+      {
+        "unit_no": 2,
+        "text": "MAGNETIC AND SUPERCONDUCTING MATERIALS: Magnetic dipole moment – atomic magnetic moments- magnetic permeability and susceptibility -Magnetic material classification: diamagnetism – paramagnetism – ferromagnetism – antiferromagnetism – ferrimagnetism – Domain Theory- M versus H behaviour – Hard and soft magnetic materials – examples and uses-– Magnetic principle in computer data storage –Introduction of Superconductivity, Properties of Superconductors, BCS theory (Qualitative), Type-I and Type II Superconductors -Magnetic Levitation-SQUIDS-Cryotrons."
+      },
+      {
+        "unit_no": 3,
+        "text": "QUANTUM PHYSICS: Introduction- Quantum free electron theory-De Broglie's concept-Schrodinger wave equation-Time independent and time dependent equations-Physical significance of wave function - Particle in a one dimensional box – electrons in metals -degenerate states – Fermi- Dirac statistics – Density of energy states -Size dependence of Fermi energy – Quantum confinement – Quantum structures –Quantum wells, Quantum wires, Quantum dots and Quantum clusters - Band gap of nanomaterials."
+      },
+      {
+        "unit_no": 4,
+        "text": "SEMICONDUCTOR PHYSICS: Intrinsic Semiconductors – Energy band diagram – direct and indirect band gap semiconductors –- Carrier concentration in intrinsic semiconductors – Band gap determination- extrinsic semiconductors (Qualitative)-Formation of P-N junction-Forward bias- Reverse bias-Hall effect -Ohmic contact-Schottky diode- Tunnel diode."
+      },
+      {
+        "unit_no": 5,
+        "text": "OPTOELECTRONICS: Classification of optical materials – carrier generation and recombination processes - Absorption emission and scattering of light in metals, insulators and semiconductors (concepts only) – Photo electric effect-Photo current in a P-N diode – Photo transistor-solar cell - LED – Organic LED- Non Linear Optical materials-properties and applications."
+      }
+    ]
+  },
+  {
+    "course_id": 160,
+    "course_code": "GE23131",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Overview of C, Constants, Variables and Data Types"
+      },
+      {
+        "unit_no": 2,
+        "text": "Operators and Expressions, Managing Input and Output Operations"
+      },
+      {
+        "unit_no": 3,
+        "text": "Decision Making and Branching"
+      },
+      {
+        "unit_no": 4,
+        "text": "Decision Making and Looping"
+      },
+      {
+        "unit_no": 5,
+        "text": "Nested Loops - while and for, Jumps in Loops"
+      },
+      {
+        "unit_no": 6,
+        "text": "One-Dimensional Arrays"
+      },
+      {
+        "unit_no": 7,
+        "text": "Searching Algorithms - Linear and Binary"
+      },
+      {
+        "unit_no": 8,
+        "text": "Sorting Algorithms - Bubble and Selection"
+      },
+      {
+        "unit_no": 9,
+        "text": "Two-Dimensional and Multi-dimensional Arrays"
+      },
+      {
+        "unit_no": 10,
+        "text": "Character Arrays and Strings Handling Functions"
+      },
+      {
+        "unit_no": 11,
+        "text": "User-Defined Functions - Recursive Functions"
+      },
+      {
+        "unit_no": 12,
+        "text": "Passing Arrays and Strings to Functions"
+      },
+      {
+        "unit_no": 13,
+        "text": "Scope, Visibility and Lifetime of Variables"
+      },
+      {
+        "unit_no": 14,
+        "text": "Structures and Unions"
+      },
+      {
+        "unit_no": 15,
+        "text": "Pointers"
+      },
+      {
+        "unit_no": 16,
+        "text": "The Preprocessor"
+      }
+    ]
+  },
+  {
+    "course_id": 161,
+    "course_code": "EE23133",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "DC CIRCUITS: Electrical circuit elements (R, L and C), voltage and current sources, Kirchoff ‘s current and voltage laws, analysis of simple circuits with dc excitation. Superposition, The venin and Norton Theorems."
+      },
+      {
+        "unit_no": 2,
+        "text": "AC CIRCUITS: Representation of sinusoidal waveforms, peak and rms values, phasor representation, real power, reactive power, apparent power, power factor. Analysis of single-phase ac circuits consisting of R, L, C, RL, RC, RLC combinations series resonance. Three phase balanced circuits, voltage and current relations in star and delta connections"
+      },
+      {
+        "unit_no": 3,
+        "text": "ELECTRICAL MACHINES: Construction, Principles of operation of DC machines, Single phase Transformers, Synchronous machines, Single phase induction motors."
+      },
+      {
+        "unit_no": 4,
+        "text": "ELECTRONIC DEVICES & CIRCUITS: Types of Materials – Silicon & Germanium- N type and P type materials – PN Junction diode–Forward and Reverse Bias – Bipolar Junction Transistor – Common Emitter characteristics –Introduction to operational Amplifier –Inverting Amplifier –Non Inverting Amplifier."
+      },
+      {
+        "unit_no": 5,
+        "text": "MEASUREMENTS & INSTRUMENTATION: Introduction to transducers - Classification of Transducers: Resistive, Inductive, Capacitive, Piezoelectric, - Classification of instruments - PMMC and MI Ammeters and Voltmeters – Digital Storage Oscilloscope."
+      }
+    ]
+  },
+  {
+    "course_id": 162,
+    "course_code": "MC23111",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INDIAN FREEDOM MOVEMENT: British Colonialism in India-Colonial administration till 1857- Revolt of 1857- Early Resistance to British Rule-Rise of Nationalism in India-Indian Freedom Struggle under Mahatma Gandhi-Non- Cooperation Movement-Civil Disobedience Movement- Quit India Movement-British Official response to National movement- Independence of India Act 1947-Freedom and Partition."
+      },
+      {
+        "unit_no": 2,
+        "text": "CONSTITUTION OF INDIA: Historical Background – Indian Constitution: Constitution' meaning of the term, Sources and constitutional history, Constituent Assembly of India – Philosophical foundations of the Indian Constitution – Preamble – Fundamental Rights – Directive Principles of State Policy – Fundamental Duties – Citizenship – Constitutional Remedies for citizens."
+      },
+      {
+        "unit_no": 3,
+        "text": "STRUCTURE AND FUNCTIONS OF CENTRAL GOVERNMENT: Union Government – Structure of the Union Government and Functions – President – Vice President – Prime Minister – Cabinet – Parliament – Supreme Court of India – Judicial Review."
+      },
+      {
+        "unit_no": 4,
+        "text": "STRUCTURE AND FUNCTION OF STATE GOVERNMENT AND LOCAL BODY: State Government – Structure and Functions – Governor – Chief Minister – Cabinet – State Legislature – Judicial System in States – High Courts and other Subordinate Courts- Role and Importance, Municipalities: Introduction, Mayor and role of Elected Representative, CEO of Municipal Corporation, Pachayati Raj: Introduction, Elected officials and their roles, Village level: Role of Elected and Appointed officials."
+      },
+      {
+        "unit_no": 5,
+        "text": "CONSTITUTIONAL FUNCTIONS AND BODIES: Indian Federal System – Centre – State Relations – President's Rule – Constitutional Functionaries – Assessment of working of the Parliamentary System in India- CAG, Election Commission, UPSC, GST Council and other Constitutional bodies-. NITI Aayog, Lokpal, National Development Council and other Non –Constitutional bodies."
+      }
+    ]
+  },
+  {
+    "course_id": 163,
+    "course_code": "MA23214",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "PROBABILITY - BAYES THEOREM: Probability models and axioms- Conditioning and Bayes' rule – Discrete random variables: Binomial and Poisson distributions - Multiple discrete random variables: joint PMFs, expectations, conditioning - Continuous random variables: Uniform and Gaussian distributions - Multiple continuous random variables- Continuous Bayes rule."
+      },
+      {
+        "unit_no": 2,
+        "text": "STATISTICAL TESTING: Bayesian statistical inference- Maximal Likelihood estimation : Parameters of Binomial and Poisson distribution- Test of hypotheses: tests of significance – Z, Chi square, F test."
+      },
+      {
+        "unit_no": 3,
+        "text": "NON PARAMETRIC TESTS: Sign test -Wilcoxon signed rank test - Mann Whitney test - Run test - Kolmogorov Smirnov test - Spearmann and Kendall's test - Tolerance region."
+      },
+      {
+        "unit_no": 4,
+        "text": "LINEAR STATISTICAL MODELS: Scatter diagram- Linear Regression and Correlation- Least squares method- Rank correlation- Multiple regression and multiple correlation- Analysis of variance (one way, two way)."
+      },
+      {
+        "unit_no": 5,
+        "text": "BASICS OF TIME SERIES: Stationary Time Series - ARIMA models: Identification, Estimation and Forecasting"
+      }
+    ]
+  },
+  {
+    "course_id": 164,
+    "course_code": "GE23111",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "PLANE CURVES AND PROJECTION OF POINTS: Curves used in engineering practices: Conics–Construction of ellipse, parabola and hyperbola by eccentricity method – Cycloidal Curves–Construction of cycloid, epicycloid and hypocycloid – Construction of involutes of square andcircle– Drawing of tangents and normal to the above curves. Principles of Projection and Projection of points."
+      },
+      {
+        "unit_no": 2,
+        "text": "PLANE CURVES AND PROJECTION OF POINTS: Projection of straight lines (First angle projection) inclined to both the principal planes – Determination of true lengths and true inclinations by rotating line method Projection of planes (polygonal and circular surfaces) inclined to both the principal planes by rotating object method."
+      },
+      {
+        "unit_no": 3,
+        "text": "PROJECTION OF SOLIDS AND PROJECTION OF SECTIONED SOLIDS: Projection of simple solids like prisms, pyramids, cylinder and cone when the axis is inclined to one of the principalplanes by rotating object method. Sectioning of solids in simple vertical position when the cutting plane is inclined to HP and perpendicular to VP –obtaining true shape of the section. Practicing three-dimensional modeling of simple objects by CAD software (Not for examination)"
+      },
+      {
+        "unit_no": 4,
+        "text": "DEVELOPMENT OF SURFACE AND ISOMETRIC PROJECTIONS: Development of lateral surfaces of simple and sectioned solids – Prisms, pyramids cylinders and cones.Principles of isometric projection–isometric scale–Isometric projections of simple solids and truncated solids - Prisms, pyramids, cylinders and cones .Model making of isometric projection of combination of solids as assignment (Not for End semester)"
+      },
+      {
+        "unit_no": 5,
+        "text": "FREE HAND SKETCHING AND PERSPECTIVE PROJECTIONS: Free Hand sketching: Freehand sketching of multiple views from pictorial views of objects - Freehand sketching of pictorial views of object from multiple views .Perspective projection of simple solids-Prisms, pyramids, cylinder and cone by visual ray method. (L=30;"
+      }
+    ]
+  },
+  {
+    "course_id": 165,
+    "course_code": "IT23231",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "MINIMIZATION TECHNIQUES: Number System and Complements: Number System - Boolean postulates and Laws – De-Morgan's Theorem – Principle of Duality – Boolean Expression – Minimization of Boolean expressions -Sum of Products (SOP) – Product of Sums (POS). Minimization Techniques: Minimization of Boolean expressions using Boolean laws - Karnaugh map - Don‟t care conditions. Logic Gates : Basic Logic Gates- Universal Gates."
+      },
+      {
+        "unit_no": 2,
+        "text": "COMBINATIONAL AND SEQUENTIAL CIRCUITS: Combinational Circuits : Adder - Subtractor –Multiplexer- De multiplexer – Decoder – Encoder. Sequential Circuits: Latches – Flip Flops – Shift Registers – Counters : Ripple – Synchronous Counter"
+      },
+      {
+        "unit_no": 3,
+        "text": "INTRODUCTION TO COMPUTER ARCHITECTURE & INSTRUCTIONS: Introduction: Eight Great ideas in Computer Architecture – Components of a computer system – Technology for building processor and memory – Performance – Power wall. Instructions: Operations of Computer Hardware – Operands of Computer Hardware - Representing instructions in Computer - Logical operations – Instructions for decision."
+      },
+      {
+        "unit_no": 4,
+        "text": "ARITHMETIC AND LOGIC UNIT: Design of ALU, Integer Arithmetic: Addition, Subtraction, Multiplication and Division – Floating Point Arithmetic: Representation, Addition, subtraction, Multiplication."
+      },
+      {
+        "unit_no": 5,
+        "text": "MEMORY AND I/O SYSTEMS: Memory hierarchy - Memory technologies – Cache basics – Measuring and improving cache performance - Virtual memory – TLBs, Input/output system, programmed I/O, DMA and interrupts, I/O processors. Case Study: RAID"
+      }
+    ]
+  },
+  {
+    "course_id": 166,
+    "course_code": "CS23231",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "LINEAR DATA STRUCTURE –LIST: Self-Referential Structures, Dynamic Memory Allocation, Linked list implementation - Singly Linked List, Doubly Linked List, Circular Linked List, Applications of List."
+      },
+      {
+        "unit_no": 2,
+        "text": "LINEAR DATA STRUCTURE –STACK AND QUEUE: Stack – Operations, Array and Linked list implementation, Applications – Evaluation of Arithmetic Expressions, Queues- Operations, Array and Linked list Implementation."
+      },
+      {
+        "unit_no": 3,
+        "text": "NONLINEAR DATA STRUCTURE -TREES: Tree Terminologies, Binary Tree Representation, Tree Traversals, Binary Search Trees, Binary Heap, Height Balance Trees – AVL Trees."
+      },
+      {
+        "unit_no": 4,
+        "text": "NONLINEAR DATA STRUCTURE -GRAPH: Representation of Graphs, Topological Sort, Depth First Search and Breadth-First Search , Minimum Spanning Tree – Prim's Algorithm, Shortest path algorithm – Dijikstra's Algorithm."
+      },
+      {
+        "unit_no": 5,
+        "text": "SORTING AND HASHING: Sorting Techniques –Insertion Sort, Quick Sort, Merge Sort, Hashing- Hashing functions – Mid square, Division, Folding, Collision Resolution Techniques – Separate Chaining – Open Addressing – Rehashing."
+      }
+    ]
+  },
+  {
+    "course_id": 167,
+    "course_code": "HS23221",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "VOCABULARY FOR BETTER COMMUNICATION: Listening: Telephonic Conversations and TV News Reading: Newspapers and Magazines Speaking: Conversational Practice: Speaking in a given situation, Asking permission and requesting etc.., Writing: Job Application Letter and Resume Grammar: Reference words: pronouns and determiners Vocabulary: Guessing meanings of words in different contexts."
+      },
+      {
+        "unit_no": 2,
+        "text": "FUNCTIONAL LANGUAGE ASPECTS: Listening: Motivational listening – listening to real life challenges Reading: Articles and Technical reports Speaking: Using Polite Expressions, Indirect Questions Writing: Paraphrasing a Text, Poem Grammar: Purpose Statements, Cause and Effect Expressions Vocabulary: Neologisms."
+      },
+      {
+        "unit_no": 3,
+        "text": "TECHNICAL REPORTWRITING: Listening: Empathetic Listening – Giving Solutions to Problems Reading: Inferential Reading Speaking: Dialogues – Interviewing Celebrities / Leaders / Sportspersons, etc.., Writing: Report Writing Grammar: Functional Usage of Expressions – used to, gone / been, etc.., Vocabulary: Words Often Confused"
+      },
+      {
+        "unit_no": 4,
+        "text": "STRUCTURAL GRAMMAR: Listening: Comprehension (IELTS practice tests) Reading: Intensive Reading for specific information Speaking: Pick and Talk Writing: Proposals Grammar: Sentence Structures – Simple, Compound, Complex Sentences Vocabulary: Replacing dull words with vivid ones"
+      },
+      {
+        "unit_no": 5,
+        "text": "PRESENTATION SKILLS: Listening: Discriminative listening – sarcasm, irony, pun, etc.., Reading: Practice of chunking – breaking up reading materials Speaking: Mini presentation on some topic Writing: Minutes of the meeting Grammar: Correction of Errors Vocabulary: Advanced vocabulary – fixing appropriate words in the given context."
+      }
+    ]
+  },
+  {
+    "course_id": 168,
+    "course_code": "HS23222",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "RECEPTIVE SKILLS: Listening – Comprehensive Listening – Watching the news – Listening to a peer giving presentation, etc. – Critical Listening – Watching a televised debate, Listening to poems – Reading – Extensive Reading – Short stories and One- act Plays – Intensive Reading – Articles or Editorials in Magazines, Blog posts on topics like science and technology, arts, etc."
+      },
+      {
+        "unit_no": 2,
+        "text": "PRODUCTIVE SKILLS: Speaking – Demonstrative Speaking – Process description through visual aids – Persuasive Speaking – Convincing the listener with the speaker's view – Writing – Descriptive Writing - Describing a place, person, process – Subjective Writing – Autobiography, Writing based on personal opinions and interpretations"
+      },
+      {
+        "unit_no": 3,
+        "text": "ENGLISH FOR COMPETITIVE EXAMS: An introduction to International English Language Testing System (IELTS) – Test of English as a Foreign Language (TOEFL) – Graduate Record Examination (GRE) – Civil Service, Indian Economic Service Examination, Indian Statistical Service Examination, Combined Defence Services Examination, Staff Selection- (Language Related) – Aptitude tests."
+      },
+      {
+        "unit_no": 4,
+        "text": "CORPORATE SKILLS: Critical Thinking and Problem Solving – Case Study, Brainstorming, Q & A Discussion – Team work and Collaboration – Activities like Office Debates, Perfect Square, Blind Retriever, etc. – Professionalism and Strong Work Ethics – Integrity, Resilience, Accountability, Adaptability, Growth Mind set."
+      },
+      {
+        "unit_no": 5,
+        "text": "PROJECT WORK: Case Study based on the challenges faced by the employers and the employees – Devise Plan, Provide Solution"
+      }
+    ]
+  },
+  {
+    "course_id": null,
+    "course_code": "GE23123",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Electrical Engineering Practice: Study of power tools."
+      },
+      {
+        "unit_no": 2,
+        "text": "Electrical Engineering Practice: Residential house wiring using switches, fuses, indicators, lamp and energy meter."
+      },
+      {
+        "unit_no": 3,
+        "text": "Electrical Engineering Practice: Fluorescent lamp wiring."
+      },
+      {
+        "unit_no": 4,
+        "text": "Electrical Engineering Practice: Stair case wiring."
+      },
+      {
+        "unit_no": 5,
+        "text": "Electrical Engineering Practice: Measurement of electrical quantities - voltage, current, power and power factor in RL circuit."
+      },
+      {
+        "unit_no": 6,
+        "text": "Electrical Engineering Practice: Measurement of earth resistance using Megger."
+      },
+      {
+        "unit_no": 7,
+        "text": "Electrical Engineering Practice: Study of Ceiling Fan and Iron Box."
+      },
+      {
+        "unit_no": 8,
+        "text": "Electrical Engineering Practice: Study of Air conditioning."
+      },
+      {
+        "unit_no": 9,
+        "text": "Electronics Engineering Practice: Study of electronic components and equipment - resistor, colour coding, and measurement of AC signal parameters (peak-to-peak, rms period, frequency) using CRO/DSO."
+      },
+      {
+        "unit_no": 10,
+        "text": "Electronics Engineering Practice: Measurement of electrical quantities using Multimeter and testing of electronic components."
+      },
+      {
+        "unit_no": 11,
+        "text": "Electronics Engineering Practice: Study of logic gates - AND, OR, EXOR and NOT."
+      },
+      {
+        "unit_no": 12,
+        "text": "Electronics Engineering Practice: Generation of Clock Signals."
+      },
+      {
+        "unit_no": 13,
+        "text": "Electronics Engineering Practice: Soldering practice - Components, Devices and Circuits using general purpose PCB."
+      },
+      {
+        "unit_no": 14,
+        "text": "Electronics Engineering Practice: Measurement of ripple factor of Half-wave and Full-wave Rectifiers."
+      },
+      {
+        "unit_no": 15,
+        "text": "Computer Systems Practice: Assembling of Desktop computer."
+      },
+      {
+        "unit_no": 16,
+        "text": "Computer Systems Practice: Installation of Operating system."
+      },
+      {
+        "unit_no": 17,
+        "text": "Computer Systems Practice: Installation of application software."
+      },
+      {
+        "unit_no": 18,
+        "text": "Computer Systems Practice: Disc Partition."
+      },
+      {
+        "unit_no": 19,
+        "text": "Computer Systems Practice: Trouble shooting - PC and hand held devices."
+      }
+    ]
+  },
+  {
+    "course_id": 169,
+    "course_code": "CS23221",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Experiments based on Variables, Datatypes and Operators in Python."
+      },
+      {
+        "unit_no": 2,
+        "text": "Implement various control statements in Python."
+      },
+      {
+        "unit_no": 3,
+        "text": "Implement various String and List operations."
+      },
+      {
+        "unit_no": 4,
+        "text": "Implement Inbuilt functions, User-defined functions and Lambda functions."
+      },
+      {
+        "unit_no": 5,
+        "text": "Implementation of Tuples, Sets, Dictionary and its operations."
+      },
+      {
+        "unit_no": 6,
+        "text": "Implementation of Exception Handling and I/O files."
+      },
+      {
+        "unit_no": 7,
+        "text": "Experiments based on Packages: math, datetime, platform, re."
+      },
+      {
+        "unit_no": 8,
+        "text": "Experiments based on Packages: NumPy, pandas, matplotlib."
+      },
+      {
+        "unit_no": 9,
+        "text": "Experiments based on Packages: collections."
+      },
+      {
+        "unit_no": 10,
+        "text": "Experiments based on Packages: SciPy."
+      },
+      {
+        "unit_no": 11,
+        "text": "Mini Project."
+      }
+    ]
+  },
+  {
+    "course_id": null,
+    "course_code": "MA23313",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "MATHEMATICAL LOGIC: Propositional calculus: Propositions and Connectives- Syntax: Semantics –truth tables – validity and satisfiability- Tautology–Connectives: Functionally complete set –Equivalence and normal forms –Formal reducibility–Predicates and quantifiers-Nested Quantifiers-Rules of inference – Temporal logic – Three valued logic."
+      },
+      {
+        "unit_no": 2,
+        "text": "COMBINATORICS: Basic counting sum and product- Balls and bins problems – Generating functions – Recurrence relations- Proof Techniques – Principle of Mathematical Induction - Pigeon hole principle."
+      },
+      {
+        "unit_no": 3,
+        "text": "STRUCTURED SETS: Set- Relation: Equivalence relations, Poset, Hasse diagram, Lattices –Boolean algebra–Algebraic System: Groups, Semi groups, monoid, homomorphism -Cosets and Lagrange's theorem-Rings and Fields (definition)."
+      },
+      {
+        "unit_no": 4,
+        "text": "NUMBER THEORY: Introduction - Divisibility - Primes - The binomial theorem-Congruences - Solutions of congruences - The Chinese - Remainder theorem - Techniques of numerical calculation."
+      },
+      {
+        "unit_no": 5,
+        "text": "GRAPHS AND TREES: Graph theory: Introduction to graphs- Graph isomorphism – Connectivity - Euler and Hamilton paths - Planar graphs - Trees –Properties- Distance and Centres – Types – Rooted Tree— Spanning Tree – Fundamental Circuits- Cut Sets – Properties –Connectivity - Separability -Graph coloring – Four color Theorem."
+      }
+    ]
+  },
+  {
+    "course_id": 170,
+    "course_code": "AI23231",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND PROBLEM-SOLVING: AGENT AI-Introduction. Intelligent Agents, Agents & environment, nature of environment, structure of agents, goal-based agents, utility-based agents, learning agents. Defining the problem as state space search, production system, problem characteristics, issues in the design of search programs."
+      },
+      {
+        "unit_no": 2,
+        "text": "SEARCH TECHNIQUES: Problem solving agents, searching for solutions; uniform search strategies: breadth first search, depth first search, depth limited search, bidirectional search. Heuristic search strategies Greedy best-first search, A* search, AO* search, memory bounded heuristic search: local search algorithms & optimization problems: Hill climbing search, simulated annealing search, local beam search."
+      },
+      {
+        "unit_no": 3,
+        "text": "CONSTRAINT SATISFACTION PROBLEMS AND GAME THEORY: Local search for constraint satisfaction problems. Adversarial search, Games, optimal decisions & strategies in games, the min max search procedure, alpha-beta pruning."
+      },
+      {
+        "unit_no": 4,
+        "text": "KNOWLEDGE REPRESENTATION: AI for knowledge representation, rule-based knowledge representation, procedural and declarative knowledge, Logic programming, Forward and backward reasoning."
+      },
+      {
+        "unit_no": 5,
+        "text": "REASONING & DECISION MAKING: Statistical Reasoning: Probability and Bays' Theorem, Certainty Factors and Rule-Base Systems, Bayesian Networks, Dempster-Shafer Theory, Fuzzy Logic. Decision networks, Markov Decision Process. Expert System"
+      }
+    ]
+  },
+  {
+    "course_id": 171,
+    "course_code": "CS23331",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO ANALYSIS OF ALGORITHMS AND EXHAUSTIVE SEARCH: Introduction- Algorithm–Fundamentals of Algorithmic Problem Solving-Analysis: Space Complexity - Time Complexity: Counter method, Mathematical Analysis of non-recursive algorithms- Asymptotic Notations - Using Limits for Comparing Orders of Growth – Basic Efficiency Classes-Brute Force Technique-Exhaustive Search-Travelling Salesperson Problem-Knapsack Problem"
+      },
+      {
+        "unit_no": 2,
+        "text": "RECURRENCE RELATION AND GREEDY TECHNIQUE: Mathematical Analysis of Recursive algorithms -Recurrence Relation-Solving Recurrence Relations: Substitution methods and Master Theorem Method. Greedy Method – Minimum Spanning Trees: Kruskal's Algorithm– Fractional Knapsack - Huffman Codes-Activity Selection Problem."
+      },
+      {
+        "unit_no": 3,
+        "text": "DIVIDE AND CONQUER TECHNIQUE: Divide and Conquer Method-Introduction-Binary Search-Finding Min Max-Maximum Subarray Problem-Towers of Hanoi Problem-Finding the kth element-Analysis of Quick and Merge Sort."
+      },
+      {
+        "unit_no": 4,
+        "text": "DYNAMIC PROGRAMMING TECHNIQUE: Dynamic Programming-Rod Cutting-Longest Common Subsequence-Traveling Sales Person Problem-String Editing- Longest Common Substring-Longest non-decreasing subsequence-Stair Case Problem."
+      },
+      {
+        "unit_no": 5,
+        "text": "BACKTRACKING BRANCH AND BOUND AND NP COMPLETE & NP HARD: Backtracking-Graph Coloring-n Queen's Problem-Branch and Bound-Knapsack Problem-- NP Complete and NP Hard Problems: Basic Concepts - Non-Deterministic Algorithms - Class of NP Complete and NP Hard Problems- Approximation Algorithm- TSP."
+      }
+    ]
+  },
+  {
+    "course_id": 172,
+    "course_code": "CS23332",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "DATABASE SYSTEMS AND SQL QUERY: Introduction – Purpose of Database Systems - View of Data –Database Architecture -Database Schema – Keys – Codd's Rule –RDBMS- SQL: Data Definition – Domain types – Structure of SQL Queries - Modifications of the database – Set Operations – Aggregate Functions – Null Values- SQL Nested Subqueries – Complex Queries – Views – Joined relations – Complex Queries."
+      },
+      {
+        "unit_no": 2,
+        "text": "PL/SQL, DATA MODEL AND QUERY PROCESSING: PL/SQL: Functions, Procedures, Triggers, Cursors –Dynamic SQL–Relational Algebra-Tuple Relational calculus- Domain Relational Calculus– Entity Relationship Model – Constraints -Entity Relationship Diagram - Design Issues of ER Model – Extended ER Features – Mapping ER Model to Relational Model– Query Processing – Heuristics for Query Optimization."
+      },
+      {
+        "unit_no": 3,
+        "text": "NORMAL FORMS AND INDEXING: Motivation for Normal Forms – Functional dependencies – Armstrong's Axioms for Functional Dependencies – Closure for a set of Functional Dependencies – Definitions of 1NF-2NF-3NF and BCNF – Multivalued Dependency 4NF - Joint Dependency- 5NF-File Organization-Indexing B+ tree ,B-Tree"
+      },
+      {
+        "unit_no": 4,
+        "text": "TRANSACTIONS: Transaction Concepts – ACID Properties – Schedules – Serializability – Transaction support in SQL – Need for Concurrency – Concurrency control –Two Phase Locking- Timestamp – Multiversion – Validation and Snapshot isolation– Multiple Granularity locking – Deadlock Handling – Recovery Concepts – Recovery based on deferred and immediate update – Shadow paging – ARIES Algorithm."
+      },
+      {
+        "unit_no": 5,
+        "text": "NOSQL DATABASE: NoSQL Database vs.SQL Databases – CAP Theorem –Migrating from RDBMS to NoSQL – MongoDB – CRUD Operations– MongoDB Sharding – MongoDB Replication – Web Application Development using MongoDB with Python and Java."
+      }
+    ]
+  },
+  {
+    "course_id": 173,
+    "course_code": "CS23333",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO OOP AND JAVA FUNDAMENTALS: Introduction to Object Oriented Programming – An overview of Java - Java Architecture - Data Types - Variables- Operators."
+      },
+      {
+        "unit_no": 2,
+        "text": "CLASSES AND INHERITANCE: Classes – Class Fundamentals - A Simple Class - Declaring Objects - Methods – Constructors Inheritance - Inheritance Basics - Member Access - Method Overriding - Abstract Classes - Object Class"
+      },
+      {
+        "unit_no": 3,
+        "text": "PACKAGES, INTERFACE & EXCEPTION HANDLING: Packages - Defining a Package - Access Protection - Imports - Interfaces - Implements - Nested Interfaces - Exception Handling - Types - try - catch - throw - throws – finally."
+      },
+      {
+        "unit_no": 4,
+        "text": "I/O AND COLLECTIONS: Input / Output Basics – Streams – Byte streams and Character streams – Collection Interfaces – Collection Classes."
+      },
+      {
+        "unit_no": 5,
+        "text": "STREAMS API, LAMBDA AND JDBC: Stream API – Reduction – Parallel – mapping – Collecting – Iterator - Lambda Expressions Functional Interfaces - Predefined Functional Interfaces - Accessing Databases with JDBC"
+      }
+    ]
+  },
+  {
+    "course_id": 174,
+    "course_code": "MC23112",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "AIR AND NOISE POLLUTION: Definition –sources of air pollution –chemical and photochemical reactions in the atmosphere –formation of smog, PAN, acidrain, ozone depletion, particulate pollutants-Air quality standards-Air quality indices - control of particulate air pollutants-gravitational settling chambers, cyclone separators, wet collectors, fabric filters (Bag-house filter),electro static precipitators(ESP)-catalytic converters. Noise pollution –sources -health effects - standards- measurement and control methods."
+      },
+      {
+        "unit_no": 2,
+        "text": "WATER POLLUTION AND ITS MANAGEMENT: Definition-causes-effects of water pollution-point and nonpoint sources of waste water-marine pollution – thermal pollution – Control of water pollution by physical, chemical and biological methods – waste water treatment-primary, secondary and tertiary treatment-sources and Characteristics of industrial effluents-zero liquid discharge."
+      },
+      {
+        "unit_no": 3,
+        "text": "SOLID WASTE AND HAZARDOUS WASTE MANAGEMENT: Solid waste – types- municipal solid waste management: sources, characteristics, collection, and transportation- sanitary landfill, recycling, composting, incineration, energy recovery options from waste – Hazardous waste–types ,characteristics, and health impact –hazardous waste management: neutralization, oxidation reduction, precipitation, solidification, stabilization, incineration and final disposal. E-waste-definition-sources-effects on human health and environment-E-waste management- steps involved - Role of E-waste management within the initiatives of the Govt. of India- Swachh Bharat Mission."
+      },
+      {
+        "unit_no": 4,
+        "text": "SUSTAINABLE DEVELOPMENT: Sustainable development- concept-dimensions-sustainable development goals - value education-gender equality – food security - poverty – hunger - famine- Twelve principles of green chemistry –Green technology - definition, importance –Cleaner development mechanism - carboncredits,carbontrading,carbonsequestration,ecolabeling-International conventions and protocols-Disaster management."
+      },
+      {
+        "unit_no": 5,
+        "text": "ENVIRONMENTAL MANAGEMENT AND LEGISLATION: Environmental Management systems - ISO 14000 series- Environmental audit-Environmental Impact Assessment-life cycle assessment-human health risk assessment – Environmental Laws and Policy- Objectives - Polluter pays principle, Precautionary principle - The Environment (Protection) Act 1986 - Role of Information technology in environment and human health."
+      }
+    ]
+  },
+  {
+    "course_id": 175,
+    "course_code": "MA23434",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO OPTIMIZATION: Convex sets, Convex function-Linear Optimization: formulation, solution by graphical and simplex methods - Primal- Penalty- Two Phase –Principles of Duality."
+      },
+      {
+        "unit_no": 2,
+        "text": "TRANSPORTATION AND ASSIGNMENT MODELS: Transportation Models (Minimizing and Maximizing Problems) – Initial Basic feasible solution by Vogel's approximation methods- Check for optimality: Solution by MODI algorithm – Case of Degeneracy- Assignment Models -Solution by Hungarian method-Introduction to Bandit algorithm."
+      },
+      {
+        "unit_no": 3,
+        "text": "INTEGER PROGRAMMING: Cutting plane algorithm –Branch and bound methods -Multistage(Dynamic) programming."
+      },
+      {
+        "unit_no": 4,
+        "text": "NON –LINEAR OPTIMIZATION: Unconstrained external problems -Newton–Raphson method–Equality constraints– Gradient Descent Method – Jacobian methods–Lagrangian method–Kuhn–Tucker conditions–Simple problems."
+      },
+      {
+        "unit_no": 5,
+        "text": "PROJECT SCHEDULING: Network diagram representation– Critical path method–Timecharts and resource leveling–PERT."
+      }
+    ]
+  },
+  {
+    "course_id": 176,
+    "course_code": "AI23331",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "FOUNDATIONS OF LEARNING: Components of learning – learning models – geometric models – probabilistic models – logical models – grouping and grading – learning versus design – types of learning – supervised – unsupervised – reinforcement – theory of learning – feasibility of learning – error and noise – training versus testing – theory of generalization – generalization bound – approximation generalization trade off – bias and variance – learning curve."
+      },
+      {
+        "unit_no": 2,
+        "text": "LINEAR MODELS: Linear classification – univariate linear regression - bivariate regression – multivariate linear regression – regularized regression – Logistic regression. Naïve Baye's – Discriminant Functions -Probabilistic Generative Models -Probabilistic Discriminative Models – BayesianLogistic Regression."
+      },
+      {
+        "unit_no": 3,
+        "text": "SUPERVISED LEARNING: Perceptron: – multilayer neural networks – back propagation - learning neural networks structures – support vector machines: – soft margin SVM – going beyond linearity – generalization and over fitting – regularization – validation. Decision trees: Training and Visualizing a Decision Tree - Making Predictions - Estimating Class Probabilities - The CART Training Algorithm - Computational Complexity - Gini Impurity or Entropy - Ensemble methods: Bagging- Boosting- Boosting AdaBoost - Gradient Boosting – Xg boost."
+      },
+      {
+        "unit_no": 4,
+        "text": "UNSUPERVISED LEARNING: Clustering: Nearest neighbor models – K-means – clustering around medoids – silhouttes – hierarchical clustering – k- d trees. Dimensionality Reduction: – Linear Discriminant Analysis – Principal Component Analysis – Factor Analysis – Independent Component Analysis."
+      },
+      {
+        "unit_no": 5,
+        "text": "REINFORCEMENT LEARNING: Passive reinforcement learning – direct utility estimation – adaptive dynamic programming – temporal-difference learning – active reinforcement learning – exploration – learning an action utility function – Generalization in reinforcement learning – policy search – applications in game playing – applications in robot control."
+      }
+    ]
+  },
+  {
+    "course_id": 177,
+    "course_code": "AI23431",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "WEB SITE BASIC, HTML 5.2, CSS 3.0: Internet Protocols – HTTP -Understand Internet-Difference between web site and application server-Internet technology overview-Understanding the difference between internet and intranet. HTML5.2 and CSS 3.0"
+      },
+      {
+        "unit_no": 2,
+        "text": "JAVASCRIPT: Introduction to Scripting - Core features - Data types and Variables -Operators, Expressions and Statements - Functions - Arrays - Objects - Document Object Model -Event Handling- JSON – Introduction to AJAX."
+      },
+      {
+        "unit_no": 3,
+        "text": "SERVER SIDE PROGRAMMING: Servlets: Java Servlet Architecture- Servlet Life Cycle- Form GET and POST actions- Session HandlingUnderstanding Cookies-DATABASE CONNECTIVITY: JDBC perspectives, JDBC program example - JSP:Understanding Java Server Pages-JSP Standard Tag Library (JSTL)-CreatingHTML forms by embedding JSP code."
+      },
+      {
+        "unit_no": 4,
+        "text": "MOBILE APPLICATION DEVELOPMENT: Android Application Design Essentials: Anatomy of an Android applications, Android terminologies, Application Context, Activities, Services, Intents, Receiving and Broadcasting Intents, Android Manifest File and its common settings, Using Intent Filter, Permissions."
+      },
+      {
+        "unit_no": 5,
+        "text": "ANDROID USER INTERFACE DESIGN: User Interface Screen elements, Designing User Interfaces with Layouts, Drawing and Working with Animation. Testing Android applications, Publishing Android application."
+      }
+    ]
+  },
+  {
+    "course_id": 178,
+    "course_code": "AD23431",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Introduction to R Programming Structures and Functions: Overview of R programming – Basic objects:Vectors– Matrix–Array–Lists–Factors– Data frames. Basic expressions: Arithmetic expressions – Control Statements: if and if-else statements –– switch statement – Loops: for loop – while loop – Functions– Strings"
+      },
+      {
+        "unit_no": 2,
+        "text": "Introduction to Data Science: Introduction – Roles of Data Science Projects – Data Collection and Management – Modeling – Model Evaluation and Critique – Determining lower and upper bounds – Loading Data into R – Working with data from files and relational database - Exploring data – Managing data: Missing values – cleaning data"
+      },
+      {
+        "unit_no": 3,
+        "text": "Statistical Analysis: Frequency distribution - Measures of central tendency and dispersion – Hypothesis Testing: Test Statistics – ANOVA – F-Test – TTest – U-Test – Fisher's Exact Test – Kruskal- Wallis Test – Bartlett's Test – Statistical Distribution: Binomial – Poisson – Normal – Chi-squared distribution"
+      },
+      {
+        "unit_no": 4,
+        "text": "Classification: Tests and Training splits- Building Single Variable Model: Categorical Features- Numerical Features – Cross Validation - Building Multi Variable Model: Variable Selection – Decision Trees – Nearest Neighbor Methods – Naïve Baye"
+      },
+      {
+        "unit_no": 5,
+        "text": "Regression and Clustering: Linear and Logistic Regression: Introduction – Building Model – Making Predictions – Characterizing Co-efficient quality – Unsupervised Methods: Cluster Analysis – Distance – Hierarchical Clustering – The K-means Algorithm"
+      }
+    ]
+  },
+  {
+    "course_id": 179,
+    "course_code": "CS23431",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "OPERATING SYSTEMS OVERVIEW: Introduction – Computer System Organization – Computer System Architecture – Operations – Resource Management – Security and Protection – Virtualization – Computing Environments. Operating Systems Structures: Services – User and OS Interface – System Calls – Linkers and Loaders – Operating system Structure – Building and Booting OS."
+      },
+      {
+        "unit_no": 2,
+        "text": "PROCESS MANAGEMENT: Process Concepts– Process Scheduling – Operations – Inter process Communication- Shared Memory and Message Passing Systems Threads: Overview- multithreading models-issues. CPU Scheduling: – FCFS – SJF – Priority – RR – Multilevel Queue Scheduling – Multilevel Feedback Queue."
+      },
+      {
+        "unit_no": 3,
+        "text": "PROCESS SYNCHRONIZATION AND DEADLOCKS: Process Synchronization – Critical Section Problem – Peterson's Solution – Hardware Synchronization – Semaphores- Monitors – Classic Problems of Synchronization, Deadlocks: Characterization-Prevention – Avoidance – Detection – Recovery."
+      },
+      {
+        "unit_no": 4,
+        "text": "MEMORY MANAGEMENT: Main Memory: Background – Contiguous Memory Allocation – Paging – Structure of a page table – Segmentation – Virtual Memory – Demand Paging – Page Replacement-FIFO-LRU-Optimal – Allocation of Frames – Thrashing – Mass Storage Management-Disk scheduling."
+      },
+      {
+        "unit_no": 5,
+        "text": "FILE MANAGEMENT: File System –Concepts – Access Methods- Directory Structure – Protection – Discretionary Access control and Mandatory Access Control – File System structure– Directory Implementation – Allocation Methods – Free-Space Management-Virtual File System. Case studies: Linux"
+      }
+    ]
+  },
+  {
+    "course_id": 180,
+    "course_code": "CS23432",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO SOFTWARE ENGINEERING: Software Process-Requirements to Maintenance-Perspective and Specialized Process Models-Projects on On-Prem/On Cloud (Azure, AWS, GCP)-Projects on cloud (cloud providers AWS, Azure)-Agile methods with associated metrics- Software metrices –AI and Data Science –Software Security- DevOps /DevSecOps."
+      },
+      {
+        "unit_no": 2,
+        "text": "SOFTWARE REQUIREMENTS: How to do Requirements in Agile-Understand Themes, Epic, Features, User Stories and Tasks-How to identify Themes, Epics, Features, User Stories-How to document the same in Microsoft Azure Boards-How to use Poker Planning Estimation Technique –Non Functional Requirements – its purpose, different attributes of the same, and examples – Document the same in Microsoft Azure Boards."
+      },
+      {
+        "unit_no": 3,
+        "text": "SYSTEM MODELING: System Modeling-Context Model-Interaction Model-Interaction Model-Structural Model-Behavioral Model- Architectural patterns-Architectural patterns-continuation-Data Flow Diagrams-ER Diagram-Tools Practice (Azure) – Prototypes / MVP"
+      },
+      {
+        "unit_no": 4,
+        "text": "TESTING: Testing Using AZURE-AZURE Test Plan Preparation-Manual and Exploratory Testing-Automated Testing Traceability-Reporting and Analysis."
+      },
+      {
+        "unit_no": 5,
+        "text": "SOFTWARE CONFIGURATION MANAGEMENT: Software Configuration Management-Introduction-Tools for SCM and Version Control-Visual Source Safe (VSS) – Introduction-Advanced Software Engineering Models-Case Study"
+      }
+    ]
+  },
+  {
+    "course_id": null,
+    "course_code": "GE23421",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Introduction: course expectations, rules and student introductions."
+      },
+      {
+        "unit_no": 2,
+        "text": "If I ruled the world: expressing opinions, listening, agreeing and disagreeing politely."
+      },
+      {
+        "unit_no": 3,
+        "text": "Picture Narrating: narrating sequential pictures using appropriate vocabulary and structures."
+      },
+      {
+        "unit_no": 4,
+        "text": "Brainstorming: generating and sharing ideas freely on a given topic."
+      },
+      {
+        "unit_no": 5,
+        "text": "Debate: competition and its role in the learning process."
+      },
+      {
+        "unit_no": 6,
+        "text": "Short Talks: prepare briefly and speak concisely on a given topic."
+      },
+      {
+        "unit_no": 7,
+        "text": "Debate: whether publicly posting student grades motivates or humiliates students."
+      },
+      {
+        "unit_no": 8,
+        "text": "The art of diplomacy: body language, appropriate word choice and handling misinformation."
+      },
+      {
+        "unit_no": 9,
+        "text": "Debate: whether humans are too dependent on computers."
+      },
+      {
+        "unit_no": 10,
+        "text": "Story Completion: collaboratively create the plot and ending of a story."
+      },
+      {
+        "unit_no": 11,
+        "text": "Role play debate: argue an issue from assigned stakeholder perspectives."
+      },
+      {
+        "unit_no": 12,
+        "text": "I Couldn't Disagree More: practice rebuttal techniques and confident communication."
+      }
+    ]
+  },
+  {
+    "course_id": 181,
+    "course_code": "AD23531",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "UNDERSTANDING BIG DATA: Introduction to Big Data: Types of Digital Data-Characteristics of Data – Evolution of Big Data – Definition of Big Data – Challenges with Big Data – 3Vs of Big Data – Non-Definitional traits of Big Data – Business Intelligence vs. Big Data – Data warehouse and Hadoop environment – Coexistence."
+      },
+      {
+        "unit_no": 2,
+        "text": "HADOOP: Introduction to Hadoop: Features – Advantages – Versions – Overview of Hadoop Eco systems – Hadoop distributions – Hadoop vs. SQL – RDBMS vs. Hadoop – Hadoop Components – Architecture – HDFS – Map Reduce: Mapper – Reducer – Combiner – Partitioner – Searching – Sorting – Compression."
+      },
+      {
+        "unit_no": 3,
+        "text": "NoSQL DATABASES: No SQL databases: Mongo DB: Introduction – Features – Data types – Mongo DB Query language – CRUD operations – Arrays – Functions: Count – Sort – Limit – Skip – Aggregate – Map Reduce. Cursors – Indexes – Mongo Import – Mongo Export"
+      },
+      {
+        "unit_no": 4,
+        "text": "HADOOP ECOSYSTEM: Hadoop Eco systems: Hive – Architecture – data type – File format – HQL – SerDe – User defined functions – Pig: Features – Anatomy – Pig on Hadoop – Pig Philosophy – Pig Latin overview – Data types – Running pig – Execution modes of Pig – HDFS commands"
+      },
+      {
+        "unit_no": 5,
+        "text": "OVERVIEW OF BIG DATA AND SPARK: Gentle Overview of Big Data and Spark: What is Apache Spark-History of Spark-The Present and Future of Spark- Downloading Spark Locally-A Gentle Introduction to Spark: Spark's Basic Architecture."
+      }
+    ]
+  },
+  {
+    "course_id": 182,
+    "course_code": "AD23532",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "DATA SCIENCE CONTEXT AND DATA BASE: Data Science importance - Data Science Process – SQL – Tool for Data Science - No-SQL: Document Databases, Wide- column Databases and Graphical Databases"
+      },
+      {
+        "unit_no": 2,
+        "text": "DATA SCIENCE METHODOLOGY: Analytics for Data Science – Examples of Data Analytics – Data Analytics Lifecycle: Data Discovery, Data Preparation, Model Planning, Model Building, Communicate Results, Ethical Use of Predictive Analytics, Ethical Data Collection and Use, Ethics of AI and Autonomous Systems, Ethical Guidelines and Frameworks."
+      },
+      {
+        "unit_no": 3,
+        "text": "DATA ANALYTICS AND TEXT ANALYSIS: Text Mining – Information Retrieval – Data Mining – Natural Language Processing – Text analysis tasks - Text Analysis steps - NLP: Major components of NLP, stages of NLP, and NLP applications."
+      },
+      {
+        "unit_no": 4,
+        "text": "PLATFORM FOR DATA SCIENCE: Python for Data Science –Python Libraries – Data Frame Manipulation with Numpy and Pandas – Exploration Data Analysis – Time Series Data – Clustering with Python – Dimensionality Reduction. Python integrated Development Environments (IDE) for Data science."
+      },
+      {
+        "unit_no": 5,
+        "text": "DATASCIENCE ETHICS: Ethical Principles in Data Science, Ethical Use of Predictive Analytics, Data Privacy and Security, Bias in Data and Algorithms, Transparency and Accountability, Ethical Guidelines and Frameworks, Ethics of Artificial Intelligence and Autonomous Systems, Informed Consent in Data Collection, Impact of Data Science on Society."
+      }
+    ]
+  },
+  {
+    "course_id": 183,
+    "course_code": "AI23531",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO DEEP LEARNING: Neural Networks – Biological Motivation- Perceptron – Multi-layer Perceptron – Feed Forward Network – BackPropagation -Activation and Loss Functions – Implementing three layer Neural Network - Handwritten Digit Recognition"
+      },
+      {
+        "unit_no": 2,
+        "text": "TRAINING TECHNIQUES: Numerical Differentiation – Gradient – Implementing a Training Algorithm - Stochastic Gradient Descent – Momentum – AdaGrad – Adam – Initial Weight Values – Regularization – Hyperparameter optimization - Validating Hyper parameters- - Model ensembling - Scaling up model training."
+      },
+      {
+        "unit_no": 3,
+        "text": "CONVOLUTIONAL NEURAL NETWORKS: Overall Architecture – The convolution layer – The pooling layer – Implementing a CNN- LeNet - ImageNet –AlexNet - VGG – GoogLeNet – ResNet"
+      },
+      {
+        "unit_no": 4,
+        "text": "RECURRENT NEURAL NETWORKS: Recursive Neural Networks – Bidirectional RNNs – Deep Recurrent Networks – Applications: Image Generation, Image Compression, Natural Language Processing. Auto encoder -Complete Auto encoder, Regularized Autoencoder-LSTM"
+      },
+      {
+        "unit_no": 5,
+        "text": "GENERATIVE DEEP LEARNING: Generative deep learning: Text generation – Deep dream – Neural style transfer – Generating images with variational autoencoders – Introduction to Generative Adversarial Networks."
+      }
+    ]
+  },
+  {
+    "course_id": 184,
+    "course_code": "CS23532",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "FUNDAMENTALS AND DATA LINK LAYER: Building a network – Requirements – Layering and protocols – Internet Architecture – Network software – Application Programming Interface (sockets) – Performance – Link layer Services - Framing - Error Detection and Correction – Reliable Transmission"
+      },
+      {
+        "unit_no": 2,
+        "text": "MEDIA ACCESS AND INTERNETWORKING: Media Access Protocols – ALOHA - CSMA/CA/CD –Ethernet – Wireless LANs - 802.11- Bluetooth - Switching and Forwarding - Bridges and LAN Switches – Basic Internetworking- IP Service Model – IP Fragmentation - Global Addresses – ARP– DHCP – ICMP"
+      },
+      {
+        "unit_no": 3,
+        "text": "ROUTING: Routing – Network as Graph - Distance Vector – Link State – Global Internet –Subnetting - Classless Routing (CIDR) – BGP– IPv6 – Multicast routing - DVMRP- PIM – Case Study-Software Defined Networking (SDN)"
+      },
+      {
+        "unit_no": 4,
+        "text": "TRANSPORT LAYER: Overview of Transport layer – UDP – TCP - Segment Format - Connection Management – Adaptive Retransmission – TCP Congestion control – Congestion avoidance (DECbit, RED) – QoS – Application requirements."
+      },
+      {
+        "unit_no": 5,
+        "text": "APPLICATION LAYER: E-Mail (SMTP, MIME, POP3, IMAP), HTTP – DNS - FTP - Telnet – Web Services – SNMP - MIB – RMON– SIP"
+      }
+    ]
+  },
+  {
+    "course_id": null,
+    "course_code": "GE23521",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "The News hour: read English news articles, learn new vocabulary and use new words in sentences."
+      },
+      {
+        "unit_no": 2,
+        "text": "Court Case: debate and defend a client using creative and out-of-the-box thinking."
+      },
+      {
+        "unit_no": 3,
+        "text": "The ultimate weekend: plan weekend activities and invite classmates using conversational English."
+      },
+      {
+        "unit_no": 4,
+        "text": "The Four Corners: take and defend a position from strongly agree to strongly disagree."
+      },
+      {
+        "unit_no": 5,
+        "text": "Debate: boarding school or day school - compare benefits and argue a position."
+      },
+      {
+        "unit_no": 6,
+        "text": "Grand Master: use Yes/No questions to identify a person and practice questioning skills."
+      },
+      {
+        "unit_no": 7,
+        "text": "Debate: whether violence on TV and video games influences children negatively."
+      },
+      {
+        "unit_no": 8,
+        "text": "Turn Tables: speak for and against a topic spontaneously."
+      },
+      {
+        "unit_no": 9,
+        "text": "Debate: whether marks define the capabilities of a student."
+      },
+      {
+        "unit_no": 10,
+        "text": "FictionAD: create and present an advertisement using fictional characters."
+      },
+      {
+        "unit_no": 11,
+        "text": "Debate: effectiveness and risks of social networking sites."
+      },
+      {
+        "unit_no": 12,
+        "text": "Talent Hunt: present an individual skill confidently before an audience."
+      }
+    ]
+  },
+  {
+    "course_id": 185,
+    "course_code": "AD23631",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO DATA PRIVACY AND SECURITY: Data Governance and simple Privacy Approaches. – Documenting Data For use-Defining Differential Privacy-Real World Differential Privacy – Key concepts: Confidentiality, Integrity, Availability (CIA Triad)."
+      },
+      {
+        "unit_no": 2,
+        "text": "ENCRYPTION TECHNIQUES: Concepts of Cryptography – Symmetric and Asymmetric Encryption - Cryptographic algorithms: AES, RSA, DES - Encryption standards and applications."
+      },
+      {
+        "unit_no": 3,
+        "text": "ACCESS CONTROL AND AUTHENTICATION: Hashing techniques and digital signatures - Methods and threats of Authentication – Password - BioMetric Authentication—MultiFactor Authentication-CIA model-RPC protocol"
+      },
+      {
+        "unit_no": 4,
+        "text": "DATA ATTACKS AND THREATS: Privacy Attacks-Different Methods Of Privacy Attacks – Data Security – Access Control-Data Loss Prevention-Extra Security Control-An Average Attacker Measuring Risk Accessing Threats."
+      },
+      {
+        "unit_no": 5,
+        "text": "EMERGING TRENDS IN DATA SECURITY AND PRIVACY: ID4D initiative – identity Life Cycle – Assurance Levels Of Authentication – Continuous Authentication – Cancellable Authentication"
+      }
+    ]
+  },
+  {
+    "course_id": 186,
+    "course_code": "AD23632",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO DATA ANALYTICS AND FRAMEWORK: Overview of Data Analytics-Importance and Applications-Data Types and Sources- Overview of Data Analysis Frameworks-CRISP-DM (Cross-Industry Standard Process for Data Mining)-SEMMA (Sample, Explore, Modify, Model, Assess)-KDD (Knowledge Discovery in Databases)"
+      },
+      {
+        "unit_no": 2,
+        "text": "EXPLORATORY DATA ANALYSIS USING PYTHON: Introduction to Exploratory Data Analysis - Types of EDA - EDA Tools-EDA using Python : Data Frame Operations- Key Data Structures: Series and Data Frame-Creating and Loading Data Frames from Various Sources (e.g., CSV, Excel, SQL)- Viewing and Inspecting Data Frames-Filtering and Subsetting Data using Conditions-Data Cleaning with Pandas- Handling Missing Data-Detection, Filling, and Dropping-Removing Duplicates and Unnecessary Data-Data Type Conversion and Ensuring Consistency"
+      },
+      {
+        "unit_no": 3,
+        "text": "VISUALIZATION IN PYTHON: Importance of data visualization in EDA- Types of data visualizations- Python Libraries for Data Visualization- Basic Plotting with Matplotlib - Visualization for Descriptive Statistics-Visualizing central tendency and dispersion-Box plots and whisker plots-Correlation and Relationship Analysis-Scatter plot matrix-Correlation heatmaps."
+      },
+      {
+        "unit_no": 4,
+        "text": "VISUALIZATION USING POWER BI: What is Power BI? - Features of Power BI -Getting Started with Data Importing-Data Modelling- Report Design : Adding Visualization to the Report, Style Manipulations on a Report, Setting Colours and Background- ,Exploring charts - Introduction to DAX Measures and Columns -Editing Interactions-Filters: Types of Filters- Visual Level, Page and Report Level, Include and Exclude,Using Slicer as a Filter-Adding Reports and Data Sets in Workspace -Converting Published Reports into Dashboards"
+      },
+      {
+        "unit_no": 5,
+        "text": "VISUALIZATION USING TABLEAU TOOL: Introduction to Tableau-Overview of Tableau-Tableau Interface-Connecting to Data-Connecting to various data sources (Excel, CSV, SQL databases-Data Preparation-Data cleaning and transformation within Tableau-Basic Visualizations in Tableau -Bar charts, line charts, and pie charts-Tables and cross-tabs-Formatting and styling visualizations- Filters and Parameters-Adding filters to visualization-Calculated Fields and Analytics-Advanced Visualizations in Tableau- Heatmaps, tree maps, and bubble charts-Creating maps- Dashboards and Stories"
+      }
+    ]
+  },
+  {
+    "course_id": 187,
+    "course_code": "GE23627",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Introduction to Design Thinking : The design thinking concepts - Different design thinking models -: Details of Stanford Design thinking process: Empathize, Define, Ideate, Prototype, Test Activities: Case studies of successful domain based Design Thinking and Innovative projects Group discussions on design thinking"
+      },
+      {
+        "unit_no": 2,
+        "text": "Empathize and Define : User research methods (interviews, surveys, observation, contextual inquiry) -: Persona development- Journey mapping – Brainstorming Defining the design problem statement Activities: Conducting user interviews and surveys Creating user personas and journey maps Identifying key user needs and pain points Analyze the user needs and Brainstorming to define problem statement"
+      },
+      {
+        "unit_no": 3,
+        "text": "Ideate and Create : Brainstorming techniques (e.g., mind mapping, SCAMPER) - Ideation tools (e.g.,: design thinking tools, concept sketching) - Concept generation and evaluation ( e.g. Brainstorming) Activities: Group brainstorming sessions to select the best idea Creating concept sketches and prototypes Evaluating ideas based on user needs and feasibility"
+      },
+      {
+        "unit_no": 4,
+        "text": "Prototype and Test : Low, Medium and high level fidelity for prototyping-Usability testing -Iterative: design Activities: Building low-fidelity prototypes (e.g., paper prototypes) Conducting usability tests with users Iterating on designs based on feedback"
+      },
+      {
+        "unit_no": 5,
+        "text": "Market Analysis and Implementation : Market research and analysis - Business model development-: Financial planning-Implementation strategies Activities: Conducting market research Developing a business model canvas Creating a financial projection Developing an implementation plan"
+      }
+    ]
+  },
+  {
+    "course_id": 188,
+    "course_code": "AD23633",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "FOUNDATIONS OF GENERATIVE AI: Concepts of Generative AI – Discriminative vs Generative AI, Statistical Models: GMM, HMM. Key NLP tasks (text classification, sentiment analysis, summarization), Tokenization, Text Representation – Word embeddings. Ethics and Challenges of Gen AI – Bias in AI models."
+      },
+      {
+        "unit_no": 2,
+        "text": "CORE ARCHITECTURES OF LLMS: Generative Models: Variational Autoencoders (VAE) - Generative Adversarial Networks (GAN). Introduction to Transformers: – Encoder-decoder architecture – Self-attention mechanism - Text Generation: Greedy Search Decoding, Beam Search Decoding, Sampling methods (Top-k, Nucleus Sampling)."
+      },
+      {
+        "unit_no": 3,
+        "text": "PROMPT ENGINEERING: Fundamental of prompt engineering- Prompt Elements - Techniques: Zero-shot, one-shot, few-shot and Chain-of- thought (CoT) – Graph Prompt – Automatic Prompt Engineer (APE). Best practices of Prompt Design – Handling ambiguous or complex queries."
+      },
+      {
+        "unit_no": 4,
+        "text": "RETRIEVAL-AUGMENTED GENERATION: Vector Databases - Integrating vector databases with LLMs - FAISS – Pinecone – Deep Lake – Parameter Efficient Fine Tuning - Retrieval Augmented Generation (RAG) – Pipeline – Core Components."
+      },
+      {
+        "unit_no": 5,
+        "text": "REAL WORLD APPLICATIONS USING GEN AI: Integrating Gen AI into workflows –Automating tasks using AI. Building Custom Apps – Chatbots and Virtual Assistants, Content generation tools (blog writing, marketing copy), Code generation and debugging tools. Evaluating and Optimizing AI outputs – Metrics for evaluating AI performance, Iterative improvement of prompts and models"
+      }
+    ]
+  },
+  {
+    "course_id": 189,
+    "course_code": "GE23621",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Numbers system"
+      },
+      {
+        "unit_no": 2,
+        "text": "Reading comprehension"
+      },
+      {
+        "unit_no": 3,
+        "text": "Data arrangements and Blood relations"
+      },
+      {
+        "unit_no": 4,
+        "text": "Time and Work"
+      },
+      {
+        "unit_no": 5,
+        "text": "Sentence correction"
+      },
+      {
+        "unit_no": 6,
+        "text": "Coding and Decoding, Series, Analogy, Odd man out and Visual reasoning"
+      },
+      {
+        "unit_no": 7,
+        "text": "Percentages, Simple interest and Compound interest"
+      },
+      {
+        "unit_no": 8,
+        "text": "Sentence completion and Para-jumbles"
+      },
+      {
+        "unit_no": 9,
+        "text": "Profit and Loss, Partnerships and Averages"
+      },
+      {
+        "unit_no": 10,
+        "text": "Permutation, Combination and Probability"
+      },
+      {
+        "unit_no": 11,
+        "text": "Data interpretation and Data sufficiency"
+      },
+      {
+        "unit_no": 12,
+        "text": "Logarithms, Progressions, Geometry and Quadratic equations"
+      },
+      {
+        "unit_no": 13,
+        "text": "Time, Speed and Distance"
+      }
+    ]
+  },
+  {
+    "course_id": 190,
+    "course_code": "AD23731",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Introduction to Agentic AI, Traditional AI vs. Generative AI vs. AI Agents vs. Agentic AI, LLM Core abilities, Principles of Prompt Engineering. Agentic AI Building Blocks, Autonomous Agents, Human-in-the-Loop Systems, Agent structure, Ethical and Responsible AI."
+      },
+      {
+        "unit_no": 2,
+        "text": "ARCHITECTURE AND DESIGN PATTERNS: Key Components: Perception, Cognitive, Action, Learning, Collaboration, Security Modules. Agentic AI Design Patterns: Reflection, Tool Use, Planning, ReAct (Reasoning and Acting), Multi-Agent collaboration, Retrieval Augmented Agent Pattern."
+      },
+      {
+        "unit_no": 3,
+        "text": "SINGLE-AGENT ORCHESTRATION WITH LANGCHAIN & LANGGRAPH: LangChain pipeline: Text Splitting, Embeddings, Integration with Vector Databases. Introduction to LangGraph, State and Memory, State Schema, State Reducer, Trim and Filter Messages, Long Term Memory, Deployment with Langserve/ Streamlit."
+      },
+      {
+        "unit_no": 4,
+        "text": "RETRIEVAL-AUGMENTED GENERATION AND MODEL CONTEXT PROTOCOL: Introduction to Agentic RAG, Agentic RAG Architecture and Components. Understanding MCP hosts, Clients and Servers, Exploring types of MCP servers and agent memory."
+      },
+      {
+        "unit_no": 5,
+        "text": "MULTI-AGENT SYSTEMS: Multi-Agent Systems (MAS), Multi Agent Workflows, Collaborative Multi Agents, AutoGen, CrewAI. Low code No code platforms: N8N, Flowise"
+      }
+    ]
+  },
+  {
+    "course_id": 191,
+    "course_code": "CS23633",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Basic concepts and terminology-roles and boundaries-cloud characteristics-cloud delivery model and deployment Model (Public, Private and Hybrid models). Understand Cloud computing models IaaS, SaaS and PaaS and its differences and when to use what model."
+      },
+      {
+        "unit_no": 2,
+        "text": "VIRTUAL MACHINES AND WORKLOADS, UNDERSTAND CLOUD: INFRASTRUCTURE Virtual Private Server (VPS), difference between dedicated and VPS server. Cloud Migration: Backup, Restore of the same and its associated costing. Cloud Infrastructure Resources: File, Block, Object Storage and CDN (Content Delivery Networks)"
+      },
+      {
+        "unit_no": 3,
+        "text": "CLOUD MANAGEMENT AND CLOUD NATIVE: Understand how to maintain control and oversight of cloud computing infrastructure, resources, and services in public, private, or hybrid cloud environments – Interoperability, Cloud Sprawl, Automation, Cloud Governance, Monitoring and Logging, Performance and Cost Reporting"
+      },
+      {
+        "unit_no": 4,
+        "text": "CLOUD COMPUTING ARCHITECTURE: Understand the services like storage, databases, software, analytics, and other platforms that are accessible via the internet. Understand how to build, design, and manage applications on the cloud platform."
+      },
+      {
+        "unit_no": 5,
+        "text": "CLOUD SECURITY: AWS and the shared responsibility model, Azure and the shared responsibility model, GCP and the shared responsibility model. Command-Line tools: AWS CLI, Azure CLI, Google Cloud SDK."
+      }
+    ]
+  },
+  {
+    "course_id": 192,
+    "course_code": "AD23A31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO CUSTOMER ANALYTICS: Overview of customer analytics and its significance in modern marketing, Data sources for customer analytics: Social media, customer reviews, surveys, Introduction to opinion mining and its applications."
+      },
+      {
+        "unit_no": 2,
+        "text": "SENTIMENT ANALYSIS TECHNIQUES: Fundamentals of sentiment analysis, Supervised and unsupervised learning techniques, Opinion summarization and applications in business, Tools and platforms for sentiment analysis (e.g., Python, R, SaaS tools)."
+      },
+      {
+        "unit_no": 3,
+        "text": "CUSTOMER SEGMENTATION AND BEHAVIOR ANALYSIS: Understanding customer segmentation using analytics, Predictive modeling for customer lifetime value (CLV), Analyzing customer journeys and touchpoints in the digital world."
+      },
+      {
+        "unit_no": 4,
+        "text": "MARKETING METRICS AND PERFORMANCE ANALYSIS: Key marketing metrics (ROI, CLV, conversion rate, etc.), Measuring the effectiveness of digital marketing campaigns, Attribution models for marketing effectiveness, Metrics for customer satisfaction and brand loyalty."
+      },
+      {
+        "unit_no": 5,
+        "text": "ADVANCED OPINION MINING AND ETHICS IN ANALYTICS: Emotion detection in opinion mining, Challenges and limitations of sentiment analysis, Ethical considerations and privacy issues in customer data mining, Case studies of brands using sentiment analysis for decision-making."
+      }
+    ]
+  },
+  {
+    "course_id": 193,
+    "course_code": "AD23A32",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "EXPLORATORY DATA ANALYSIS: Generating Summary Statistics- Preparing Data for EDA- Visualizing Data in Python- Preparing for visualization- Visualizing data in Matplotlib-Visualizing data in Seaborn-Visualizing data in GGPLOT"
+      },
+      {
+        "unit_no": 2,
+        "text": "ADVANCED EXPLORATORY DATA ANALYSIS TECHNIQUES: Performing Univariate Analysis in Python- Performing Bivariate Analysis in Python- Performing Multivariate Analysis in Python- Dealing with Outliers and Missing Values- Automated EDA using pandas profiling"
+      },
+      {
+        "unit_no": 3,
+        "text": "TIME SERIES DATA ANALYSIS: Introducing time series-Acquiring and processing time series data-Analyzing and visualizing time series data-Generating strong baseline forecast-Accessing forecasting of a time series."
+      },
+      {
+        "unit_no": 4,
+        "text": "FORECASTING MODELS: Forecasting as regression-Feature engineering for time series forecasting-Target Transformations-Forecasting time series with Machine Learning models-Time series models using statistical methods-Plotting ACF and PACF- Exponential Smoothening-ARIMA-SARIMA."
+      },
+      {
+        "unit_no": 5,
+        "text": "ADVANCED FORECASTING MODELS: Forecasting with auto ARIMA, Facebook Prophet-Forecasting multivariate time series using VAR models-Forecasting with RNN using Keras-Forecasting with LSTM using Keras."
+      }
+    ]
+  },
+  {
+    "course_id": 194,
+    "course_code": "AD23A33",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Basic biomolecular concepts: Protein and amino acid, DNA & RNA, Sequence, structure and function - Types of Nucleotide Sequence - DNA sequencing methods: Basic and Automated DNA sequencing, DNA sequencing by capillary array and electrophoresis, Gene expression data."
+      },
+      {
+        "unit_no": 2,
+        "text": "BIOINFORMATICS RESOURCES: NCBI, EBI, ExPASy, RCSB, DDBJ: The knowledge of databases and bioinformatics tools available at these resources, organization of databases: data contents, purpose and utility - Open access bibliographic resources and literature databases: PubMed, BioMed Central, Public Library of Sciences (PloS), CiteXplore."
+      },
+      {
+        "unit_no": 3,
+        "text": "SEQUENCE DATABASES: Nucleic acid sequence databases - Protein sequence databases - Structure Databases - Sequence file formats - Protein and nucleic acid properties."
+      },
+      {
+        "unit_no": 4,
+        "text": "SEQUENCE ANALYSIS: Basic concepts of sequence similarity - identity and homology, definitions of homologues, orthologues, paralogues and xenologues Scoring matrices."
+      },
+      {
+        "unit_no": 5,
+        "text": "SEQUENCE ALIGNMENT: Measurement of sequence similarity - Similarity and homology - Pairwise sequence alignment - Needleman and Wunsch, Smith and Waterman algorithms for pairwise alignments, gap penalties, use of pairwise alignments for analysis of Nucleic acid and protein sequences."
+      }
+    ]
+  },
+  {
+    "course_id": null,
+    "course_code": "AD23A34",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO PREDICTIVE ANALYTICS: Evolution of Data Analytics, Types of Predictive Analytic, Role of Predictive Analytics, Tools, Frameworks, Platforms, Languages, Libraries, Services, Challenges, Vertical Industry Use cases for Predictive Analytics."
+      },
+      {
+        "unit_no": 2,
+        "text": "DATA MODELING IN PREDICTIVE ANALYTICS: Understanding Advanced Data, Data Preprocessing and Feature Engineering, Predictive Analytics Pipeline, Selecting Right Model, Python and Scikit learn for predictive analytics."
+      },
+      {
+        "unit_no": 3,
+        "text": "MATHEMATICS AND ALGORITHMS IN PREDICTIVE ANALYTICS: Statistics and Linear Algebra, Regression, Decision Trees, Random Forests, Neural Networks, Support Vector Machines, Naïve bayes classifiers,"
+      },
+      {
+        "unit_no": 4,
+        "text": "MACHINE LEARNING IN PREDICTIVE MODELING: Predict future events with Big Data, Predict future events with Data mining, Predict future events with Predictive Modelling, Statistics to predict future events, Data analysis for prediction, Using Machine Learning to make predictions, Prediction traps, Bias, Estimating the best prediction, Implementing Predictive Analysis."
+      },
+      {
+        "unit_no": 5,
+        "text": "APPLICATIONS OF PREDICTIVE MODELING: Prediction based Optimal Retail Price recommendations, Recommender Systems, Credit Card Fraud Classification, Navigation and Traffic Management, Social Impact of Predictions."
+      }
+    ]
+  },
+  {
+    "course_id": 195,
+    "course_code": "AD23A35",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO HEALTHCARE DATA ANALYTICS: Introduction, Healthcare Data Sources and Basic Analytics, Advanced Data Analytics for Healthcare, Applications and Practical Systems for Healthcare, Resources for Healthcare Data Analytics."
+      },
+      {
+        "unit_no": 2,
+        "text": "HEALTH CARE DATA SOURCES AND BASIC ANALYTICS: Health Law, Big Data Analytics & AI in healthcare, History of EHR, Components of EHR, Coding Systems, Benefits of EHR, Barriers to Adopting EHR, Challenges of Using EHR Data, Phenotyping Algorithms."
+      },
+      {
+        "unit_no": 3,
+        "text": "ARTIFICIAL INTELLIGENCE IN HEALTH CARE: Big Data Analtyics and Artificial Intelligence in Health care, Biomedical Imaging Modalities, Object Detection, Image Segmentation, Image Registration, Feature Extraction,"
+      },
+      {
+        "unit_no": 4,
+        "text": "HEALTH INFORMATICS & MINING OF SENSOR DATA IN HEALTHCARE: Digitizing Medical Records, Health Record Content and Documentation, Clinical Terminologies, Classifications and Code Systems, Mining Sensor Data in Medical Informatics: Scope and Challenges, Challenges in Healthcare Data Analysis, Nonclinical Healthcare Applications."
+      },
+      {
+        "unit_no": 5,
+        "text": "ADVANCED DATA ANALYTICS IN HEALTHCARE: Public Health Informatics, Security and Privacy Issues, Healthcare Statistics, Statistical Prediction Models, Survival Models, Evaluation and Validation."
+      }
+    ]
+  },
+  {
+    "course_id": 196,
+    "course_code": "AD23A36",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO SOCIAL MEDIA ANALYTICS: Introduction: Social media landscape, Need for SMA; Types of SMA; SMA Cycle, Tools, Application of SMA in different areas like marketing, health, and politics, Challenges to Social Media Analytics"
+      },
+      {
+        "unit_no": 2,
+        "text": "SOCIAL MEDIA NETWORK ANALYTICS: Basic Concept : Network definitions, centrality measures : Degree Centrality, Eigenvector Centrality, Katz Centrality, PageRank, Betweenness Centrality, Closeness Centrality, Group Centrality, Transitivity and Reciprocity, Balance and Status, Similarity: Structural Equivalence, Regular Equivalence Applications: Types of Network, Network Terminologies, Tools for Network Analytic, Detection communities, identification of key influencers, and their roles in network dynamics."
+      },
+      {
+        "unit_no": 3,
+        "text": "SOCIAL MEDIA LINK AND TEXT ANALYTICS: Link analysis: Random graphs and network evolution, Link Prediction, Collective Classification, Collecting and analyzing social media data, and clustering techniques Text Analytics: Types Of Social Media Text, Purpose Of Text Analytics, Steps In Text Analytics, Social Media Text Analysis Tools."
+      },
+      {
+        "unit_no": 4,
+        "text": "SOCIAL MEDIA ACTIONS AND HYPERLINK ANALYTICS: Actions Analytics: Introduction to Actions Analytics, Common Social Media Actions, Actions Analytics Tools. Case Study: Cover-More Group Hyperlink Analytics: Types of Hyperlinks, Hyperlink Analytics, Types of Hyperlink Analytics, Hyperlink Analytics"
+      },
+      {
+        "unit_no": 5,
+        "text": "WEB ANALYTICS TOOLS: Web 2.0 Analytics: Clickstream analysis, A/B testing, online surveys, Web crawling and Indexing. Natural Language Processing Techniques for Micro-text Analysis Visualization Techniques: Visualization techniques for social media data, Dashboards, heatmaps, word clouds, network graphs, time-series visualizations, and storytelling with data."
+      }
+    ]
+  },
+  {
+    "course_id": 197,
+    "course_code": "AD23A37",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Computer Vision – Image representation and image analysis tasks - Image representations – digitization – properties – color images – Data structures for Image Analysis - Levels of image data representation"
+      },
+      {
+        "unit_no": 2,
+        "text": "IMAGE PRE-PROCESSING: Local pre-processing - Image smoothing - Edge detectors - Zero-crossings of the second derivative - Scale in image processing - Canny edge detection - Parametric edge models - Edges in multispectral images - Local pre-processing in the frequency domain - Line detection by local preprocessing operators - Image restoration."
+      },
+      {
+        "unit_no": 3,
+        "text": "OBJECT DETECTION USING MACHINE LEARNING: Object detection– Object detection methods – Deep Learning framework for Object detection– bounding box approach- Intersection over Union (IoU) –Deep Learning Architectures - R-CNN-Faster R-CNN"
+      },
+      {
+        "unit_no": 4,
+        "text": "FACE RECOGNITION AND GESTURE RECOGNITION: Face Recognition - Introduction - Applications of Face Recognition - Process of Face Recognition - DeepFace solution by Facebook - FaceNet for Face Recognition- Implementation using FaceNetGesture Recognition."
+      },
+      {
+        "unit_no": 5,
+        "text": "VIDEO ANALYTICS: Video Processing – use cases of video analytics-Vanishing Gradient and exploding gradient problem - RestNet architecture-RestNet and skip connections-Inception Network"
+      }
+    ]
+  },
+  {
+    "course_id": 198,
+    "course_code": "AD23A38",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "MATHEMATICAL FOUNDATIONS: Understanding Data: Notions of free variables (rank), dependencies (null space), and dimensionality reduction using eigenvalue and singular value decompositions. Understanding Uncertainty: Probability density functions, correlation, covariance, and estimation of parameters. Optimization: Univariate optimization, unconstrained and constrained nonlinear programming, and gradient descent with manufacturing examples"
+      },
+      {
+        "unit_no": 2,
+        "text": "DIGITAL TRANSFORMATION: Core Concepts: Definitions of digitization, digitalization, and digital transformation. Digital Capability: Building blocks including technological capacity, IT infrastructure, data management, and talent development. Strategies and Trends: Planning digital strategies aligned with business objectives and exploring future trends like IoT, Big Data, and Cloud Computing."
+      },
+      {
+        "unit_no": 3,
+        "text": "MACHINE LEARNING FOR MANUFACTURING ANALYTICS: Machine Learning Fundamentals: Introduction to classification, regression, feature engineering, and typology of algorithms. Regression & Classification: Linear and latent variable regression, LASSO, Support Vector Machines (SVM), Random Forests, and Naive Bayes. Clustering & Application: K-means and spectral clustering applied to quality, productivity, safety, and asset maintenance problems"
+      },
+      {
+        "unit_no": 4,
+        "text": "DEEP LEARNING FOR INDUSTRIAL APPLICATIONS: Architectures: Neural networks, activation functions, CNNs, RNNs, LSTMs, and Autoencoders. Quality Control: Computer vision for defect detection using CNNs, and anomaly detection using Autoencoders. Safety Analytics: Video and sensor data analysis for worker safety monitoring and predictive safety alerts"
+      },
+      {
+        "unit_no": 5,
+        "text": "GENERATIVE AI IN MANUFACTURING: GenAI Architectures: GANs, VAEs, Transformers, and Diffusion Models. Applications: Defect synthesis for quality monitoring and data augmentation to improve classification accuracy. Safety Simulations: Simulating accident or near-miss scenarios, such as chemical leak detection, and generating natural language safety logs"
+      }
+    ]
+  },
+  {
+    "course_id": 199,
+    "course_code": "AD23B31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Introduction to Image Processing and Computer Vision-Features-Applications- Image formation -Geometric primitives and Photometric image formation - The digital camera and Image processing - Point operators - Linear filtering ,Fourier transforms - Pyramids and wavelets - Geometric transformations - Global optimization - Feature detection and matching Points and patches - Edges – Lines"
+      },
+      {
+        "unit_no": 2,
+        "text": "Image Segmentation and Alignment: Segmentation: Active contours - Split and merge - Mean shift and mode finding - Normalized cuts -Graph cuts- Feature- based alignment - 2D and 3D feature-based alignment - -Geometric intrinsic calibration."
+      },
+      {
+        "unit_no": 3,
+        "text": "Object Detection, Recognition, and 3D Reconstruction: Object detection -Face recognition -Instance recognition - Category recognition -Context and scene understanding - Recognition databases and test set, 3D reconstruction: Shape from X - Active range finding - Surface representations - Point-based representations - Volumetric representations - Model-based reconstruction -Recovering texture maps and albedos"
+      },
+      {
+        "unit_no": 4,
+        "text": "Vision Datasets and Model Predictions: Object Detection – Segmentation. Creating Vision Datasets: Collecting Images – Data types – Manual Labeling – Labeling at Scale – Automated Labeling – Bias – Creating a Dataset -Model Predictions: Making Predictions"
+      },
+      {
+        "unit_no": 5,
+        "text": "Object Measurement, Pose Estimation, and Image Understanding: Object Measurement – Counting – No-Code Computer Vision - Pose estimation- Image Search, Image and Text Generations: Image Understanding – Image Generation –Image Captioning ."
+      }
+    ]
+  },
+  {
+    "course_id": 200,
+    "course_code": "AD23B32",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO NLP ANALYTICS: Overview of NLP Analytics: Introduction to Natural Language Processing and its applications in analytics.NLP Pipeline: Stages of NLP analytics – text preprocessing, tokenization, and vectorization. Basic Analytics Techniques: Statistical measures (entropy, cross-entropy), text encoding (character encoding, word embeddings).Tools and Frameworks: Introduction to popular NLP tools (NLTK, spaCy, TextBlob)."
+      },
+      {
+        "unit_no": 2,
+        "text": "TEXT REPRESENTATION AND FEATURE EXTRACTION: Text Representation: Bag of Words, TF-IDF, Word2Vec for text vectorization.Feature Extraction: N-grams, part-of- speech tagging, named entity recognition (NER), and semantic features.Dimensionality Reduction: Techniques like PCA and LDA for reducing feature space in text analytics.Sentiment Analysis: Extracting sentiment from text data and its applications in social media and reviews."
+      },
+      {
+        "unit_no": 3,
+        "text": "SEMANTIC ANALYSIS AND MODELING: Lexical Semantics: Word similarity, WordNet, and context-based word meaning.Semantic Models: TF-IDF, Pointwise Mutual Information (PMI), and co-occurrence models.Word Embeddings: Word2Vec, GloVe, and their application in capturing semantic meaning in large text corpora.Text Classification: Applying semantic models for text classification tasks like spam detection or topic modeling."
+      },
+      {
+        "unit_no": 4,
+        "text": "ADVANCED NLP MODELS AND DEEP LEARNING: Deep Learning for NLP: Introduction to RNNs, LSTMs, GRUs, and Transformers (BERT, GPT).Transfer Learning: Using pre-trained models for NLP tasks (BERT, GPT, etc.).Named Entity Recognition (NER) and Dependency Parsing: Advanced syntactic and semantic analysis using deep learning.Sequence Labeling: Tasks such as part-of-speech tagging, chunking, and syntactic parsing."
+      },
+      {
+        "unit_no": 5,
+        "text": "PREDICTIVE ANALYTICS AND MODEL DEPLOYMENT: Predictive Analytics in NLP: Text classification, sentiment analysis, and predictive modeling.Text Generation and Summarization: Building models for text generation (e.g., chatbots) and text summarization.Model Evaluation: Metrics like accuracy, precision, recall, F1-score, and BLEU for text-based models.Model Deployment: Techniques for deploying NLP models (via APIs, cloud services) for real-time text analytics applications."
+      }
+    ]
+  },
+  {
+    "course_id": 201,
+    "course_code": "AD23B33",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO TEXT AND SPEECH ANALYSIS: Overview of Text and Speech Analysis-Applications of NLP and Speech Processing-Basic Concepts in Text Analysis and Speech Recognition."
+      },
+      {
+        "unit_no": 2,
+        "text": "INTRODUCTION TO STATISTICAL AND MACHINE: Introduction to Language Models (N-grams, Bag of Words, TF-IDF)-Topic Modeling: Latent Dirichlet Allocation (LDA)."
+      },
+      {
+        "unit_no": 3,
+        "text": "TEXT ANALYSIS: Text Classification: Naive Bayes, Support Vector Machines, and Neural Networks-Word Embeddings: Word2Vec, GloVe, BERT."
+      },
+      {
+        "unit_no": 4,
+        "text": "SPEECH SIGNAL PROCESSING: Basics of Digital Speech Processing-Feature Extraction: Mel-Frequency Cepstral Coefficients (MFCC), Linear Predictive Coding (LPC)-Speech Recognition: Hidden Markov Models (HMM), Dynamic Time Warping (DTW)- Introduction to Automatic Speech Recognition (ASR) Systems."
+      },
+      {
+        "unit_no": 5,
+        "text": "ADVANCED TOPICS IN TEXT AND SPEECH ANALYSIS: Deep Learning for NLP: Recurrent Neural Networks (RNNs), Transformers-Speech Synthesis: Text-to-Speech (TTS) Systems-Cross-lingual Text and Speech Analysis-Ethical Considerations in Text and Speech Processing."
+      }
+    ]
+  },
+  {
+    "course_id": 202,
+    "course_code": "AI23B11",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION AND DATA FOUNDATION: Basics - Relationship between Visualization and Other Fields -The Visualization Process - Pseudo code Conventions - The Scatter plot. Data Foundation - Types of Data - Structure within and between Records - Data Preprocessing - Data Sets."
+      },
+      {
+        "unit_no": 2,
+        "text": "FOUNDATIONS FOR VISUALIZATION: Visualization stages - Semiology of Graphical Symbols - The Eight Visual Variables – Historical Perspective - Taxonomies - Experimental Semiotics based on Perception Gibson‘s Affordance theory – A Model of Perceptual Processing."
+      },
+      {
+        "unit_no": 3,
+        "text": "VISUALIZATION TECHNIQUES: Spatial Data: One-Dimensional Data - Two-Dimensional Data – Three Dimensional Data - Dynamic Data - Combining Techniques. Geospatial Data : Visualizing Spatial Data - Visualization of Point Data -Visualization of Line Data - Visualization of Area Data – Other Issues in Geospatial Data Visualization Multivariate Data : Point-Based Techniques - LineBased Techniques - Region-Based Techniques - Combinations of Techniques – Trees Displaying Hierarchical Structures – Graphics and Networks- Displaying Arbitrary Graphs/Networks."
+      },
+      {
+        "unit_no": 4,
+        "text": "INTERACTION CONCEPTS AND TECHNIQUES: ext and Document Visualization: Introduction - Levels of Text Representations - The Vector Space Model - Single Document Visualizations -Document Collection Visualizations – Extended Text Visualizations Interaction Concepts: Interaction Operators - Interaction Operands and Spaces - A Unified Framework. Interaction Techniques: Screen Space - Object-Space –Data Space - Attribute Space- Data Structure Space - Visualization Structure – Animating Transformations - Interaction Control."
+      },
+      {
+        "unit_no": 5,
+        "text": "DESIGNING OF VISUALIZATION: Steps in designing Visualizations – Problems in designing effective Visualizations- Issues of Data. Issues of Cognition, Perception, and Reasoning. Issues of System Design Evaluation , Hardware and Applications"
+      }
+    ]
+  },
+  {
+    "course_id": 203,
+    "course_code": "AI23A33",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Introduction to Game AI-Roles of AI in Game design, Game AI Interfaces (Movement, Path finding, Decision Making, Strategy), Complexity (Artificial Stupidity, Intelligent Mistakes)-Game AI Inputs, Outputs, and Behaviors The 2D Rigidbody Agent, Steering Output, Variable Matching"
+      },
+      {
+        "unit_no": 2,
+        "text": "CLASSICAL TECHNIQUES: Movement Algorithms-Position Matching: Kinematic and Dynamic Seek, Flee, Arrive-Orientation Matching: Kinematic and Dynamic Align, Wander-Advanced Movement: Delegation and Combination Interfaces, Blending, Arbitration-Advanced Position and Orientation Matching Pursue, Evade, Face, Look Where You Are Going"
+      },
+      {
+        "unit_no": 3,
+        "text": "MODERN TECHNIQUES: Structure of Procedural Content Generators Content Selection v. Generation, Expressive Range-Pseudorandom Number Generation Halton Sequence, Poisson Disk, Kaleidoscope Effect-Content Selection L-systems, Grammars, Randomness-Content Generation Parametric Systems, Search-based Methods"
+      },
+      {
+        "unit_no": 4,
+        "text": "STRATEGY ALGORITHMS: Structure of Strategy Algorithms Blackboard, Utility Theory-Game Playing Minimax, Alpha-beta Pruning-Monte-Carlo Tree Search Algorithm, Improving Performance-Coordinated Action Multi-tier AI, Influence Maps"
+      },
+      {
+        "unit_no": 5,
+        "text": "LEARNING: Decision Tree Learning ID3 Algorithm-Artificial Neural Networks Credit Assignment, Feedforward and Back propagation, Error Term-Overview, Architectures"
+      }
+    ]
+  },
+  {
+    "course_id": 204,
+    "course_code": "AI23B34",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "FOUNDATIONS OF HCI AND HUMAN FACTORS AS HCI THEORIES: What HCI Is and Why It Is Important- Principles of HCI- Specific HCI Guidelines- Human Information Processing- Sensation and Perception of Information- Human Body Ergonomics (Motor Capabilities)"
+      },
+      {
+        "unit_no": 2,
+        "text": "HCI DESIGN: The Overall Design Process-Interface Selection Options-Wire-Framing-\"Naïve\" Design Example: No Sheets 1.0: Requirements Analysis, User Analysis, Making a Scenario and Task Modeling, Interface Selection and Consolidation"
+      },
+      {
+        "unit_no": 3,
+        "text": "USER INTERFACE LAYER: Understanding the UI Layer and Its Execution Framework-Input and Output at the Low Level-Processing the Input and Generating Output: Events, UI Objects, and Event Handlers, Event-Driven Program Structure, Output UI DEVELOPMENT TOOLKIT & INTERACTIVE SYSTEM DEVELOPMENT"
+      },
+      {
+        "unit_no": 4,
+        "text": "6: FRAMEWORK Model, View, and Controller (MVC), MVC Implementation: Simple Bank Application, No Sheets User Interface Toolkit, Java AWT UI Toolkit, Android UI Execution Framework and Toolkit, Examples: iOS UIKit Framework and Toolkit, Case study experiencing the use of Flutter / React Native / Figma"
+      },
+      {
+        "unit_no": 5,
+        "text": "USER INTERFACE EVALUATION AND FUTURE OF HCI: User Interface Evaluation: Evaluation Criteria, Evaluation Methods, Future of HCI: Non- WIMP/Natural/Multimodal Interfaces-Mobile and Handheld Interaction-High-End Cloud Service and Multimodal Client Interaction-Natural/Immersive/Experiential Interaction-Mixed and Augmented Reality."
+      }
+    ]
+  },
+  {
+    "course_id": 205,
+    "course_code": "AI23B12",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO COGNITIVE SCIENCE: The prehistory of cognitive science- The discipline matures: Three milestones-The turn to the brain-Cognitive systems as functional systems anatomy of the brain and the primary visual pathway-Extending computational modeling to the brain-Mapping the stages of lexical processing"
+      },
+      {
+        "unit_no": 2,
+        "text": "COGNITIVE SCIENCE AND THE INTEGRATION CHALLENGE: Levels of explanation: The contrast between psychology and neuroscience-The integration challenge-Local integration I: Evolutionary psychology and the psychology of reasoning-Local integration II: Neural activity and the BOLD signal-Marr's tri-level hypothesis and the integration challenge-Models of mental architecture"
+      },
+      {
+        "unit_no": 3,
+        "text": "INFORMATION-PROCESSING MODELS OF THE MIND: The physical symbol system hypothesis- From physical symbol systems to the language of thought -Applying the symbolic paradigm- Neural networks and distributed information processing -Neural network models of cognitive processes: Language learning in neural networks- Neural network models of children's physical reasoning."
+      },
+      {
+        "unit_no": 4,
+        "text": "THE ORGANIZATION OF THE MIND: Architectures for intelligent agents-Fodor on the modularity of mind massive modularity hypothesis-Hybrid Strategies for brain mapping: Structure and function in the brain-Studying cognitive functioning: Techniques from neuroscience"
+      },
+      {
+        "unit_no": 5,
+        "text": "NEW HORIZONS: DYNAMICAL SYSTEMS AND SITUATED COGNITION: Cognitive science and dynamical systems-Applying dynamical systems-Situated cognition and biorobotics- Information processing without conscious awareness-The global workspace theory of consciousness-Exploring the connectivity of the brain-Building artificial brain systems"
+      }
+    ]
+  },
+  {
+    "course_id": 206,
+    "course_code": "IT23B31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "C# LANGUAGE BASICS: .Net Architecture – Core C#– Objects and Types- – Inheritance- Generics – Arrays and Tuples – Operators and Casts."
+      },
+      {
+        "unit_no": 2,
+        "text": "C# ADVANCED FEATURES: Delegates – Lambdas – Events– Strings and Regular Expressions – Collections –Asynchronous Programming- Memory Management and Pointers – Errors and Exceptions – Reflection."
+      },
+      {
+        "unit_no": 3,
+        "text": "BASE CLASS LIBRARIES AND DATA MANIPULATION: Diagnostics -Tasks, Threads and Synchronization – Manipulating XML–ADO.NET- Peer-to-Peer Networking –Core Windows Presentation Foundation (WPF)."
+      },
+      {
+        "unit_no": 4,
+        "text": "WINDOW BASED APPLICATIONS, WCF AND WWF: Core ASP.NET- ASP.NET Web forms -Windows Communication Foundation (WCF)– Introduction to Web Services – .Net Remoting -Windows Service – Windows Workflow Foundation (WWF)"
+      },
+      {
+        "unit_no": 5,
+        "text": ".NET FRAMEWORK AND COMPACT FRAMEWORK: Assemblies – Custom Hosting with CLR Objects – Core XAML – .Net Compact Framework – Compact Edition Data Stores – Errors, Testing and Debugging – Optimizing performance ."
+      }
+    ]
+  },
+  {
+    "course_id": 207,
+    "course_code": "IT23C17",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Applications- Properties- Implicit Human Computer Interaction- Ubiquitous System Environment Interaction - Architectural Design for UbiCom Systems- Applications and Requirements: Example Early UbiCom Research Projects, Everyday Applications in the Virtual, Human and Physical World"
+      },
+      {
+        "unit_no": 2,
+        "text": "SMART DEVICES: Smart Devices and Services - Service Architecture Models - Service Provision Life Cycle - Virtual Machines and Operating Systems- Smart Mobile Devices, Users, Resources and Code- Operating Systems for Mobile Computers and Communicator Devices - Smart Card Devices- Device Networks"
+      },
+      {
+        "unit_no": 3,
+        "text": "HUMAN COMPUTER INTERACTION: Basic Concepts - User Interfaces and Interaction for Four Widely Used Devices - Hidden UI Via Basic Smart Devices - Hidden UI Via Wearable and Implanted Devices - Human Centred Design (HCD) - Tagging the Physical World - Sensors and Sensor Networks - Control Systems - Robots"
+      },
+      {
+        "unit_no": 4,
+        "text": "INTELLIGENT SYSTEMS: Basic Concepts , IS Architectures , IS System Operations - Interaction Multiplicity- Interaction Design -Generic Intelligent Interaction Applications- Autonomous Systems and Artificial Life"
+      },
+      {
+        "unit_no": 5,
+        "text": "UBIQUITOUS COMMUNICATION: Audio Networks, Data Networks, Wireless Data Networks and Ubiquitous Networks- Managing Smart Devices in Virtual Environments and Human User Centered Environments"
+      }
+    ]
+  },
+  {
+    "course_id": 208,
+    "course_code": "IT23C31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Testing as an Engineering Activity – Testing as a Process – Testing Maturity Model- Testing axioms – Basic definitions – Software Testing Principles – The Tester‘s Role in a Software Development Organization – Origins of Defects – Cost of defects – Defect Classes – The Defect Repository and Test Design"
+      },
+      {
+        "unit_no": 2,
+        "text": "TEST CASE DESIGN STRATEGIES: Test case Design Strategies – Using Black Box Approach to Test Case Design – Using White Box Approach to Test design – Test Adequacy Criteria – static testing vs. structural testing – code functional testing – Coverage and Control Flow Graphs – Covering Code Logic – Paths – Secured Code Writing – code complexity testing"
+      },
+      {
+        "unit_no": 3,
+        "text": "LEVELS OF TESTING: The need for Levels of Testing – Unit Test – Unit Test Planning – Designing the Unit Tests –Running the Unit tests and Recording results – Integration tests – Designing Integration Tests – Integration Test Planning – Scenario testing – Defect bash elimination System Testing – Acceptance testing – Performance testing – Regression Testing – Internationalization testing – Ad-hoc testing – Alpha, Beta Tests – Testing OO systems – Usability and Accessibility testing – Configuration testing –Compatibility testing ."
+      },
+      {
+        "unit_no": 4,
+        "text": "TEST MANAGEMENT: People and organizational issues in testing – Organization structures for testing teams – testing services – Test Planning – Test Plan Components – Test Plan Attachments – Locating Test Items – test management – test process – Reporting Test Results – Introducing the test specialist – Skills needed by a test specialist – Building a Testing Group- The Structure of Testing Group."
+      },
+      {
+        "unit_no": 5,
+        "text": "TEST AUTOMATION: Software test automation – skills needed for automation – scope of automation – design and architecture for automation – requirements for a test tool – challenges in automation – Test metrics and measurements – project, progress and productivity metrics"
+      }
+    ]
+  },
+  {
+    "course_id": 209,
+    "course_code": "CS23A35",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: History of Software Security – OWASP Top Ten List 2021 – Input Validation – Attack Surface Reduction – Classifying and Prioritizing Threats"
+      },
+      {
+        "unit_no": 2,
+        "text": "WEB APPLICATION SECURITY PRINCIPLES: Authentication - Access Control Overview - Two Factor and Three Factor Authentication - Web Application Authentication – Authorization - Session Management Fundamentals - Securing Web Application Session Management"
+      },
+      {
+        "unit_no": 3,
+        "text": "COMMON WEB APPLICATION VULNERABILITIES: Cross Site Scripting- Reflected XSS- Stored XSS- DOM based XSS- Mutation based XSS – Cross Site Request Forgery - SQL Injection – Code Injection – Insecure Direct Object References (IDOR)"
+      },
+      {
+        "unit_no": 4,
+        "text": "SECURE DEVELOPMENT AND DEPLOYMENT: Application Security- Training- Threat Modelling- Secure Coding Libraries- Code Review- Security Testing- Security Incident Response Planning – Microsoft Security Development Lifecycle (SDL) – OWASP Comprehensive Lightweight Application Security Process (CLASP) – Software Assurance Maturity Model (SAMM)"
+      },
+      {
+        "unit_no": 5,
+        "text": "MITIGATIONS AND COUNTERMEASURES: Anti XSS Coding Best Practices- Sanitizing User Input – Anti CSRF Coding Best Practices – Mitigating Against SQL Injection – Generic Injection Defenses – Defending Against IDOR – Architecture Level Mitigations"
+      }
+    ]
+  },
+  {
+    "course_id": 210,
+    "course_code": "IT23B33",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO DEVOPS: What is Devop- DevOps Roots and Origin- Why Is DevOps Required- The DevOps Lifecycle and Workflow- DevOps Practices- DevOps Tools"
+      },
+      {
+        "unit_no": 2,
+        "text": "DEVOPS CI/CD PIPELINE: Managing Your Source Code with Git - Overviewing Git and its principal command lines- Understanding the Git process and Gitflow pattern- Continuous Integration and Continuous Delivery- CI/CD principles- Creating a CD pipeline – the release- Using GitLab CI- Using Jenkins for CI/CD implementation- Deploying Infrastructure as Code with CI/CD Pipelines-"
+      },
+      {
+        "unit_no": 3,
+        "text": "MICROSERVICES WITH DOCKER AND KUBERNETES: Containerizing Your Application with Docker- Installing Docker- An overview of Docker's elements- Building and running a container on a local machine- Using Docker for running command-line tools- Docker Compose- Installing Kubernetes- Installing the Kubernetes dashboard- Using Helm as a package manager- Creating a CI/CD pipeline for Kubernetes with Azure Pipelines"
+      },
+      {
+        "unit_no": 4,
+        "text": "MORE ON DEVOPS: Security in the DevOps Process with DevSecOps- Testing Azure infrastructure- Writing InSpec tests- Reducing Deployment Downtime- Blue-green deployment concepts and patterns- DevOps for Open Source Projects- pull requests- Sharing binaries- GitHub Actions- Analyzing code with SonarCloud"
+      },
+      {
+        "unit_no": 5,
+        "text": "DEVOPS BEST PRACTICES: Choosing the right tool- Writing all your configuration in code- Designing the system architecture- Building a good CI/CD pipeline- Shifting security left with DevSecOp- Applying web security and penetration testing with ZAP- Running performance tests with Postman"
+      }
+    ]
+  },
+  {
+    "course_id": 211,
+    "course_code": "IT23C12",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "SOFTWARE DEVELOPMENT PROCESS: Defining of Software Development Process - Process - Tailoring the Process – Improving the process discipline - Need for implementing discipline. Software Production Process - Identify the Software Model - Software Process Models : Waterfall Model, Prototyping Model, RAD Model, Incremental Model, Spiral Model, Component Assembly Model - Software Life Cycle."
+      },
+      {
+        "unit_no": 2,
+        "text": "SOFTWARE PROJECT MANAGEMENT: Introduction to Software Project Management- Software Projects – ways of categorizing software projects – problems with software projects – Project Life Cycle– Management -Setting objectives –Stakeholders – Project Team- Step-wise : An overview of project planning -project Evaluation –Selection Of Appropriate Project Objectives- Software Effort Estimation Techniques, Function Point Analysis-Object Point-COCOMO."
+      },
+      {
+        "unit_no": 3,
+        "text": "SOFTWARE PLANNING: Activity planning– project schedules – sequencing and scheduling projects – Network planning model – AON and AOA- identifying critical activities-Crashing And Fast Tracking-,Risk management—Categories , Risk planning, Management and Control – Evaluating risks to the schedule. PERT- Resource Allocation, Monitoring and Tracking – Monitoring and control – allocation – identifying resource requirements – scheduling resources – creating critical paths – publishing schedule – cost schedules- sequence schedule."
+      },
+      {
+        "unit_no": 4,
+        "text": "SOFTWARE SPECIFICATIONS: Product Specifications - Defining the Final Product - Data Flow Diagram, Data Dictionary, Structured English, Decision Trees, Decision Tables - Feasibility Study. Software Testing : Test Plan - Development Testing : Verification and Validation - General Testing Methods : White Box and Black Box Testing - Unit Testing – System Integration Testing - Validation Testing - System testing."
+      },
+      {
+        "unit_no": 5,
+        "text": "SOFTWARE QUALITY: Software Quality - Quality Measures - FURPS - Software Quality Assurance – Software Reviews - Format Technical Review (FTR) Formal Approaches to SQA – Software Reliability - Introduction to SQA - The Software Quality Assurance Plan – Formal approaches to SQA - Clean room Methodology."
+      }
+    ]
+  },
+  {
+    "course_id": 212,
+    "course_code": "IT23A11",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO INTERNET OF THINGS: Introduction – Definition and characteristics of IoT – How IoT Works? – IoT Applications- Challenges of IoT – Advantages and Disadvantages of IoT - IoT Protocols – Logical Design of IoT: IoT Functional blocks – IoT Communication Models – IoT Communication APIs."
+      },
+      {
+        "unit_no": 2,
+        "text": "INTERNET OF THINGS ARCHITECTURE AND DESIGN METHODOLOGIES: IoT Architecture – IoT Reference Architecture – IOT Design Methodology: Domain Specification- Functional View, Information View, Operation and deployment, Device and Component Integration, Application development and deployment UNIT-III IOT ELEMENT"
+      },
+      {
+        "unit_no": 3,
+        "text": "INTERNET OF THINGS HARDWARE AND MANAGEMENT: Building blocks of an IoT Device – Raspberry Pi, Arduino – Sensors, Communication Modules: Bluetooth, Zigbee, RFID - Power Sources –Data Management, Business Processes in IoT"
+      },
+      {
+        "unit_no": 4,
+        "text": "IOT PLATFORMS AND CLOUD MANAGEMENT: Physical servers and cloud - XaaS, M2M , WAMP- AutoBahn for IoT – Xively Cloud for IoT – Django – Designing a RESTful Web API –Google cloud for IoT."
+      },
+      {
+        "unit_no": 5,
+        "text": "TOOLS AND APPLICATIONS: Retail, Health care, Transportation, Agriculture and environmental, Smart city, Government and military, Smart home"
+      }
+    ]
+  },
+  {
+    "course_id": 213,
+    "course_code": "CS23B32",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Setting up the environment and getting started with Oracle APEX."
+      },
+      {
+        "unit_no": 2,
+        "text": "Exploring SQL Workshop, creating tables, and executing SQL queries."
+      },
+      {
+        "unit_no": 3,
+        "text": "Creating database application and deploying it on APEX."
+      },
+      {
+        "unit_no": 4,
+        "text": "Adding and customizing pages and regions in an application."
+      },
+      {
+        "unit_no": 5,
+        "text": "Creating and formatting reports to visualize data."
+      },
+      {
+        "unit_no": 6,
+        "text": "Modifying interactive reports to enhance user interaction."
+      },
+      {
+        "unit_no": 7,
+        "text": "Managing and personalizing interactive grids in an application."
+      },
+      {
+        "unit_no": 8,
+        "text": "Adding page controls like buttons, list items, and selectors."
+      },
+      {
+        "unit_no": 9,
+        "text": "Integrating computations, processes, and validations for application logic."
+      },
+      {
+        "unit_no": 10,
+        "text": "Implementing dynamic actions to enhance user interactivity."
+      },
+      {
+        "unit_no": 11,
+        "text": "Designing and implementing advanced search and filter options."
+      },
+      {
+        "unit_no": 12,
+        "text": "Creating interactive forms and connecting them with database tables."
+      },
+      {
+        "unit_no": 13,
+        "text": "Designing and implementing navigation menus and breadcrumbs."
+      },
+      {
+        "unit_no": 14,
+        "text": "Customizing application look and feel using themes and styles."
+      },
+      {
+        "unit_no": 15,
+        "text": "Adding plugins and JavaScript to extend functionality."
+      },
+      {
+        "unit_no": 16,
+        "text": "Importing, exporting, and managing data within an application."
+      },
+      {
+        "unit_no": 17,
+        "text": "Implementing security measures like authentication and authorization."
+      },
+      {
+        "unit_no": 18,
+        "text": "Integrating new pages into the existing application structure."
+      },
+      {
+        "unit_no": 19,
+        "text": "Deploying and migrating applications across different environments."
+      }
+    ]
+  },
+  {
+    "course_id": 214,
+    "course_code": "CS23A32",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Downloading and Installing UiPath Academic Alliance and connect to Orchestrator."
+      },
+      {
+        "unit_no": 2,
+        "text": "Installing UiPath Extension in Browsers."
+      },
+      {
+        "unit_no": 3,
+        "text": "Installing Activity Packages in UiPath Studio - Manage Packages feature to find, install, update and remove packages."
+      },
+      {
+        "unit_no": 4,
+        "text": "Experiments based on variables and arguments."
+      },
+      {
+        "unit_no": 5,
+        "text": "Algorithmic Approach: Selection control structures."
+      },
+      {
+        "unit_no": 6,
+        "text": "Algorithmic Approach: Iteration control structures."
+      },
+      {
+        "unit_no": 7,
+        "text": "Debugging - Debug modes, debug actions and the debug ribbon option to debug a file or the entire Project and simple and conditional breakpoints and simple and conditional trace points."
+      },
+      {
+        "unit_no": 8,
+        "text": "Exception Handling - Try Catch, Throw, Rethrow and Retry Scope."
+      },
+      {
+        "unit_no": 9,
+        "text": "Logging - Apply logging best practices during development."
+      },
+      {
+        "unit_no": 10,
+        "text": "UI Automation – Modern Recorder, Modern UI Automation Input Activities and Input Methods, Modern UI Automation Output Activities and Output Methods, UI Synchronization with activities available in the Modern Design Experience, static and dynamic Descriptors."
+      },
+      {
+        "unit_no": 11,
+        "text": "Excel Automation."
+      },
+      {
+        "unit_no": 12,
+        "text": "Email Automation."
+      },
+      {
+        "unit_no": 13,
+        "text": "PDF Automation."
+      },
+      {
+        "unit_no": 14,
+        "text": "Working with Files and Folders."
+      },
+      {
+        "unit_no": 15,
+        "text": "Data Manipulation."
+      },
+      {
+        "unit_no": 16,
+        "text": "Version Control Integration."
+      },
+      {
+        "unit_no": 17,
+        "text": "Libraries and Templates."
+      },
+      {
+        "unit_no": 18,
+        "text": "Workflow Analyzer."
+      },
+      {
+        "unit_no": 19,
+        "text": "Orchestrator: Invoice Processing – Dispatcher."
+      },
+      {
+        "unit_no": 20,
+        "text": "Orchestrator: Invoice Processing – Performer."
+      }
+    ]
+  },
+  {
+    "course_id": 215,
+    "course_code": "CB23G11",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO QUANTUM INFORMATION: States, Operators, Measurements, Quantum Entanglement: Quantum Teleportation, Super-dense coding, CHSH Game, Quantum gates and circuits."
+      },
+      {
+        "unit_no": 2,
+        "text": "QUANTUM ALGORITHMS: Deutsch-Jozsa, Simon, Grover, Shor, Implication of Grover's and Simon's algorithms towards classical symmetric key cryptosystems, Implication of Shor's algorithm towards factorization and Discrete Logarithm based classical public key cryptosystems."
+      },
+      {
+        "unit_no": 3,
+        "text": "QUANTUM TRUE RANDOM NUMBER GENERATORS: Detailed design and issues of quantum Ness, Commercial products and applications."
+      },
+      {
+        "unit_no": 4,
+        "text": "QUANTUM KEY DISTRIBUTION: BB84, Ekert, Semi-Quantum QKD protocols and their variations, Issues of Device Independence, Commercial products."
+      },
+      {
+        "unit_no": 5,
+        "text": "INTRODUCTORY TOPICS IN POST-QUANTUM CRYPTOGRAPHY: API-Public-key Signatures, Key Encapsulation Mechanism (KEM), Digital Signature standard, Pair-Wise Key Establishment-Discrete Logarithm Cryptography, Integer Factorization Cryptography."
+      }
+    ]
+  },
+  {
+    "course_id": 216,
+    "course_code": "CR23A33",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Overview, distributed ledger, how it works, and its key components like blocks, hashing functions, and consensus mechanisms (Proof of Work, Proof of Stake). Blockchain operation and its potential to revolutionize various industries beyond just cryptocurrency."
+      },
+      {
+        "unit_no": 2,
+        "text": "CRYPTOCURRENCIES: Overview of history and evolution of leading cryptocurrencies like Bitcoin and Ethereum, different types of cryptocurrencies available, the mining process that creates new coins, how to securely store them in wallets, and the economic principles that govern their value."
+      },
+      {
+        "unit_no": 3,
+        "text": "SMART CONTRACTS AND DAPPS: Overview of smart contracts and decentralized applications (dApps), Smart contracts functionalities, limitations, and real-world applications, dApp platforms like Ethereum and how these applications are transforming industries such as finance, supply chain management, and even voting systems."
+      },
+      {
+        "unit_no": 4,
+        "text": "BLOCKCHAIN SECURITY, REGULATION, AND FUTURE APPLICATIONS: Overview on common security challenges associated with cryptocurrencies and blockchain platforms, like hacking attempts and fraudulent activities, explore the current regulations and potential future frameworks being developed globally, Future applications of blockchain technology across different sectors like healthcare, data management, and the Internet of Things (IoT)."
+      },
+      {
+        "unit_no": 5,
+        "text": "BLOCKCHAIN IN PRACTICE: Provide practical experience with blockchain and cryptocurrency tools, Set up a cryptocurrency wallet, interact with a blockchain platform like Ethereum or another chosen platform, or explore dApps for different purposes (e.g., decentralized finance applications or NFT marketplaces)."
+      }
+    ]
+  },
+  {
+    "course_id": 217,
+    "course_code": "CS23A36",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO CAD: Coordinate systems: Geometric co-ordinate systems - Cartesian, Cylindrical and Spherical coordinate systems. Display co-ordinate systems - Global, Local, View and Screen coordinate systems. Curves: Definition - Parametric and non- parametric forms of analytical and synthetic curves. Analytical Curve modeling - Line Segment, Circle, Ellipse. Synthetic Curve modeling - Hermite Cubic Spline, Bezier, B-spline .Surfaces and types. Mathematical modeling of Solids: Properties of solid model, Solid modeling Techniques - Boundary representation, Constructive Solid Geometry, Analytical Solid Modeling, Sweep representation schemes. Solid Manipulation Techniques."
+      },
+      {
+        "unit_no": 2,
+        "text": "STL FILE FORMAT AND MANIPULATION: Introduction, Preparation of CAD Models – The STL File Format, Binary/ASCII ,Creating STL Files from a CAD System, Calculation of Each Slice Profile, Technology Specific Elements, Problems with STL Files, STL File Manipulation- Viewers, STL Manipulation on the AM Machine,Beyond the STL File- Direct Slicing of the CAD Model, Color Models, Multiple Materials, Use of STL for Machining."
+      },
+      {
+        "unit_no": 3,
+        "text": "3D PRINTING PROCESSES: Vat photo polymerization, Material jetting, Binder jetting, Powder bed fusion, Material extrusion, Directed energy deposition, Sheet lamination, 3D printing Processes limitations and Industrial applications."
+      },
+      {
+        "unit_no": 4,
+        "text": "INKJET TECHNOLOGY: Printer- Working Principle, Positioning System, Print head, Print bed, Frames, Motion control; Print head Considerations – Continuous Inkjet, Thermal Inkjet, Piezoelectric Drop-on-Demand; Material Formulation for jetting; Liquid based fabrication – Continuous jet, Multijet; power based fabrication- Colourjet."
+      },
+      {
+        "unit_no": 5,
+        "text": "LASER TECHNOLOGY: Light Sources – Types ,Characteristics ; Optics – Deflection, Modulation; Material feeding and flow- Liquid, powder; Printing machines – Types, Working Principle, Build Platform, Print bed Movement, Support structures."
+      }
+    ]
+  },
+  {
+    "course_id": 218,
+    "course_code": "CS23A33",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Cyber Security- History of Internet - Impact of Internet - Reason for Cyber Crime - Need for Cyber Security - History of Cyber Crime–Cybercriminals – Classification of Cybercrimes– A Global Perspective on Cyber Crimes – Cyber Laws-The Indian IT Act"
+      },
+      {
+        "unit_no": 2,
+        "text": "ATTACKS AND COUNTERMEASURES: Malicious Attack Threats and Vulnerabilities: Scope of Cyber-Attacks – Security Breach – Types of Malicious Attacks – Malicious Software – Common Attack Vectors – Social engineering Attack – Wireless Network Attack – Web Application Attack – Attack Tools – Countermeasures"
+      },
+      {
+        "unit_no": 3,
+        "text": "INTRODUCTION TO COMPUTER FORENSICS: Introduction to Traditional Computer Crime and its problems – Introduction to Identity Theft & Identity Fraud – Types of CF techniques - Incident and incident response methodology - Forensic duplication and investigation – Preparation for IR: Creating response tool kit and IR team – Forensics Technology and Systems - Understanding Computer Investigation – Data Acquisition."
+      },
+      {
+        "unit_no": 4,
+        "text": "EVIDENCE COLLECTION AND FORENSICS TOOLS: Processing Crime and Incident Scenes – Working with Windows and DOS Systems –Current Computer Forensics Tools- Software/ Hardware Tools"
+      },
+      {
+        "unit_no": 5,
+        "text": "ANALYSIS AND VALIDATION: Validating Forensics Data – Data Hiding Techniques – Performing Remote Acquisition – Network Forensics – Email Investigations – Cell Phone and Mobile Devices Forensics"
+      }
+    ]
+  },
+  {
+    "course_id": 219,
+    "course_code": "CR23A11",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Fundamentals of information security- CIA triad: Confidentiality, Integrity, Availability. Threat landscape overview: Common security threats, actors, and motivations. Introduction to vulnerability management."
+      },
+      {
+        "unit_no": 2,
+        "text": "SECURITY ASSESSMENT METHODOLOGIES: Security assessment methodologies: Penetration testing - Vulnerability scanning - Security audits. Penetration testing types: White-box, black-box, grey-box testing. Vulnerability scanning tools and their functionalities."
+      },
+      {
+        "unit_no": 3,
+        "text": "RISK ANALYSIS AND RISK MANAGEMENT: Risk Profiling - Formulating the Risk - Risk Exposure Factors. Risk management concepts: Risk identification- assessment - mitigation and acceptance. Case Study - Work in groups to develop a risk register for a fictional company, identifying potential security risks, their likelihood, and impact."
+      },
+      {
+        "unit_no": 4,
+        "text": "RISK ASSESSMENT AND ANALYSIS: Risk Evaluation and mitigation strategies - Reports and Consulting - Risk Assessment Techniques. Project: Conduct a risk assessment for a specific department within your organization (if applicable) or a chosen cloud service platform."
+      },
+      {
+        "unit_no": 5,
+        "text": "SECURITY FRAMEWORKS AND STANDARDS: Introduction to security frameworks and standards (NIST CSF, ISO 27001) -Aligning security assessments and risk analysis with frameworks - Implementing security controls based on identified risks."
+      }
+    ]
+  },
+  {
+    "course_id": 220,
+    "course_code": "CS23A11",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "MALWARE COMPONENTS AND FUNCTIONALITY: Malware Components-Payload, Packers, Persistence, Communication, Propagation, Armoring ,Stealth, Distribution Mechanisms, Downloaders and Launchers, Backdoors, Credential Stealers, Persistence Mechanisms, Handles, Mutexes, Privilege Escalation, Covert malware launching- Launchers, Process Injection, Process Replacement, Hook Injection, Detours, APC injection"
+      },
+      {
+        "unit_no": 2,
+        "text": "MALWARE DETECTION AND REVERSE ENGINEERING: Antivirus Engines-Main Components, Signatures and Signature Modules, File Scanner, Unpacker Module, Memory Scanner, Hook and Rootkit detection Modules, Next Generation Antiviruses, Malware Sandbox Internals, Reverse engineering malicious code - Identifying malware passwords - Bypassing authentication -Advanced malware analysis: Virus, Trojan and APK Analysis - Reverse Engineering Tools: IDA Pro and OLLYDBG."
+      },
+      {
+        "unit_no": 3,
+        "text": "BASIC MALWARE ANALYSIS: Objective of Malware Analysis, Malware Analysis techniques, Types of Malware, General Rules for Malware Analysis, Antivirus scanning, Hashing, Finding Strings, Packed and Obfuscated Malware , Portable Executable File Format, Linked Libraries and Functions, Static Analysis tools, Virtual Machines and their usage in malware analysis, Sandboxing, Basic dynamic analysis, Malware execution, Process Monitoring, Viewing processes, Registry snapshots."
+      },
+      {
+        "unit_no": 4,
+        "text": "MODERN MALWARE STATIC ANALYSIS: Levels of Abstraction, Reverse-Engineering, The x86 Architecture, Simple Instructions, The Stacks, Conditionals, Branching, Rep Instructions, Disassembly, Global and local variables, Arithmetic operations, Loops, Function Call Conventions, C Main Method and Offsets. Portable Executable File Format, The PE File Headers and Sections, IDA Pro, Function analysis, Graphing, The Structure of a Virtual Machine, Analyzing Windows programs, Anti-static analysis techniques, obfuscation, packing, metamorphism, polymorphism"
+      },
+      {
+        "unit_no": 5,
+        "text": "MODERN MALWARE DYNAMIC ANALYSIS: Live malware analysis, dead malware analysis, analyzing traces of malware, system calls, api calls, registries, network activities. Anti-dynamic analysis techniques, VM detection techniques, Evasion techniques, , Malware Sandbox, Monitoring with Process Monitor, Packet Sniffing with Wire shark, Kernel vs. User-Mode Debugging, OllyDbg, Breakpoints, Tracing, Exception Handling, Patching"
+      }
+    ]
+  },
+  {
+    "course_id": 221,
+    "course_code": "CR23A31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Overview of Ethical Hacking- Importance of ethical hacking for Businesses-Key concepts of Ethical Hacking-Difference between Ethical Hacking and Malicious Hacking-Most used tools in Ethical Hacking Incidents(NMAP, Metasploit)-Ethical hacking challenges and their solutions."
+      },
+      {
+        "unit_no": 2,
+        "text": "NETWORK VULNERABILITIES AND VARIOUS SCANNING TOOLS: Overview of Network vulnerability scanning- Types of network vulnerability scanning-Key features of network vulnerability scanner-Network vulnerability scanning vs network scanning- Network scanning tools(Burp Suite)"
+      },
+      {
+        "unit_no": 3,
+        "text": "ETHICAL HACKING TOOLS AND TECHNIQUES: Overview, Tools and Techniques in Ethical Hacking (Metasploit Framework, Nessus, Wireshark, Burp Suite, Nmap, John-the-Ripper, OWASP Zap."
+      },
+      {
+        "unit_no": 4,
+        "text": "RISK ASSESSMENT AND TYPES OF SYSTEM HARDENING: Overview, Types of system hardening (Network hardening, Server hardening, Application hardening, Database hardening, Operating system hardening), Types of Security Risk assessments (Physical security assessment, IT security assessment, Data security assessment, Application security assessment, Insider Threat assessment)"
+      },
+      {
+        "unit_no": 5,
+        "text": "SOCIAL ENGINEERING AND ZERO DAY ATTACKS: Overview of Social Engineering and zero day attacks, Impact of social Engineering and zero day attacks, Prevention and mitigation techniques, Best practices for protecting against social engineering and zero day attacks."
+      }
+    ]
+  },
+  {
+    "course_id": 222,
+    "course_code": "CR23A32",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Forensic Science – Digital Forensics – Digital Evidence – The Digital Forensics Process: Introduction – The Identification Phase – The Collection Phase – The Examination Phase – The Analysis Phase – The Presentation Phase."
+      },
+      {
+        "unit_no": 2,
+        "text": "DIGITAL CRIME AND INVESTIGATION: The International Legal Framework of Cybercrime Law - Digital Crime – Substantive Criminal Law – General Conditions – Offenses – Investigation Methods for Collecting Digital Evidence – International Cooperation to Collect Digital Evidence"
+      },
+      {
+        "unit_no": 3,
+        "text": "DIGITAL FORENSIC READINESS: Introduction – Law Enforcement versus Enterprise Digital Forensic Readiness – Rationale for Digital Forensic Readiness – Frameworks, Standards and Methodologies – Enterprise Digital Forensic Readiness – Challenges in Digital Forensics"
+      },
+      {
+        "unit_no": 4,
+        "text": "ANDROID FORENSICS: Android basics – Key Codes – ADB – Rooting Android – Boot Process – File Systems – Security – Tools – Android Forensics – Forensic Procedures – ADB – Android Only Tools – Dual Use Tools – Oxygen Forensics – MobilEdit – Android App Decompiling"
+      },
+      {
+        "unit_no": 5,
+        "text": "SQLITE DATABASE FORENSICS AND ANTI FORENSICS: Sqlite Database Forensics: Relational Databases - Other Viewers - Anti Forensics: Introduction - Steganography – Cryptography - Password Cracking."
+      }
+    ]
+  },
+  {
+    "course_id": 224,
+    "course_code": "CR23A34",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "FUNDAMENTALS OF CLOUD CONCEPTS: Cloud Computing-Cloud computing technology components, Cloud services delivery, Cloud Deployment Model, Key drivers for adopting the cloud."
+      },
+      {
+        "unit_no": 2,
+        "text": "INFRASTRUCTURE SECURITY: Infrastructure Security: The Host Level-The Network Level, Ensuring Data Confidentiality and Integrity, Ensuring Proper Access Control, SaaS and PaaS Host Security, IaaS Host Security, Virtualization Software Security, Threats to the hypervisor, Virtual Server Security, Securing virtual servers."
+      },
+      {
+        "unit_no": 3,
+        "text": "CLOUD APPLICATION: Application-Level Security Threats, DoS and EDoS, End User Security, End User Security, PaaS Application Security, Customer-Deployed Application Security, IaaS Application Security, Public Cloud Security Limitations."
+      },
+      {
+        "unit_no": 4,
+        "text": "CLOUD PRIVACY: Privacy: Data Life Cycle, Key Privacy Concerns in the Cloud, Protecting Privacy."
+      },
+      {
+        "unit_no": 5,
+        "text": "CLOUD PRIVACY RISK MANAGEMENT: Privacy Risk Management:Collection Limitation Principle, Use Limitation Principle, Security Principle, Transfer Principle, Accountability Principle, Legal and Regulatory Implications."
+      }
+    ]
+  },
+  {
+    "course_id": 225,
+    "course_code": "CR23A35",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "FUNDAMENTALS OF SOCIAL NETWORKING: Introduction to Semantic Web, Limitations of current Web, Development of Semantic Web, Emergence of the Social Web, Social Network analysis, Development of Social Network Analysis, Key concepts and measures in network analysis, Historical overview of privacy and security, Major paradigms, for understanding privacy and security."
+      },
+      {
+        "unit_no": 2,
+        "text": "PRIVACY AND SECURITY ISSUES: The evolution of privacy and security concerns with networked technologies, Contextual influences on privacy attitudes and behaviours, Anonymity in a networked world."
+      },
+      {
+        "unit_no": 3,
+        "text": "EXTRACTION AND MINING IN SOCIAL NETWORKING DATA: Extracting evolution of Web Community from a Series of Web Archive, detecting communities in social networks, Definition of community, evaluating communities, Methods for community detection and mining, Applications of community mining algorithms, Tools for detecting communities social network infrastructures and communities, Big data and Privacy."
+      },
+      {
+        "unit_no": 4,
+        "text": "PREDICTING HUMAN BEHAVIOUR AND PRIVACY ISSUES: Understanding and predicting human behaviour for social communities, User data Management, Inference and Distribution, Enabling new human experiences, Reality mining, Context, Awareness, Privacy in online social networks, Trust in online environment, What is Neo4j, Nodes, Relationships, Properties."
+      },
+      {
+        "unit_no": 5,
+        "text": "ACCESS CONTROL AND IDENTITY MANAGEMENT: Understand the access control requirements for Social Network, Enforcing Access Control Strategies, Authentication and Authorization, Roles-based Access Control, Host, storage and network access control options, Firewalls, Authentication, and Authorization in Social Network, Identity & Access Management, Single Sign-on, Identity Federation, Identity providers and service consumers, The role of Identity provisioning."
+      }
+    ]
+  },
+  {
+    "course_id": 226,
+    "course_code": "CR23A36",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Security Trends, OSI security architecture, Security attacks, security services, security mechanisms, Security System Development Life cycle – Legal, Ethical and Professional issues."
+      },
+      {
+        "unit_no": 2,
+        "text": "SECURITY ANALYSIS: Risk Management - Identifying and Assessing Risk - Assessing and Controlling Risk. Blueprint for Information Security -Information Security Policy. Case Study: Healthcare Data Security"
+      },
+      {
+        "unit_no": 3,
+        "text": "SECURITY TECHNOLOGY: Intrusion Detection and Prevention Systems (IDPS)-Terminology-Types-Detection methods. Honeypots, Honeynets and padded cell systems. Scanning and Analysis Tools-Port scanners-Firewall analysis tools, Operating system detection tools-Vulnerability scanners-Packet sniffers-Wireless security Tools"
+      },
+      {
+        "unit_no": 4,
+        "text": "AUDITING: Overview, Access control, IT Audit, Authentication. Open Web Application Security Project (OWASP), Web Site Audit and Vulnerabilities assessment- Case Study: Web Application Security Assessment for Online Retailer"
+      },
+      {
+        "unit_no": 5,
+        "text": "ANALYSIS AND VALIDATION: Validating Forensics Data – Data Hiding Techniques – Performing Remote Acquisition – Network Forensics – Email Investigations – Cell Phone and Mobile Devices Forensics. -Case Study: WannaCry Ransomware Attack"
+      }
+    ]
+  },
+  {
+    "course_id": 227,
+    "course_code": "CS23A37",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO AUGMENTED REALITY AND VIRTUAL REALITY: Introduction to Virtual Reality and Augmented Reality – Definition – Introduction to Trajectories and Hybrid Space- Three I's of Virtual Reality – Virtual Reality Vs 3D Computer Graphics – Components of VR System – Introduction to AR-AR Technologies-Input Devices – 3D Position Trackers – Types of Trackers – Navigation and Manipulation Interfaces – Gesture Interfaces – Types of Gesture Input Devices – Output Devices – Graphics Display – Human Visual System – Personal Graphics Displays – Large Volume Displays – Sound Displays."
+      },
+      {
+        "unit_no": 2,
+        "text": "SENSATION AND PERCEPTION: Physiology of Perception, Cutaneous Senses, Pain, Olfaction, Gustation, Auditory System, Auditory Localization, Speech, Visual System, Object Perception, Motion Detection, Depth and Size Perception, psychophysical methods for computing perceptual thresholds."
+      },
+      {
+        "unit_no": 3,
+        "text": "MOBILE VR AND AR: VR UX with the Unity API, Interaction and Locomotion, Working with Mobile VR in Unity, Travel and Wayfinding in Virtual Environments, Strategies for Designing and Developing 3D UIs, Evaluation of 3D User Interfaces, Traditional and Emerging VR/AR applications."
+      },
+      {
+        "unit_no": 4,
+        "text": "INTRODUCTION TO HAPTICS and MODELLING: Modeling – Geometric Modeling – Virtual Object Shape – Object Visual Appearance – Kinematics Modeling – Transformation Matrices – Object Position – Transformation Invariants –Object Hierarchies – Viewing the 3D World – Physical Modeling – Collision Detection – Surface Deformation – Force Computation – Force Smoothing and Mapping – Behavior Modeling – Model Management."
+      },
+      {
+        "unit_no": 5,
+        "text": "APPLICATIONS: Human Factors in VR – Methodology and Terminology – VR Health and Safety Issues – VR and Society-Medical Applications of VR – Education, Arts and Entertainment – Military VR Applications – Emerging Applications of VR – VR Applications in Manufacturing – Applications of VR in Robotics – Information Visualization – VR in Business – VR in Entertainment – VR in Education. Open-source toolkits/ libraries such as OpenScene Graph, Vega, VRML etc., Future AR/VR applications (holo teleportation, telepresence)."
+      }
+    ]
+  },
+  {
+    "course_id": 228,
+    "course_code": "CS23A39",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Introduction to Game Development: Games Overview; History of Games.Lecture: History and Generations of Video Games-Overview of Game Platforms-the Elements of Gameplay-Maths behind Game Development-Generic Programming"
+      },
+      {
+        "unit_no": 2,
+        "text": "Game Design Document: Platforms-Input Devices-Game Genres-Game Design-Characters-Storyline-Levels and Environments-Game Play- Graphic Style and Art-Sound and Music-Game Controls-Accessibility-Marketing."
+      },
+      {
+        "unit_no": 3,
+        "text": "Concepts of Game Design: Game Loop-Collision Detection and Reaction-Common Issues with Collision Detection-Cameras-Screen Space Vs Game Space-Hybrid Approaches-Game Design-Game Mechanics-Rewarding the Player-Tips and Tricks- Virtual Resolution-Layering the Graphics-Palette Swapping"
+      },
+      {
+        "unit_no": 4,
+        "text": "Graphic Design for Game Development: Sound and Music-Digital Sound Processing-Fonts-Shaders-Patterns, containers and Classes-Design Pattern- Resource Manager-Ai in Video Games-Useful Algorithms"
+      },
+      {
+        "unit_no": 5,
+        "text": "Mechanics in Developing in Game Design: Game Mechanics-I Frames-2D mechanics-RPG Like Games-Rhythm Games-Matchx Games-Cut Scenes- Testing your Game-Balancing your Game-No BS Principle-Managing Hype-Digital Rights Management-Game Jams"
+      }
+    ]
+  },
+  {
+    "course_id": 229,
+    "course_code": "CS23B31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Metaverse fundamentals: Metaverse evolution-Metaverse importance and characteristics-The interdisciplinary nature of the Metaverse- Metaverse opportunities and risks- Computer-mediated communication -Avatar-mediated communication-layers of Metaverse: Experience-Discovery-Creator economy- Spatial computing- Decentralization - Human interface- Infrastructure"
+      },
+      {
+        "unit_no": 2,
+        "text": "Metaverse technologies, tools and platforms: Metaverse Technologies: AR/VR/MR/XR - 3D reconstruction - Game engines - Smart glasses- wearables, haptic devices, headsets and headwear -Blockchain, smart contracts, tokens, NFTs - Cryptography - Artificial Intelligence (AI) - Internet of Things (IoT) - Edge computing and 5G, 6G Tools and technologies for Metaverse UX and UI: Tools and services for avatar systems - Spatial user interface design - Cross-platform user experience design - Multimodal user interface- Technologies and devices for human computer interaction in Metaverse Metaverse Platforms: Decentraland, SANDBOX - Roblox, Axie Infinity- uHive, Hyper Nation - Nakamoto (NAKA), Metahero (HERO), Star Atlas (ATLAS)- Bloktopia (BLOK), Stageverse - Spatial, PalkaCity, Viverse -Sorare, Illuvium, Upland - Second Life, Sansar, Sensorium Galaxy"
+      },
+      {
+        "unit_no": 3,
+        "text": "Design theories and practices: Social presence and co-presence - Motion sickness and cybersickness- Uncanny valley - Sense of self- location, sense of agency and sense of body ownership-Universal simulation principle- Prototyping- Evaluation techniques"
+      },
+      {
+        "unit_no": 4,
+        "text": "Cybersecurity and Cybercrime in the Metaverse: Metaverse and cybersecurity: Cybersecurity concerns in Metaverse: social engineering attacks, Data theft, Decentralization vs vulnerabilities - Cybersecurity risks in Metaverse: process, people, technology - Best practices for preventing cyberattacks in Metaverse: Risk assessment and mitigation, Physical security, Data encryption, Controlled access, Protect outbound data - Implementing cybersecurity in the Metaverse: Platform owners, Property owners/renters, Consumers/users Metaverse and cybercrime: Scam and theft- Rug pull- Money manipulation and wash trading- Money laundering"
+      },
+      {
+        "unit_no": 5,
+        "text": "Metaverse applications, challenges and open issues: Metaverse applications: Gaming and entertainment- Travel and tourism - Education and learning- Real estate -Banking and Finance- Healthcare- Social media- Fashion Metaverse challenges and open issues: Persistency - Interoperability and scalability- Maturity- Regulation- Usefulness and ease-of-use - Privacy and data security- Content creation- NFTs and creator economy - Social, legal and ethical issues in the Metaverse"
+      }
+    ]
+  },
+  {
+    "course_id": 230,
+    "course_code": "IT23E31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: An Introduction Graphics System : Computer Graphics and Its Types, Application of computer graphics - Graphics Systems : Video Display Devices, Raster Scan Systems, Random Scan Systems, Graphics Monitors and Work Stations, Input Devices, Hard Copy Devices, Graphics Software - Scan Conversion Basics, Line, Circle and Ellipse drawing algorithms – Parallel Curve Algorithm – Filled Area Primitives."
+      },
+      {
+        "unit_no": 2,
+        "text": "2D PRIMITIVES: Two-dimensional Geometric Transformations: Basic Transformations, Matrix Representation and Homogeneous Coordinates, Composite Transformations, Reflection and Shearing. Two-Dimension Viewing : The viewing Pipeline, Window to view port coordinate transformation, Clipping Operations, Point Clipping, Line Clipping, Polygon Clipping, Text Clipping, Exterior Clipping."
+      },
+      {
+        "unit_no": 3,
+        "text": "3D CONCEPTS: Three-Dimensional Concepts : Three Dimensional Display Methods, 3D Transformations, Parallel Projection and Perspective Projection Parallel and Perspective projections - 3D Concepts – 3D Object Representation, Polygons, Curved Lines, Splines, Quadratic Surfaces, Splines, B-Splines, Bezier Curves, Beta Splines, 3D Transformations, 3D Viewing – Visible surface identification, Elements of Color, Color Perception, Color Matching, Color Models – XYZ, RGB, YIQ, CMY, HSV -"
+      },
+      {
+        "unit_no": 4,
+        "text": "MULTIMEDIA SYSTEM DESIGN: Multimedia basics − Multimedia applications − Multimedia system architecture – Evolving technologies for multimedia − Defining objects for multimedia systems − Multimedia data interface standards − Multimedia databases. Compression and decompression − Data and file format standards − Multimedia I/O technologies − Digital voice and audio − Video image and animation − Full motion video − Storage and retrieval technologies."
+      },
+      {
+        "unit_no": 5,
+        "text": "HYPERMEDIA: Hypermedia messaging -Mobile messaging − Hypermedia message component − Creating hypermedia message − Integrated multimedia message standards − Integrated document management − Distributed multimedia systems. CASE STUDY: BLENDER GRAPHICS Blender Fundamentals – Drawing Basic Shapes – Modelling – Shading & Textures"
+      }
+    ]
+  },
+  {
+    "course_id": 231,
+    "course_code": "CS23A38",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO ONLINE MARKET: Online Market space- Digital Marketing Strategy- Components -Opportunities for building Brand Website - Planning and Creation- Content Marketing."
+      },
+      {
+        "unit_no": 2,
+        "text": "SEARCH ENGINE OPTIMIZATION: Search Engine optimisation - Keyword Strategy- SEO Strategy - SEO success factors -On-Page Techniques - OffPage Techniques. Search Engine Marketing- How Search Engine works- SEM components- PPC advertising -Display Advertisement"
+      },
+      {
+        "unit_no": 3,
+        "text": "E - MAIL MARKETING: E- Mail Marketing - Types of E- Mail Marketing - Email Automation - Lead Generation - Integrating Email with Social Media and Mobile- Measuring and maximising email campaign effectiveness. Mobile Marketing- Mobile Inventory/channels- Location based; Context based; Coupons and offers, Mobile Apps, Mobile Commerce, SMS Campaigns-Profiling and targeting."
+      },
+      {
+        "unit_no": 4,
+        "text": "SOCIAL MEDIA MARKETING: Social Media Marketing - Social Media Channels- Leveraging social media for brand conversations and buzz. Successful /benchmark social media campaigns. Engagement Marketing- Building Customer relationships - Creating Loyalty drivers - Influencer Marketing."
+      },
+      {
+        "unit_no": 5,
+        "text": "DIGITAL TRANSFORMATION: Digital Transformation & Channel Attribution- Analytics- Ad-words, Email, Mobile, social media, Web Analytics - Changing your strategy based on analysis- Recent trends in Digital marketing."
+      }
+    ]
+  },
+  {
+    "course_id": 232,
+    "course_code": "CD23731",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "Introduction to Media Production: Radio as a means of Mass Communication - Brief history of Radio from early years to the present stage - Print vs Electronic Media - Studio set-ups and productions - Field reporting"
+      },
+      {
+        "unit_no": 2,
+        "text": "Radio Broadcasting Technologies: Public vs Private broadcasting systems in India - Radio Broadcasting Systems--MW, SW, FM - Internet Radio, Space Radio, Community Radio."
+      },
+      {
+        "unit_no": 3,
+        "text": "A Guide to Radio Scriptwriting and Management: Scriptwriting for different formats of Radio - Elements of Radio scripts - Listing, scheduling and traffic management - Importance of Audience Surveys."
+      },
+      {
+        "unit_no": 4,
+        "text": "Functions of Radio in Public and Private Broadcasting Systems: Functions of Radio in the context of Public and Private Broadcasting systems - Types and formats of Radio programmes - News, Music, Interviews, Talks, Dramas – Discussions."
+      },
+      {
+        "unit_no": 5,
+        "text": "Art and Craft of Radio News Reporting: Art and Craft of Radio News Reporting - Locating radio news stories - Structure a radio news report - Tools and techniques of radio news reporting - Radio news interviews and vox pops"
+      }
+    ]
+  },
+  {
+    "course_id": 233,
+    "course_code": "AD23O11",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION: Introduction to Data Science – Evolution of Data Science – Data Science Roles – Stages in a Data Science Project – Applications of Data Science in various fields – Data Security Issues."
+      },
+      {
+        "unit_no": 2,
+        "text": "DATA COLLECTION AND DATA PRE-PROCESSING: Data Collection Strategies – Data Pre-Processing Overview – Data Cleaning – Data Integration and Transformation – Data Reduction – Data Discretization."
+      },
+      {
+        "unit_no": 3,
+        "text": "EXPLORATORY DATA ANALYTICS: Descriptive Statistics – Mean, Standard Deviation, Skewness and Kurtosis – Box Plots –Pivot Table – Heat Map – Correlation Statistics – ANOVA"
+      },
+      {
+        "unit_no": 4,
+        "text": "MODEL DEVELOPMENT: Simple and Multiple Regression – Model Evaluation using Visualization – Residual Plot – Distribution Plot – Polynomial Regression and Pipelines – Measures for In-sample Evaluation – Prediction and Decision Making."
+      },
+      {
+        "unit_no": 5,
+        "text": "MODEL EVALUATION: Generalization Error – Out-of-Sample Evaluation Metrics – Cross Validation – Overfitting –Under Fitting and Model Selection – Prediction by using Ridge Regression – Testing Multiple Parameters by using Grid Search."
+      }
+    ]
+  },
+  {
+    "course_id": 234,
+    "course_code": "AD23O31",
+    "topics": [
+      {
+        "unit_no": 1,
+        "text": "INTRODUCTION TO POWER BI: Introduction to PowerBI-Importing Data into PowerBI Desktop- Data Transformation strategies- The Power Query Editor-Transform Basics-Advanced data transformation options."
+      },
+      {
+        "unit_no": 2,
+        "text": "DATA MODELING AND DAX: Building the Data Model-Building Relationships-Working with complex relationships -Leveraging DAX-Building calculated columns-Calculated measures."
+      },
+      {
+        "unit_no": 3,
+        "text": "DATA VISUALIZATION WITH POWER BI: Data visualization basics-Visuals for filtering-Visualizing tabular data-Visualizing categorical data-Visualizing trend data-Visualizing KPI data-Visualizing geographical data-Leveraging Power BI custom visuals-Data visualization tips and tricks."
+      },
+      {
+        "unit_no": 4,
+        "text": "POWER BI REPORTS AND DASHBOARDS: Creating Reports with Power BI Desktop- Publishing Reports and Creating Dashboards in the Power BI Portal- Visualization best practices- Choosing the visual-Visual interactions-Slicers-Visualization Formatting-Map visuals"
+      },
+      {
+        "unit_no": 5,
+        "text": "CUSTOM VISUALS ANIMATION AND ANALYTICS: Drillthrough report pages-Bookmarks-ArcGIS Map visual for Power BI -Waterfall chart breakdown-Analytics pane- Quick Insights -Custom visuals-Animation and data storytelling"
+      }
+    ]
+  },
+  {
+  "course_id": null,
+  "course_code": "GE23117",
+  "topics": [
+    {
+      "unit_no": 1,
+      "text": "LANGUAGE AND LITERATURE: Language families in India - Dravidian languages - Tamil as a Classical Language - Classical Literature in Tamil - Secular nature of Sangam Literature - Distributive justice in Sangam Literature - Management principles in Thirukkural - Tamil Epics - Impact of Buddhism and Jainism in Tamil land - Bhakti Literature - Azhwars and Nayanmars - Minor literary forms - Development of modern Tamil literature - Contribution of Bharathiyar and Bharathidasan."
+    },
+    {
+      "unit_no": 2,
+      "text": "HERITAGE - ROCK ART PAINTINGS TO MODERN ART AND SCULPTURE: Hero stones to modern sculpture - Bronze icons - Tribes and their handicrafts - Temple car making - Terracotta sculptures - Village deities - Thiruvalluvar statue - Musical instruments such as Mridangam, Parai, Veenai, Yazh and Nadhaswaram - Role of temples in the social and economic life of Tamils."
+    },
+    {
+      "unit_no": 3,
+      "text": "FOLK AND MARTIAL ARTS: Therukoothu - Karagattam - Villu Pattu - Kaniyan Koothu - Oyilattam - Leather puppetry - Silambattam - Valari - Tiger dance - Traditional sports and games of Tamils."
+    },
+    {
+      "unit_no": 4,
+      "text": "THINAI CONCEPT OF TAMILS: Flora and fauna of Tamil Nadu - Aham and Puram concepts from Tholkappiyam and Sangam Literature - Aram concept - Education and literacy during Sangam age - Ancient cities and ports - Export and import during Sangam age - Overseas conquests of the Cholas."
+    },
+    {
+      "unit_no": 5,
+      "text": "CONTRIBUTION OF TAMILS TO INDIAN NATIONAL MOVEMENT AND INDIAN CULTURE: Contribution of Tamils to the Indian freedom struggle - Cultural influence of Tamils in other parts of India - Self-Respect Movement - Role of Siddha medicine - Inscriptions and manuscripts - Print history of Tamil books."
+    }
+  ]
+},
+{
+  "course_id": null,
+  "course_code": "GE23217",
+  "topics": [
+    {
+      "unit_no": 1,
+      "text": "WEAVING AND CERAMIC TECHNOLOGY: Weaving industry during Sangam Age - Ceramic technology - Black and Red Ware Potteries (BRW) - Graffiti on Potteries."
+    },
+    {
+      "unit_no": 2,
+      "text": "DESIGN AND CONSTRUCTION TECHNOLOGY: Designing and structural construction of houses and household materials during Sangam Age - Building materials and Hero stones - Stage constructions in Silappathikaram - Sculptures and temples of Mamallapuram - Great Temples of Cholas - Temples of Nayaka period - Madurai Meenakshi Temple - Thirumalai Nayakar Mahal - Chettinad houses - Indo-Saracenic architecture at Madras during British period."
+    },
+    {
+      "unit_no": 3,
+      "text": "MANUFACTURING TECHNOLOGY: Art of ship building - Metallurgical studies - Iron industry - Iron smelting and steel - Copper and gold - Coins as a source of history - Minting of coins - Bead making industries including stone beads, glass beads, terracotta beads and shell or bone beads - Archaeological evidence - Gem stone types described in Silappathikaram."
+    },
+    {
+      "unit_no": 4,
+      "text": "AGRICULTURE AND IRRIGATION TECHNOLOGY: Dams - Tanks - Ponds - Sluices - Significance of Kumizhi Thoompu of Chola period - Animal husbandry - Wells designed for cattle use - Agriculture and agro processing - Knowledge of sea - Fisheries - Pearl and conch diving - Ancient knowledge of ocean."
+    },
+    {
+      "unit_no": 5,
+      "text": "SCIENTIFIC TAMIL AND TAMIL COMPUTING: Development of Scientific Tamil - Tamil computing - Digitalization of Tamil books - Development of Tamil software - Tamil Virtual Academy - Tamil Digital Library - Online Tamil dictionaries - Sorkuvai Project."
+    }
+  ]
+}
+
+]

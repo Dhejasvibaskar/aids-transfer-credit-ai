@@ -1,19 +1,284 @@
-<!-- templates/upload.html -->
 <!DOCTYPE html>
-<html>
-<head><title>Transfer Credit Evaluation — Upload</title></head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto;">
-  <h2>Upload Transcript</h2>
-  <form action="/evaluations/run" method="post" enctype="multipart/form-data">
-    <label>Transcript (PDF, JPG, or PNG):</label><br>
-    <input type="file" name="transcript" accept=".pdf,.jpg,.jpeg,.png" required><br><br>
-    <button type="submit">Upload & Evaluate</button>
-    <label>Percentage in qualifying exam:</label>
-    <input type="number" step="0.01" name="percentage" required><br>
-    <label>Prior branch:</label>
-    <input type="text" name="prior_branch" required><br>
-    <label>Institution recognition:</label>
-    <input type="text" name="institution_recognition" value="AICTE" required><br>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CredRoute — Transfer Credit Evaluation</title>
+</head>
+
+<body style="
+    font-family: sans-serif;
+    max-width: 650px;
+    margin: 40px auto;
+">
+
+<h2>Transfer Credit Evaluation</h2>
+
+<p>
+    Upload the student's completed semester transcript(s)
+    and source university syllabus.
+</p>
+
+<form
+    action="/evaluations/run"
+    method="post"
+    enctype="multipart/form-data"
+>
+
+    <!-- MULTIPLE TRANSCRIPTS -->
+    <label>
+        Transcript(s):
+    </label>
+    <br>
+
+    <input
+        type="file"
+        name="transcripts"
+        accept=".pdf,.jpg,.jpeg,.png"
+        multiple
+        required
+    >
+
+    <br>
+
+    <small>
+        You can select multiple transcripts,
+        for example Semester 1 and Semester 2.
+    </small>
+
+    <br><br>
+
+
+    <!-- COMPLETED SEMESTER -->
+    <label for="completed_semester">
+        Student completed through:
+    </label>
+    <br>
+
+    <select
+        id="completed_semester"
+        name="completed_semester"
+        required
+    >
+        <option value="" selected disabled>
+            Select semester
+        </option>
+
+        <option value="1">
+            Semester 1
+        </option>
+
+        <option value="2">
+            Semester 2
+        </option>
+
+        <option value="3">
+            Semester 3
+        </option>
+
+        <option value="4">
+            Semester 4
+        </option>
+
+        <option value="5">
+            Semester 5
+        </option>
+
+        <option value="6">
+            Semester 6
+        </option>
+
+        <option value="7">
+            Semester 7
+        </option>
+
+        <option value="8">
+            Semester 8
+        </option>
+    </select>
+
+    <br><br>
+
+
+    <!-- SOURCE SYLLABUS -->
+    <label>
+        Source University Syllabus:
+    </label>
+    <br>
+
+    <input
+        type="file"
+        name="syllabus"
+        accept=".pdf,.jpg,.jpeg,.png"
+        required
+    >
+
+    <br><br>
+
+
+    <!-- PERCENTAGE -->
+    <label>
+        Percentage in qualifying exam:
+    </label>
+    <br>
+
+    <input
+        type="number"
+        step="0.01"
+        min="0"
+        max="100"
+        name="percentage"
+        required
+    >
+
+    <br><br>
+
+
+    <!-- CATEGORY -->
+    <label>
+        Category:
+    </label>
+    <br>
+
+    <select name="category">
+
+        <option value="general">
+            General
+        </option>
+
+        <option value="reserved">
+            Reserved
+        </option>
+
+    </select>
+
+    <br><br>
+
+
+    <!-- PRIOR BRANCH -->
+    <label for="prior_branch">
+        Prior Branch:
+    </label>
+    <br>
+
+    <select
+        id="prior_branch"
+        name="prior_branch"
+        required
+    >
+
+        <option value="" selected disabled>
+            Select prior branch
+        </option>
+
+        <option value="Computer Science">
+            Computer Science / CSE
+        </option>
+
+        <option value="Information Technology">
+            Information Technology / IT
+        </option>
+
+        <option value="Artificial Intelligence">
+            Artificial Intelligence / AI
+        </option>
+
+        <option value="Data Science">
+            Data Science / DS
+        </option>
+
+        <option value="Artificial Intelligence and Data Science">
+            Artificial Intelligence and Data Science / AI&DS
+        </option>
+
+        <option value="Electronics">
+            Electronics / ECE
+        </option>
+
+        <option value="Electrical">
+            Electrical / EEE
+        </option>
+
+    </select>
+
+    <br><br>
+
+
+    <!-- INSTITUTION RECOGNITION -->
+    <label>
+        Institution Recognition:
+    </label>
+    <br>
+
+    <select
+        name="institution_recognition"
+        required
+    >
+
+        <option value="AICTE">
+            AICTE
+        </option>
+
+        <option value="UGC">
+            UGC
+        </option>
+
+        <option value="Anna University">
+            Anna University
+        </option>
+
+        <option value="Autonomous - AICTE approved">
+            Autonomous - AICTE approved
+        </option>
+
+    </select>
+
+    <br><br>
+
+
+    <!-- ACCEPTANCE THRESHOLD -->
+    <label>
+        Acceptance Threshold:
+        <strong>
+            <span id="threshold-value">
+                80
+            </span>%
+        </strong>
+    </label>
+
+    <br>
+
+    <input
+        type="range"
+        name="threshold"
+        min="50"
+        max="100"
+        value="80"
+
+        oninput="
+            document.getElementById(
+                'threshold-value'
+            ).textContent = this.value
+        "
+    >
+
+    <br><br>
+
+
+    <button type="submit">
+        Upload & Evaluate
+    </button>
+
 </form>
+
+<hr>
+
+<p>
+    <a href="/login">
+        HOD Review Login
+    </a>
+</p>
+
 </body>
+
 </html>
