@@ -619,10 +619,60 @@ def select_completed_source_courses(
 
 
 # ---------------------------------------------------------------------
+# Evaluation batch helpers
+# ---------------------------------------------------------------------
+
+def create_evaluation_batch(
+    student_name,
+    completed_semester,
+):
+    """
+    Create one parent record for one complete upload/evaluation run.
+
+    Every course-level evaluation produced by this run will reference
+    the same batch_id. This prevents repeated uploads for the same
+    student name from being merged together on the HOD dashboard.
+    """
+
+    conn = psycopg2.connect(
+        **DB_CONFIG
+    )
+
+    try:
+        cur = conn.cursor()
+
+        cur.execute(
+            """
+            INSERT INTO evaluation_batch (
+                student_name,
+                completed_semester
+            )
+            VALUES (%s, %s)
+            RETURNING id
+            """,
+            (
+                student_name,
+                completed_semester,
+            ),
+        )
+
+        batch_id = cur.fetchone()[0]
+
+        conn.commit()
+        cur.close()
+
+        return batch_id
+
+    finally:
+        conn.close()
+
+
+# ---------------------------------------------------------------------
 # Database save
 # ---------------------------------------------------------------------
 
 def save_evaluation(
+    batch_id,
     student_name,
     course_id,
     source_course_name,
@@ -633,6 +683,10 @@ def save_evaluation(
     recommended_status,
     reasoning_text,
 ):
+    """
+    Save one course-level evaluation under a parent evaluation batch.
+    """
+
     conn = psycopg2.connect(
         **DB_CONFIG
     )
@@ -643,6 +697,7 @@ def save_evaluation(
         cur.execute(
             """
             INSERT INTO evaluation (
+                batch_id,
                 student_name,
                 course_id,
                 source_course_name,
@@ -654,11 +709,12 @@ def save_evaluation(
                 reasoning
             )
             VALUES (
-                %s,%s,%s,%s,%s,%s,%s,%s,%s
+                %s,%s,%s,%s,%s,%s,%s,%s,%s,%s
             )
             RETURNING id
             """,
             (
+                batch_id,
                 student_name,
                 course_id,
                 source_course_name,
@@ -674,7 +730,6 @@ def save_evaluation(
         eval_id = cur.fetchone()[0]
 
         conn.commit()
-
         cur.close()
 
         return eval_id
@@ -1062,7 +1117,16 @@ def run_evaluation(
     )
 
     # -----------------------------------------------------------------
-    # 9. Build/save results
+    # 9. Create one parent batch for this complete evaluation run
+    # -----------------------------------------------------------------
+
+    batch_id = create_evaluation_batch(
+        student_name=student_name,
+        completed_semester=completed_semester,
+    )
+
+    # -----------------------------------------------------------------
+    # 10. Build/save course results under that batch
     # -----------------------------------------------------------------
 
     results = []
@@ -1186,6 +1250,8 @@ def run_evaluation(
         # -------------------------------------------------------------
 
         eval_id = save_evaluation(
+            batch_id=batch_id,
+
             student_name=student_name,
 
             course_id=course_id,
@@ -1264,7 +1330,7 @@ def run_evaluation(
         )
 
     # -----------------------------------------------------------------
-    # 10. Sort by semester and course code
+    # 11. Sort by semester and course code
     # -----------------------------------------------------------------
 
     results.sort(
@@ -1275,7 +1341,7 @@ def run_evaluation(
     )
 
     # -----------------------------------------------------------------
-    # 11. HOD-friendly result groups
+    # 12. HOD-friendly result groups
     # -----------------------------------------------------------------
 
     accepted_courses = [
@@ -1317,7 +1383,7 @@ def run_evaluation(
     }
 
     # -----------------------------------------------------------------
-    # 12. Final response
+    # 13. Final response
     # -----------------------------------------------------------------
 
     return {
@@ -1329,6 +1395,9 @@ def run_evaluation(
 
         "student_name":
             student_name,
+
+        "batch_id":
+            batch_id,
 
         "completed_semester":
             completed_semester,

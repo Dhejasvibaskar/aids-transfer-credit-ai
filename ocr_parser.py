@@ -311,15 +311,15 @@ def _call_gemini(contents):
     Call Gemini for transcript / syllabus extraction.
 
     Temporary 503/server errors are retried.
-
-    429 quota errors and 404 model errors are not repeatedly retried.
+    429 quota errors wait and retry.
+    404 model errors fail immediately.
     """
 
     client = _get_client()
 
     model = os.environ.get(
         "GEMINI_OCR_MODEL",
-        "gemini-2.5-flash",
+        "gemini-3.6-flash",
     )
 
     max_attempts = 3
@@ -327,7 +327,6 @@ def _call_gemini(contents):
     for attempt in range(1, max_attempts + 1):
 
         try:
-
             response = client.models.generate_content(
                 model=model,
                 contents=contents,
@@ -346,26 +345,34 @@ def _call_gemini(contents):
             )
 
         except Exception as exc:
-
             error_text = str(exc)
 
             # ---------------------------------------------------------
-            # Quota exhausted
+            # Quota exhausted / rate limit
             # ---------------------------------------------------------
-
             if (
                 "429" in error_text
                 or "RESOURCE_EXHAUSTED" in error_text
             ):
+                if attempt < max_attempts:
+                    wait_seconds = 65
+
+                    print(
+                        "[ocr_parser] Gemini rate limit reached. "
+                        f"Waiting {wait_seconds} seconds before retry..."
+                    )
+
+                    time.sleep(wait_seconds)
+                    continue
+
                 raise RuntimeError(
-                    "Gemini OCR quota exhausted. "
-                    "Please try again after the quota resets."
+                    "Gemini OCR quota is still exhausted "
+                    "after waiting and retrying."
                 ) from exc
 
             # ---------------------------------------------------------
             # Model unavailable
             # ---------------------------------------------------------
-
             if (
                 "404" in error_text
                 or "NOT_FOUND" in error_text
@@ -377,12 +384,10 @@ def _call_gemini(contents):
             # ---------------------------------------------------------
             # Temporary server overload
             # ---------------------------------------------------------
-
             if (
                 "503" in error_text
                 or "UNAVAILABLE" in error_text
             ):
-
                 print(
                     "[ocr_parser] "
                     f"Gemini temporarily unavailable "
@@ -390,7 +395,6 @@ def _call_gemini(contents):
                 )
 
                 if attempt < max_attempts:
-
                     wait_seconds = 2 * attempt
 
                     print(
@@ -398,18 +402,13 @@ def _call_gemini(contents):
                         f"Retrying in {wait_seconds} seconds..."
                     )
 
-                    time.sleep(
-                        wait_seconds
-                    )
-
+                    time.sleep(wait_seconds)
                     continue
 
             # ---------------------------------------------------------
             # Other temporary/network errors
             # ---------------------------------------------------------
-
             if attempt < max_attempts:
-
                 wait_seconds = 2 * attempt
 
                 print(
@@ -423,10 +422,7 @@ def _call_gemini(contents):
                     f"Retrying in {wait_seconds} seconds..."
                 )
 
-                time.sleep(
-                    wait_seconds
-                )
-
+                time.sleep(wait_seconds)
                 continue
 
             raise RuntimeError(
@@ -1053,6 +1049,6 @@ if __name__ == "__main__":
         "OCR model:",
         os.environ.get(
             "GEMINI_OCR_MODEL",
-            "gemini-2.5-flash",
+            "gemini-3.6-flash",
         ),
     )

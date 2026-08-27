@@ -2,3 +2,12 @@ sentence-transformers
 google-genai
 numpy
 psycopg2-binary
+fastapi
+uvicorn
+jinja2
+python-multipart
+itsdangerous
+python-dotenv
+pdfplumber
+pdf2image
+Pillow

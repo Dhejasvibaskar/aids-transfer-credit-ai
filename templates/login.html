@@ -1,65 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>CredRoute — HOD Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CredRoute | Reviewer Login</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Shared stylesheet -->
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
 </head>
 
-<body style="
-    font-family: sans-serif;
-    max-width: 450px;
-    margin: 60px auto;
-">
+<body class="credroute-login-body">
 
-<h2>HOD Login</h2>
+<div class="credroute-login-page">
 
-{% if request.query_params.get("error") %}
+    <!-- LEFT 30% -->
+    <section class="credroute-brand-panel">
 
-<p style="color:red;">
-    Invalid username or password.
-</p>
+        <div class="brand-content">
 
-{% endif %}
+            <div class="college-name">
+                RAJALAKSHMI<br>
+                ENGINEERING COLLEGE
+            </div>
 
-<form
-    action="/login"
-    method="post"
->
+            <div class="brand-divider"></div>
 
-    <label>Username</label>
-    <br>
+            <div class="department-name">
+                DEPARTMENT OF AIDS
+            </div>
 
-    <input
-        type="text"
-        name="username"
-        required
+            <div class="project-block">
+
+                <h1>
+                    CredRoute
+                </h1>
+
+                <p>
+                    Explainable AI for<br>
+                    Transparent Credit Transfer
+                </p>
+
+            </div>
+
+            <div class="brand-caption">
+                AI-assisted course equivalency evaluation
+                with transparent reasoning and human approval.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT 70% -->
+    <section
+        class="credroute-login-panel"
+        style="
+            background:
+                linear-gradient(
+                    rgba(4, 3, 8, 0.50),
+                    rgba(4, 3, 8, 0.58)
+                ),
+                url('/static/images/rec-campus.png');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        "
     >
 
-    <br><br>
+        <div class="reviewer-login-card">
 
-    <label>Password</label>
-    <br>
+            <!-- Logo -->
+            <div class="login-logo-wrapper">
 
-    <input
-        type="password"
-        name="password"
-        required
-    >
+                <img
+                    src="/static/images/rec-logo.png"
+                    alt="Rajalakshmi Engineering College"
+                    class="login-logo"
+                >
 
-    <br><br>
+            </div>
 
-    <button type="submit">
-        Login
-    </button>
+            <div class="reviewer-tag">
+                REVIEWER PORTAL
+            </div>
 
-</form>
+            <h2>
+                Welcome Back
+            </h2>
 
-<br>
+            <p class="login-subtitle">
+                Sign in to review transfer-credit evaluations
+                and make final academic decisions.
+            </p>
 
-<a href="/">
-    Back to evaluation
-</a>
+            {% if error %}
+            <div class="alert alert-danger">
+                {{ error }}
+            </div>
+            {% endif %}
+
+            <form method="post" action="/login">
+
+                <div class="mb-3">
+
+                    <label
+                        for="username"
+                        class="form-label login-label"
+                    >
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control dark-input"
+                        id="username"
+                        name="username"
+                        placeholder="Enter reviewer username"
+                        required
+                    >
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label
+                        for="password"
+                        class="form-label login-label"
+                    >
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        class="form-control dark-input"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="credroute-login-btn"
+                >
+                    Sign in to Reviewer Portal
+                </button>
+
+            </form>
+
+            <div class="login-trust-note">
+
+                <div class="trust-line">
+                    Explainable AI
+                    <span>•</span>
+                    Auditable
+                    <span>•</span>
+                    Human Approved
+                </div>
+
+                <p>
+                    AI recommendations are advisory only.
+                    Final academic decisions remain with the
+                    authorized reviewer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
 
 </body>
 </html>
