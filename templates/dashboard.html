@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Review Queue | CredRoute{% endblock %}
+{% block body_class %}app-page{% endblock %}
+{% block content %}
+<div class="app-shell">
+  <aside class="sidebar">
+    <div>
+      <div class="sidebar-brand"><div class="sidebar-logo">CR</div><div><strong>CredRoute</strong><small>AI&DS · REC</small></div></div>
+      <nav class="side-nav"><a href="/">Overview</a><a href="/#new-evaluation">New Evaluation</a><a class="active" href="/evaluations">Review Queue</a></nav>
+    </div>
+  </aside>
+
+  <main class="app-main">
+    <header class="topbar">
+      <div><div class="eyebrow">HUMAN-IN-THE-LOOP REVIEW</div><h1>Academic Review Queue</h1><p>Inspect AI recommendations and record the authorized academic decision.</p></div>
+      <a class="btn btn-primary" href="/">New Evaluation</a>
+    </header>
+
+    <section class="panel">
+      <div class="review-list">
+        {% for item in evaluations %}
+        <article class="review-card">
+          <div class="review-card-main">
+            <div class="review-meta"><span class="status-pill {{ (item.recommended_status or 'redo')|lower }}">{{ (item.recommended_status or 'redo')|upper }}</span><span>{{ item.created_at or "" }}</span></div>
+            <h3>{{ item.student_name or "Student" }}</h3>
+            <p><strong>{{ item.course_code or "" }}</strong> {{ item.course_title or item.source_course_name or "Course evaluation" }}</p>
+            <div class="review-stats">
+              <div><span>Coverage</span><strong>{{ item.coverage_pct or 0 }}%</strong></div>
+              <div><span>Source</span><strong>{{ item.source_course_name or "—" }}</strong></div>
+              <div><span>Final</span><strong>{{ item.final_decision or "Pending" }}</strong></div>
+            </div>
+            {% if item.reasoning %}<details><summary>View AI reasoning</summary><p>{{ item.reasoning }}</p></details>{% endif %}
+          </div>
+
+          <form method="post" action="/evaluations/{{ item.id }}/decision" class="decision-box">
+            <label>Final academic decision</label>
+            <select name="final_decision" required>
+              <option value="">Select</option>
+              <option value="ACCEPT">Accept</option>
+              <option value="PARTIAL">Partial / Bridge</option>
+              <option value="REDO">Redo</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Save Decision</button>
+          </form>
+        </article>
+        {% else %}
+        <div class="empty-panel"><div class="mini-logo">CR</div><h2>No evaluations yet</h2><p>Run a new transfer-credit evaluation to populate the reviewer queue.</p><a class="btn btn-primary" href="/">Start Evaluation</a></div>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+</div>
+{% endblock %}

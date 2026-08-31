@@ -2,282 +2,771 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>CredRoute — Transfer Credit Evaluation</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CredRoute — Transfer Credit Evaluation
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #09070c;
+            color: #f7f3f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .page {
+            max-width: 1250px;
+            margin: auto;
+            padding: 45px 25px 70px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 10px;
+
+            color: #c75bff;
+
+            border:
+                1px solid #51215f;
+
+            background:
+                rgba(182, 44, 255, .08);
+
+            border-radius: 7px;
+
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 12px 0 8px;
+            font-size: 42px;
+        }
+
+        .subtitle {
+            color: #a39aa7;
+            line-height: 1.6;
+        }
+
+        .review-link {
+            padding: 13px 18px;
+
+            color: white;
+
+            border:
+                1px solid #3a323d;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+        }
+
+        .grid {
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr;
+
+            gap: 18px;
+        }
+
+        .panel {
+            padding: 28px;
+
+            border:
+                1px solid #29222d;
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #17121b,
+                    #100d13
+                );
+        }
+
+        .panel h2 {
+            margin-top: 8px;
+        }
+
+        .section {
+            margin-top: 28px;
+        }
+
+        .section-title {
+            margin-bottom: 14px;
+
+            color: #d8cfdc;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .upload-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 14px;
+        }
+
+        .upload {
+            padding: 22px;
+
+            text-align: center;
+
+            border:
+                1px dashed #663276;
+
+            border-radius: 14px;
+
+            background:
+                rgba(182, 44, 255, .04);
+        }
+
+        .upload input {
+            width: 100%;
+            margin-top: 12px;
+            color: white;
+        }
+
+        .fields {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 15px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 8px;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .field input,
+        .field select {
+
+            width: 100%;
+            height: 48px;
+
+            padding: 0 12px;
+
+            color: white;
+
+            background:
+                #151118;
+
+            border:
+                1px solid #332c36;
+
+            border-radius: 9px;
+        }
+
+        option {
+            color: white;
+            background: #151118;
+        }
+
+        .submit {
+            margin-top: 26px;
+
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+
+            min-height: 50px;
+
+            padding:
+                0 25px;
+
+            border: none;
+            border-radius: 9px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #8420c5,
+                    #b62cff
+                );
+
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .steps {
+            display: grid;
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .step {
+            display: flex;
+            gap: 12px;
+
+            padding: 14px;
+
+            border:
+                1px solid #29222d;
+
+            border-radius: 12px;
+        }
+
+        .number {
+            width: 34px;
+            height: 34px;
+
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 9px;
+
+            color: #cf65ff;
+            background: #291431;
+        }
+
+        .step p {
+            margin: 4px 0 0;
+
+            color: #a39aa7;
+
+            font-size: 11px;
+        }
+
+        @media (max-width: 850px) {
+
+            .grid,
+            .upload-grid,
+            .fields {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                align-items: start;
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+
 </head>
 
-<body style="
-    font-family: sans-serif;
-    max-width: 650px;
-    margin: 40px auto;
-">
-
-<h2>Transfer Credit Evaluation</h2>
-
-<p>
-    Upload the student's completed semester transcript(s)
-    and source university syllabus.
-</p>
-
-<form
-    action="/evaluations/run"
-    method="post"
-    enctype="multipart/form-data"
->
-
-    <!-- MULTIPLE TRANSCRIPTS -->
-    <label>
-        Transcript(s):
-    </label>
-    <br>
-
-    <input
-        type="file"
-        name="transcripts"
-        accept=".pdf,.jpg,.jpeg,.png"
-        multiple
-        required
-    >
-
-    <br>
-
-    <small>
-        You can select multiple transcripts,
-        for example Semester 1 and Semester 2.
-    </small>
-
-    <br><br>
-
-
-    <!-- COMPLETED SEMESTER -->
-    <label for="completed_semester">
-        Student completed through:
-    </label>
-    <br>
-
-    <select
-        id="completed_semester"
-        name="completed_semester"
-        required
-    >
-        <option value="" selected disabled>
-            Select semester
-        </option>
-
-        <option value="1">
-            Semester 1
-        </option>
-
-        <option value="2">
-            Semester 2
-        </option>
-
-        <option value="3">
-            Semester 3
-        </option>
-
-        <option value="4">
-            Semester 4
-        </option>
-
-        <option value="5">
-            Semester 5
-        </option>
-
-        <option value="6">
-            Semester 6
-        </option>
-
-        <option value="7">
-            Semester 7
-        </option>
-
-        <option value="8">
-            Semester 8
-        </option>
-    </select>
-
-    <br><br>
-
-
-    <!-- SOURCE SYLLABUS -->
-    <label>
-        Source University Syllabus:
-    </label>
-    <br>
+<body>
 
-    <input
-        type="file"
-        name="syllabus"
-        accept=".pdf,.jpg,.jpeg,.png"
-        required
-    >
+<div class="page">
 
-    <br><br>
+    <header class="header">
 
+        <div>
 
-    <!-- PERCENTAGE -->
-    <label>
-        Percentage in qualifying exam:
-    </label>
-    <br>
+            <div class="badge">
+                TRANSFER CREDIT INTELLIGENCE
+            </div>
 
-    <input
-        type="number"
-        step="0.01"
-        min="0"
-        max="100"
-        name="percentage"
-        required
-    >
+            <h1>
+                CredRoute
+            </h1>
 
-    <br><br>
+            <div class="subtitle">
+                Explainable AI for Transparent Credit Transfer
+            </div>
 
+        </div>
 
-    <!-- CATEGORY -->
-    <label>
-        Category:
-    </label>
-    <br>
+        <a
+            href="/login"
+            class="review-link"
+        >
+            HOD Review Login
+        </a>
 
-    <select name="category">
+    </header>
 
-        <option value="general">
-            General
-        </option>
 
-        <option value="reserved">
-            Reserved
-        </option>
+    <div class="grid">
 
-    </select>
 
-    <br><br>
+        <!-- ============================= -->
+        <!-- EVALUATION FORM -->
+        <!-- ============================= -->
 
+        <section class="panel">
 
-    <!-- PRIOR BRANCH -->
-    <label for="prior_branch">
-        Prior Branch:
-    </label>
-    <br>
+            <div class="badge">
+                NEW EVALUATION
+            </div>
 
-    <select
-        id="prior_branch"
-        name="prior_branch"
-        required
-    >
+            <h2>
+                Student Transfer Credit Evaluation
+            </h2>
 
-        <option value="" selected disabled>
-            Select prior branch
-        </option>
+            <p class="subtitle">
+                Upload completed-semester transcript(s)
+                and the source-university syllabus.
+            </p>
 
-        <option value="Computer Science">
-            Computer Science / CSE
-        </option>
 
-        <option value="Information Technology">
-            Information Technology / IT
-        </option>
+            <form
+                action="/evaluations/run"
+                method="post"
+                enctype="multipart/form-data"
+            >
 
-        <option value="Artificial Intelligence">
-            Artificial Intelligence / AI
-        </option>
 
-        <option value="Data Science">
-            Data Science / DS
-        </option>
+                <!-- DOCUMENTS -->
 
-        <option value="Artificial Intelligence and Data Science">
-            Artificial Intelligence and Data Science / AI&DS
-        </option>
+                <div class="section">
 
-        <option value="Electronics">
-            Electronics / ECE
-        </option>
+                    <div class="section-title">
+                        ACADEMIC DOCUMENTS
+                    </div>
 
-        <option value="Electrical">
-            Electrical / EEE
-        </option>
 
-    </select>
+                    <div class="upload-grid">
 
-    <br><br>
 
+                        <div class="upload">
 
-    <!-- INSTITUTION RECOGNITION -->
-    <label>
-        Institution Recognition:
-    </label>
-    <br>
+                            <strong>
+                                Transcript(s)
+                            </strong>
 
-    <select
-        name="institution_recognition"
-        required
-    >
+                            <p class="subtitle">
+                                Multiple semester transcripts supported
+                            </p>
 
-        <option value="AICTE">
-            AICTE
-        </option>
+                            <input
+                                type="file"
+                                name="transcripts"
+                                accept=".pdf,.jpg,.jpeg,.png"
+                                multiple
+                                required
+                            >
 
-        <option value="UGC">
-            UGC
-        </option>
+                        </div>
 
-        <option value="Anna University">
-            Anna University
-        </option>
 
-        <option value="Autonomous - AICTE approved">
-            Autonomous - AICTE approved
-        </option>
+                        <div class="upload">
 
-    </select>
+                            <strong>
+                                Source University Syllabus
+                            </strong>
 
-    <br><br>
+                            <p class="subtitle">
+                                PDF, JPG, JPEG or PNG
+                            </p>
 
+                            <input
+                                type="file"
+                                name="syllabus"
+                                accept=".pdf,.jpg,.jpeg,.png"
+                                required
+                            >
 
-    <!-- ACCEPTANCE THRESHOLD -->
-    <label>
-        Acceptance Threshold:
-        <strong>
-            <span id="threshold-value">
-                80
-            </span>%
-        </strong>
-    </label>
+                        </div>
 
-    <br>
 
-    <input
-        type="range"
-        name="threshold"
-        min="50"
-        max="100"
-        value="80"
+                    </div>
 
-        oninput="
-            document.getElementById(
-                'threshold-value'
-            ).textContent = this.value
-        "
-    >
+                </div>
 
-    <br><br>
 
+                <!-- STUDENT INFORMATION -->
 
-    <button type="submit">
-        Upload & Evaluate
-    </button>
+                <div class="section">
 
-</form>
+                    <div class="section-title">
+                        STUDENT & ELIGIBILITY INFORMATION
+                    </div>
 
-<hr>
 
-<p>
-    <a href="/login">
-        HOD Review Login
-    </a>
-</p>
+                    <div class="fields">
+
+
+                        <!-- SEMESTER -->
+
+                        <div class="field">
+
+                            <label>
+                                Student completed through
+                            </label>
+
+                            <select
+                                name="completed_semester"
+                                required
+                            >
+
+                                <option
+                                    value=""
+                                    selected
+                                    disabled
+                                >
+                                    Select Semester
+                                </option>
+
+                                {% for semester in range(1, 9) %}
+
+                                    <option value="{{ semester }}">
+                                        Semester {{ semester }}
+                                    </option>
+
+                                {% endfor %}
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- PERCENTAGE -->
+
+                        <div class="field">
+
+                            <label>
+                                Percentage in qualifying exam
+                            </label>
+
+                            <input
+                                type="number"
+                                step="0.01"
+                                min="0"
+                                max="100"
+                                name="percentage"
+                                placeholder="Example: 75"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- CATEGORY -->
+
+                        <div class="field">
+
+                            <label>
+                                Category
+                            </label>
+
+                            <select
+                                name="category"
+                                required
+                            >
+
+                                <option value="general">
+                                    General
+                                </option>
+
+                                <option value="reserved">
+                                    Reserved
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- PRIOR BRANCH -->
+
+                        <div class="field">
+
+                            <label>
+                                Prior Branch
+                            </label>
+
+                            <select
+                                name="prior_branch"
+                                required
+                            >
+
+                                <option
+                                    value=""
+                                    selected
+                                    disabled
+                                >
+                                    Select Prior Branch
+                                </option>
+
+                                <option value="Computer Science">
+                                    Computer Science / CSE
+                                </option>
+
+                                <option value="Information Technology">
+                                    Information Technology / IT
+                                </option>
+
+                                <option value="Artificial Intelligence">
+                                    Artificial Intelligence / AI
+                                </option>
+
+                                <option value="Data Science">
+                                    Data Science / DS
+                                </option>
+
+                                <option value="Artificial Intelligence and Data Science">
+                                    Artificial Intelligence and Data Science / AI&DS
+                                </option>
+
+                                <option value="Electronics">
+                                    Electronics / ECE
+                                </option>
+
+                                <option value="Electrical">
+                                    Electrical / EEE
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- INSTITUTION RECOGNITION -->
+
+                        <div class="field">
+
+                            <label>
+                                Institution Recognition
+                            </label>
+
+                            <select
+                                name="institution_recognition"
+                                required
+                            >
+
+                                <option value="AICTE">
+                                    AICTE
+                                </option>
+
+                                <option value="UGC">
+                                    UGC
+                                </option>
+
+                                <option value="Anna University">
+                                    Anna University
+                                </option>
+
+                                <option value="Autonomous - AICTE approved">
+                                    Autonomous - AICTE approved
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- THRESHOLD -->
+
+                        <div class="field">
+
+                            <label>
+
+                                Acceptance Threshold:
+
+                                <span id="threshold-value">
+                                    80
+                                </span>%
+
+                            </label>
+
+                            <input
+                                type="range"
+                                name="threshold"
+                                min="50"
+                                max="100"
+                                value="80"
+
+                                oninput="
+                                    document.getElementById(
+                                        'threshold-value'
+                                    ).textContent = this.value
+                                "
+                            >
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="submit">
+
+                    <button type="submit">
+                        Upload & Evaluate
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- EXPLANATION PANEL -->
+        <!-- ============================= -->
+
+        <aside class="panel">
+
+            <div class="badge">
+                HOW IT WORKS
+            </div>
+
+            <h2>
+                Transparent by Design
+            </h2>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Extract
+                        </strong>
+
+                        <p>
+                            Read transcript and syllabus.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Validate
+                        </strong>
+
+                        <p>
+                            Check student eligibility.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Match
+                        </strong>
+
+                        <p>
+                            Semantic + lexical syllabus comparison.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Explain
+                        </strong>
+
+                        <p>
+                            Calculate coverage and missing topics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="number">
+                        05
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Review
+                        </strong>
+
+                        <p>
+                            HOD makes final academic decision.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </aside>
+
+
+    </div>
+
+</div>
 
 </body>
 

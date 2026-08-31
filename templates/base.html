@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | CredRoute{% endblock %}
+{% block body_class %}app-page{% endblock %}
+{% block content %}
+<div class="app-shell">
+  <aside class="sidebar">
+    <div>
+      <div class="sidebar-brand">
+        <div class="sidebar-logo">CR</div>
+        <div><strong>CredRoute</strong><small>AI&DS · REC</small></div>
+      </div>
+      <nav class="side-nav">
+        <a class="active" href="/">Overview</a>
+        <a href="#new-evaluation">New Evaluation</a>
+        <a href="/evaluations">Review Queue</a>
+      </nav>
+    </div>
+    <div class="reviewer-chip">
+      <div class="avatar">H</div>
+      <div><strong>Authorized Reviewer</strong><small>Academic Decision Portal</small></div>
+    </div>
+  </aside>
+
+  <main class="app-main">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">TRANSFER CREDIT INTELLIGENCE</div>
+        <h1>Reviewer Dashboard</h1>
+        <p>Evaluate completed coursework against the REC curriculum with transparent AI assistance.</p>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-secondary" href="/evaluations">Review History</a>
+        <a class="btn btn-primary" href="#new-evaluation">New Evaluation</a>
+      </div>
+    </header>
+
+    <section class="stats-grid">
+      <article class="stat-card"><span>WORKFLOW</span><strong>Document → Decision</strong><p>Transcript extraction, eligibility, matching and HOD review.</p></article>
+      <article class="stat-card"><span>AI LAYER</span><strong>Hybrid Matching</strong><p>Semantic embeddings + lexical evidence + course safeguards.</p></article>
+      <article class="stat-card"><span>GOVERNANCE</span><strong>Human in the Loop</strong><p>AI recommends; the reviewer makes the final decision.</p></article>
+    </section>
+
+    <section id="new-evaluation" class="content-grid">
+      <article class="panel panel-lg">
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">NEW TRANSFER-CREDIT CASE</div>
+            <h2>Start Evaluation</h2>
+            <p>Upload completed-semester transcripts and the previous institution's syllabus.</p>
+          </div>
+          <span class="step-badge">01</span>
+        </div>
+
+        <form action="/evaluations/run" method="post" enctype="multipart/form-data" class="evaluation-form">
+          <div class="form-section">
+            <div class="section-label">Academic Documents</div>
+            <div class="upload-grid">
+              <label class="upload-zone">
+                <input type="file" name="transcripts" accept=".pdf,.png,.jpg,.jpeg" multiple required>
+                <span class="upload-icon">↑</span>
+                <strong>Upload Transcript(s)</strong>
+                <small>PDF, JPG or PNG · multiple semesters supported</small>
+              </label>
+              <label class="upload-zone">
+                <input type="file" name="syllabus" accept=".pdf,.png,.jpg,.jpeg" required>
+                <span class="upload-icon">↑</span>
+                <strong>Upload Source Syllabus</strong>
+                <small>Course-wise syllabus from the previous institution</small>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-label">Student Eligibility</div>
+            <div class="fields-grid two-col">
+              <div class="field"><label>Percentage in qualifying exam</label><input name="percentage" type="number" min="0" max="100" step="0.01" placeholder="e.g. 75" required></div>
+              <div class="field"><label>Category</label><select name="category" required><option value="">Select category</option><option value="general">General</option><option value="reserved">Reserved</option></select></div>
+              <div class="field"><label>Previous institution</label><input name="institution" type="text" placeholder="e.g. Anna University" required></div>
+              <div class="field"><label>Previous branch</label><input name="prior_branch" type="text" placeholder="e.g. AI&DS / CSE / IT" required></div>
+              <div class="field"><label>Completed semester</label><select name="completed_semester" required><option value="">Select semester</option>{% for sem in range(1,9) %}<option value="{{ sem }}">Semester {{ sem }}</option>{% endfor %}</select></div>
+              <div class="field">
+                <label>Acceptance threshold</label>
+                <div class="range-row"><input id="threshold" name="threshold" type="range" min="50" max="100" value="80"><output id="thresholdValue">80%</output></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <div class="privacy-note"><span>◈</span><p>Documents are used only for academic evaluation and reviewer decision support.</p></div>
+            <button class="btn btn-primary btn-lg" type="submit">Run Explainable Evaluation</button>
+          </div>
+        </form>
+      </article>
+
+      <aside class="panel process-panel">
+        <div class="eyebrow">HOW IT WORKS</div>
+        <h2>Transparent by design</h2>
+        <ol class="process-list">
+          <li><span>01</span><div><strong>Extract</strong><p>Read transcript and syllabus content.</p></div></li>
+          <li><span>02</span><div><strong>Validate</strong><p>Check eligibility and completed courses.</p></div></li>
+          <li><span>03</span><div><strong>Match</strong><p>Run semantic + lexical course matching.</p></div></li>
+          <li><span>04</span><div><strong>Explain</strong><p>Generate coverage and missing-topic evidence.</p></div></li>
+          <li><span>05</span><div><strong>Review</strong><p>HOD makes the final academic decision.</p></div></li>
+        </ol>
+        <div class="ai-note"><strong>AI is advisory.</strong><p>The final authority remains with the academic reviewer.</p></div>
+      </aside>
+    </section>
+  </main>
+</div>
+{% endblock %}

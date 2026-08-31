@@ -1,65 +1,685 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>CredRoute — HOD Login</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CredRoute — HOD Login
+    </title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                sans-serif;
+
+            background:
+                #08060b;
+
+            color: white;
+        }
+
+
+        .page {
+
+            min-height: 100vh;
+
+            display: grid;
+
+            grid-template-columns:
+                32%
+                68%;
+        }
+
+
+        .left {
+
+            padding:
+                65px
+                50px;
+
+            background:
+                #09070c;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .college {
+
+            color:
+                #ba4cff;
+
+            font-size:
+                28px;
+
+            font-weight:
+                bold;
+
+            line-height:
+                1.3;
+        }
+
+
+        .line {
+
+            width:
+                55px;
+
+            height:
+                3px;
+
+            background:
+                #b62cff;
+
+            margin:
+                25px
+                0;
+        }
+
+
+        .department {
+
+            color:
+                #ae43e6;
+
+            font-size:
+                13px;
+
+            font-weight:
+                bold;
+
+            letter-spacing:
+                2px;
+        }
+
+
+        .project {
+
+            margin-top:
+                65px;
+        }
+
+
+        .project h1 {
+
+            margin:
+                0
+                0
+                15px;
+
+            color:
+                #b62cff;
+
+            font-size:
+                58px;
+        }
+
+
+        .project h2 {
+
+            color:
+                #b744e8;
+
+            line-height:
+                1.5;
+        }
+
+
+        .project p {
+
+            color:
+                #a99fab;
+
+            line-height:
+                1.8;
+        }
+
+
+        .right {
+
+            min-height:
+                100vh;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            padding:
+                30px;
+
+            background:
+
+                linear-gradient(
+                    rgba(7, 5, 9, .55),
+                    rgba(7, 5, 9, .65)
+                ),
+
+                url(
+                    "/static/images/college-campus.jpg"
+                )
+
+                center
+                /
+                cover;
+        }
+
+
+        .card {
+
+            width:
+                480px;
+
+            max-width:
+                100%;
+
+            padding:
+                38px;
+
+            border-radius:
+                20px;
+
+            border:
+                1px solid
+                rgba(
+                    190,
+                    70,
+                    255,
+                    .25
+                );
+
+            background:
+                rgba(
+                    18,
+                    14,
+                    21,
+                    .95
+                );
+
+            box-shadow:
+                0
+                30px
+                80px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    .5
+                );
+        }
+
+
+        .logo {
+
+            width:
+                55px;
+
+            height:
+                55px;
+
+            margin:
+                0
+                auto
+                20px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                10px;
+
+            color:
+                #cf65ff;
+
+            border:
+                1px solid
+                #6d267e;
+
+            font-weight:
+                bold;
+        }
+
+
+        .badge {
+
+            width:
+                max-content;
+
+            margin:
+                0
+                auto;
+
+            padding:
+                7px
+                10px;
+
+            color:
+                #cc63ff;
+
+            border:
+                1px solid
+                #552464;
+
+            border-radius:
+                7px;
+
+            font-size:
+                11px;
+        }
+
+
+        .card h2 {
+
+            text-align:
+                center;
+
+            font-size:
+                32px;
+
+            margin-bottom:
+                10px;
+        }
+
+
+        .subtitle {
+
+            text-align:
+                center;
+
+            color:
+                #a79eaa;
+
+            line-height:
+                1.6;
+
+            margin-bottom:
+                28px;
+        }
+
+
+        label {
+
+            display:
+                block;
+
+            margin-bottom:
+                8px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                bold;
+        }
+
+
+        input {
+
+            width:
+                100%;
+
+            height:
+                50px;
+
+            margin-bottom:
+                18px;
+
+            padding:
+                0
+                15px;
+
+            border-radius:
+                9px;
+
+            border:
+                1px solid
+                #332c36;
+
+            background:
+                #17131a;
+
+            color:
+                white;
+        }
+
+
+        button {
+
+            width:
+                100%;
+
+            height:
+                50px;
+
+            border:
+                none;
+
+            border-radius:
+                9px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #8420c5,
+                    #b62cff
+                );
+
+            color:
+                white;
+
+            font-weight:
+                bold;
+
+            cursor:
+                pointer;
+        }
+
+
+        .error {
+
+            padding:
+                12px;
+
+            margin-bottom:
+                18px;
+
+            border-radius:
+                8px;
+
+            color:
+                #ff91a6;
+
+            background:
+                rgba(
+                    255,
+                    80,
+                    110,
+                    .1
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    80,
+                    110,
+                    .25
+                );
+        }
+
+
+        .bottom {
+
+            margin-top:
+                22px;
+
+            text-align:
+                center;
+
+            color:
+                #847a87;
+
+            font-size:
+                11px;
+        }
+
+
+        .bottom a {
+
+            color:
+                #c85bff;
+        }
+
+
+        @media (
+            max-width: 800px
+        ) {
+
+            .page {
+
+                display:
+                    block;
+            }
+
+
+            .left {
+
+                display:
+                    none;
+            }
+
+
+            .right {
+
+                padding:
+                    20px;
+            }
+        }
+
+    </style>
+
 </head>
 
-<body style="
-    font-family: sans-serif;
-    max-width: 450px;
-    margin: 60px auto;
-">
 
-<h2>HOD Login</h2>
+<body>
 
-{% if request.query_params.get("error") %}
 
-<p style="color:red;">
-    Invalid username or password.
-</p>
+<div class="page">
 
-{% endif %}
 
-<form
-    action="/login"
-    method="post"
->
+    <section class="left">
 
-    <label>Username</label>
-    <br>
 
-    <input
-        type="text"
-        name="username"
-        required
-    >
+        <div class="college">
 
-    <br><br>
+            RAJALAKSHMI
 
-    <label>Password</label>
-    <br>
+            <br>
 
-    <input
-        type="password"
-        name="password"
-        required
-    >
+            ENGINEERING COLLEGE
 
-    <br><br>
+        </div>
 
-    <button type="submit">
-        Login
-    </button>
 
-</form>
+        <div class="line"></div>
 
-<br>
 
-<a href="/">
-    Back to evaluation
-</a>
+        <div class="department">
+
+            DEPARTMENT OF AI & DATA SCIENCE
+
+        </div>
+
+
+        <div class="project">
+
+
+            <h1>
+
+                CredRoute
+
+            </h1>
+
+
+            <h2>
+
+                Explainable AI for
+
+                <br>
+
+                Transparent Credit Transfer
+
+            </h2>
+
+
+            <p>
+
+                AI-assisted course equivalency evaluation
+                with transparent reasoning,
+                auditable recommendations
+                and human approval.
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="right">
+
+
+        <div class="card">
+
+
+            <div class="logo">
+
+                CR
+
+            </div>
+
+
+            <div class="badge">
+
+                HOD REVIEW PORTAL
+
+            </div>
+
+
+            <h2>
+
+                Welcome Back
+
+            </h2>
+
+
+            <p class="subtitle">
+
+                Sign in to review transfer-credit
+                evaluations and make the final
+                academic decision.
+
+            </p>
+
+
+            {% if request.query_params.get("error") %}
+
+                <div class="error">
+
+                    Invalid username or password.
+
+                </div>
+
+            {% endif %}
+
+
+            <form
+                action="/login"
+                method="post"
+            >
+
+
+                <label>
+
+                    Username
+
+                </label>
+
+
+                <input
+                    type="text"
+                    name="username"
+                    required
+                >
+
+
+                <label>
+
+                    Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    name="password"
+                    required
+                >
+
+
+                <button type="submit">
+
+                    Sign in to HOD Portal
+
+                </button>
+
+
+            </form>
+
+
+            <div class="bottom">
+
+                Explainable AI
+                · Auditable
+                · Human Approved
+
+                <br><br>
+
+                <a href="/">
+
+                    Back to Evaluation
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</div>
+
 
 </body>
+
 </html>

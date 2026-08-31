@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CredRoute — HOD Review
+    </title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            background:
+                #09070c;
+
+            color:
+                white;
+
+            font-family:
+                Arial,
+                sans-serif;
+        }
+
+
+        .page {
+
+            max-width:
+                1200px;
+
+            margin:
+                auto;
+
+            padding:
+                45px
+                25px;
+        }
+
+
+        .header {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                end;
+
+            margin-bottom:
+                25px;
+        }
+
+
+        .badge {
+
+            display:
+                inline-block;
+
+            padding:
+                7px
+                10px;
+
+            color:
+                #c75bff;
+
+            border:
+                1px solid
+                #51215f;
+
+            border-radius:
+                7px;
+
+            font-size:
+                10px;
+
+            font-weight:
+                bold;
+        }
+
+
+        h1 {
+
+            font-size:
+                40px;
+
+            margin:
+                12px
+                0
+                7px;
+        }
+
+
+        .muted {
+
+            color:
+                #a39aa7;
+        }
+
+
+        .actions {
+
+            display:
+                flex;
+
+            gap:
+                10px;
+        }
+
+
+        .button {
+
+            padding:
+                12px
+                17px;
+
+            color:
+                white;
+
+            text-decoration:
+                none;
+
+            border-radius:
+                9px;
+
+            border:
+                1px solid
+                #3b333e;
+        }
+
+
+        .review-list {
+
+            display:
+                grid;
+
+            gap:
+                15px;
+        }
+
+
+        .card {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr
+                250px;
+
+            gap:
+                20px;
+
+            padding:
+                20px;
+
+            border:
+                1px solid
+                #29222d;
+
+            border-radius:
+                15px;
+
+            background:
+                #151118;
+        }
+
+
+        .card h3 {
+
+            margin:
+                10px
+                0
+                5px;
+        }
+
+
+        .course {
+
+            color:
+                #aaa0ad;
+        }
+
+
+        .metrics {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                10px;
+
+            margin-top:
+                15px;
+        }
+
+
+        .metric {
+
+            padding:
+                12px;
+
+            border:
+                1px solid
+                #2e2731;
+
+            border-radius:
+                9px;
+
+            background:
+                #0e0b10;
+        }
+
+
+        .metric span {
+
+            display:
+                block;
+
+            color:
+                #857b89;
+
+            font-size:
+                9px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .metric strong {
+
+            display:
+                block;
+
+            margin-top:
+                5px;
+        }
+
+
+        .status {
+
+            display:
+                inline-block;
+
+            padding:
+                6px
+                10px;
+
+            border-radius:
+                20px;
+
+            font-size:
+                10px;
+
+            font-weight:
+                bold;
+        }
+
+
+        .accept {
+
+            color:
+                #68dfa5;
+
+            background:
+                rgba(
+                    80,
+                    210,
+                    145,
+                    .1
+                );
+        }
+
+
+        .partial {
+
+            color:
+                #ffd06c;
+
+            background:
+                rgba(
+                    255,
+                    200,
+                    80,
+                    .1
+                );
+        }
+
+
+        .redo {
+
+            color:
+                #ff8499;
+
+            background:
+                rgba(
+                    255,
+                    90,
+                    120,
+                    .1
+                );
+        }
+
+
+        .decision {
+
+            padding:
+                15px;
+
+            border-radius:
+                11px;
+
+            background:
+                #0e0b10;
+
+            border:
+                1px solid
+                #29222d;
+        }
+
+
+        .decision label {
+
+            display:
+                block;
+
+            margin-bottom:
+                10px;
+
+            color:
+                #968b99;
+
+            font-size:
+                10px;
+
+            font-weight:
+                bold;
+        }
+
+
+        select {
+
+            width:
+                100%;
+
+            height:
+                44px;
+
+            padding:
+                0
+                10px;
+
+            margin-bottom:
+                10px;
+
+            color:
+                white;
+
+            background:
+                #18131c;
+
+            border:
+                1px solid
+                #372f3a;
+
+            border-radius:
+                8px;
+        }
+
+
+        button {
+
+            width:
+                100%;
+
+            height:
+                44px;
+
+            color:
+                white;
+
+            border:
+                none;
+
+            border-radius:
+                8px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #8420c5,
+                    #b62cff
+                );
+
+            font-weight:
+                bold;
+
+            cursor:
+                pointer;
+        }
+
+
+        .empty {
+
+            padding:
+                50px;
+
+            text-align:
+                center;
+
+            border:
+                1px solid
+                #29222d;
+
+            border-radius:
+                15px;
+
+            background:
+                #151118;
+        }
+
+
+        @media (
+            max-width: 800px
+        ) {
+
+            .card {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .metrics {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .header {
+
+                align-items:
+                    start;
+
+                flex-direction:
+                    column;
+
+                gap:
+                    20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <header class="header">
+
+
+        <div>
+
+
+            <div class="badge">
+
+                HUMAN-IN-THE-LOOP REVIEW
+
+            </div>
+
+
+            <h1>
+
+                HOD Review Queue
+
+            </h1>
+
+
+            <div class="muted">
+
+                Review AI recommendations and
+                record the final academic decision.
+
+            </div>
+
+
+        </div>
+
+
+        <div class="actions">
+
+
+            <a
+                class="button"
+                href="/"
+            >
+
+                New Evaluation
+
+            </a>
+
+
+            <a
+                class="button"
+                href="/logout"
+            >
+
+                Logout
+
+            </a>
+
+
+        </div>
+
+
+    </header>
+
+
+    {% if evaluations %}
+
+
+        <div class="review-list">
+
+
+            {% for item in evaluations %}
+
+
+                <article class="card">
+
+
+                    <div>
+
+
+                        {% if item.recommended_status == "accept" %}
+
+                            <span class="status accept">
+
+                                AI: ACCEPT
+
+                            </span>
+
+
+                        {% elif item.recommended_status == "partial" %}
+
+                            <span class="status partial">
+
+                                AI: PARTIAL
+
+                            </span>
+
+
+                        {% else %}
+
+                            <span class="status redo">
+
+                                AI: REDO
+
+                            </span>
+
+                        {% endif %}
+
+
+                        <h3>
+
+                            {{ item.student_name }}
+
+                        </h3>
+
+
+                        <div class="course">
+
+                            {{ item.course }}
+
+                        </div>
+
+
+                        <div class="metrics">
+
+
+                            <div class="metric">
+
+                                <span>
+
+                                    Coverage
+
+                                </span>
+
+                                <strong>
+
+                                    {{ item.coverage_pct }}%
+
+                                </strong>
+
+                            </div>
+
+
+                            <div class="metric">
+
+                                <span>
+
+                                    AI Recommendation
+
+                                </span>
+
+                                <strong>
+
+                                    {{ item.recommended_status }}
+
+                                </strong>
+
+                            </div>
+
+
+                            <div class="metric">
+
+                                <span>
+
+                                    Final Decision
+
+                                </span>
+
+                                <strong>
+
+                                    {{ item.final_decision or "Pending" }}
+
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <form
+
+                        class="decision"
+
+                        action="/evaluations/{{ item.id }}/decision"
+
+                        method="post"
+
+                    >
+
+
+                        <label>
+
+                            FINAL ACADEMIC DECISION
+
+                        </label>
+
+
+                        <select
+
+                            name="decision"
+
+                            required
+
+                        >
+
+
+                            <option
+                                value=""
+                                selected
+                                disabled
+                            >
+
+                                Select Decision
+
+                            </option>
+
+
+                            <option value="accept">
+
+                                Accept
+
+                            </option>
+
+
+                            <option value="partial">
+
+                                Partial / Bridge
+
+                            </option>
+
+
+                            <option value="redo">
+
+                                Redo
+
+                            </option>
+
+
+                        </select>
+
+
+                        <button type="submit">
+
+                            Save Decision
+
+                        </button>
+
+
+                    </form>
+
+
+                </article>
+
+
+            {% endfor %}
+
+
+        </div>
+
+
+    {% else %}
+
+
+        <div class="empty">
+
+
+            <h2>
+
+                No Evaluations Yet
+
+            </h2>
+
+
+            <p class="muted">
+
+                Run a transfer-credit evaluation first.
+
+            </p>
+
+
+            <a
+                class="button"
+                href="/"
+            >
+
+                Start Evaluation
+
+            </a>
+
+
+        </div>
+
+
+    {% endif %}
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -17,20 +17,63 @@ from fastapi import (
     HTTPException,
 )
 
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import (
+    HTMLResponse,
+    RedirectResponse,
+)
 
-from pipeline import run_evaluation, DB_CONFIG
-from auth import verify_login, create_session, require_login
+from pipeline import (
+    run_evaluation,
+    DB_CONFIG,
+)
 
+from auth import (
+    verify_login,
+    create_session,
+    require_login,
+)
+
+
+# ============================================================
+# APP
+# ============================================================
 
 app = FastAPI(
     title="CredRoute"
 )
 
+
+# ============================================================
+# STATIC FILES
+# ============================================================
+
+# Ensure the folders exist before mounting them.
+os.makedirs(
+    "static/images",
+    exist_ok=True,
+)
+
+app.mount(
+    "/static",
+    StaticFiles(directory="static"),
+    name="static",
+)
+
+
+# ============================================================
+# TEMPLATES
+# ============================================================
+
 templates = Jinja2Templates(
     directory="templates"
 )
+
+
+# ============================================================
+# UPLOAD SETTINGS
+# ============================================================
 
 UPLOAD_DIR = "uploads"
 
@@ -38,6 +81,7 @@ os.makedirs(
     UPLOAD_DIR,
     exist_ok=True,
 )
+
 
 ALLOWED_EXT = {
     ".pdf",
@@ -47,14 +91,24 @@ ALLOWED_EXT = {
 }
 
 
-def save_upload(upload: UploadFile):
-    original_name = upload.filename or ""
+# ============================================================
+# SAVE UPLOAD
+# ============================================================
+
+def save_upload(
+    upload: UploadFile,
+):
+
+    original_name = (
+        upload.filename or ""
+    )
 
     ext = Path(
         original_name
     ).suffix.lower()
 
     if ext not in ALLOWED_EXT:
+
         raise HTTPException(
             status_code=400,
             detail=(
@@ -72,7 +126,11 @@ def save_upload(upload: UploadFile):
         filename,
     )
 
-    with open(path, "wb") as file:
+    with open(
+        path,
+        "wb",
+    ) as file:
+
         shutil.copyfileobj(
             upload.file,
             file,
@@ -81,6 +139,10 @@ def save_upload(upload: UploadFile):
     return path
 
 
+# ============================================================
+# MAIN EVALUATION PAGE
+# ============================================================
+
 @app.get(
     "/",
     response_class=HTMLResponse,
@@ -88,12 +150,17 @@ def save_upload(upload: UploadFile):
 async def upload_page(
     request: Request,
 ):
-    return templates.TemplateResponse(
-    request=request,
-    name="upload.html",
-    context={},
-)
 
+    return templates.TemplateResponse(
+        request=request,
+        name="upload.html",
+        context={},
+    )
+
+
+# ============================================================
+# LOGIN PAGE
+# ============================================================
 
 @app.get(
     "/login",
@@ -102,22 +169,31 @@ async def upload_page(
 async def login_page(
     request: Request,
 ):
-    return templates.TemplateResponse(
-    request=request,
-    name="login.html",
-    context={},
-)
 
+    return templates.TemplateResponse(
+        request=request,
+        name="login.html",
+        context={},
+    )
+
+
+# ============================================================
+# LOGIN
+# ============================================================
 
 @app.post("/login")
 async def login(
+
     username: str = Form(...),
+
     password: str = Form(...),
 ):
+
     if not verify_login(
         username,
         password,
     ):
+
         return RedirectResponse(
             "/login?error=1",
             status_code=303,
@@ -141,14 +217,40 @@ async def login(
 
     return response
 
+
+# ============================================================
+# LOGOUT
+# ============================================================
+
+@app.get("/logout")
+async def logout():
+
+    response = RedirectResponse(
+        "/login",
+        status_code=303,
+    )
+
+    response.delete_cookie(
+        "session_token"
+    )
+
+    return response
+
+
+# ============================================================
+# RUN EVALUATION
+# ============================================================
+
 @app.post(
     "/evaluations/run",
     response_class=HTMLResponse,
 )
 def evaluate(
+
     request: Request,
 
     transcripts: list[UploadFile] = File(...),
+
     syllabus: UploadFile = File(...),
 
     completed_semester: int = Form(...),
@@ -167,11 +269,16 @@ def evaluate(
         80.0
     ),
 ):
-    # ---------------------------------------------------------
-    # Validate acceptance threshold
-    # ---------------------------------------------------------
 
-    if threshold <= 40 or threshold > 100:
+    # ========================================================
+    # VALIDATE ACCEPTANCE THRESHOLD
+    # ========================================================
+
+    if (
+        threshold <= 40
+        or threshold > 100
+    ):
+
         raise HTTPException(
             status_code=400,
             detail=(
@@ -180,11 +287,34 @@ def evaluate(
             ),
         )
 
-    # ---------------------------------------------------------
-    # Validate completed semester
-    # ---------------------------------------------------------
 
-    if completed_semester < 1 or completed_semester > 8:
+    # ========================================================
+    # VALIDATE PERCENTAGE
+    # ========================================================
+
+    if (
+        percentage < 0
+        or percentage > 100
+    ):
+
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                "Percentage must be "
+                "between 0 and 100."
+            ),
+        )
+
+
+    # ========================================================
+    # VALIDATE SEMESTER
+    # ========================================================
+
+    if (
+        completed_semester < 1
+        or completed_semester > 8
+    ):
+
         raise HTTPException(
             status_code=400,
             detail=(
@@ -193,11 +323,13 @@ def evaluate(
             ),
         )
 
-    # ---------------------------------------------------------
-    # Make sure at least one transcript was uploaded
-    # ---------------------------------------------------------
+
+    # ========================================================
+    # VALIDATE TRANSCRIPTS
+    # ========================================================
 
     if not transcripts:
+
         raise HTTPException(
             status_code=400,
             detail=(
@@ -206,9 +338,10 @@ def evaluate(
             ),
         )
 
-    # ---------------------------------------------------------
-    # Save ALL transcript files
-    # ---------------------------------------------------------
+
+    # ========================================================
+    # SAVE TRANSCRIPTS
+    # ========================================================
 
     transcript_paths = []
 
@@ -222,71 +355,113 @@ def evaluate(
             transcript_path
         )
 
-    # ---------------------------------------------------------
-    # Save source syllabus
-    # ---------------------------------------------------------
+
+    # ========================================================
+    # SAVE SOURCE SYLLABUS
+    # ========================================================
 
     syllabus_path = save_upload(
         syllabus
     )
 
-    # ---------------------------------------------------------
-    # Eligibility information
-    # ---------------------------------------------------------
+
+    # ========================================================
+    # ELIGIBILITY DATA
+    # ========================================================
 
     eligibility_data = {
-        "percentage": percentage,
-        "category": category,
+
+        "percentage":
+            percentage,
+
+        "category":
+            category,
+
         "institution_recognition":
             institution_recognition,
-        "prior_branch": prior_branch,
+
+        "prior_branch":
+            prior_branch,
     }
 
-    # ---------------------------------------------------------
-    # Run transfer-credit evaluation
-    # ---------------------------------------------------------
+
+    # ========================================================
+    # RUN CREDROUTE PIPELINE
+    # ========================================================
 
     result = run_evaluation(
-        transcript_paths=transcript_paths,
-        syllabus_path=syllabus_path,
+
+        transcript_paths=
+            transcript_paths,
+
+        syllabus_path=
+            syllabus_path,
+
         regulation_id=1,
-        eligibility_data=eligibility_data,
-        accept_threshold=threshold,
-        completed_semester=completed_semester,
+
+        eligibility_data=
+            eligibility_data,
+
+        accept_threshold=
+            threshold,
+
+        completed_semester=
+            completed_semester,
     )
 
-    # ---------------------------------------------------------
-    # Display results
-    # ---------------------------------------------------------
+
+    # ========================================================
+    # DISPLAY RESULTS
+    # ========================================================
 
     return templates.TemplateResponse(
+
         request=request,
+
         name="results.html",
+
         context={
-            "result": result,
-            "threshold": threshold,
+
+            "result":
+                result,
+
+            "threshold":
+                threshold,
+
             "completed_semester":
                 completed_semester,
         },
     )
 
 
+# ============================================================
+# HOD REVIEW QUEUE
+# ============================================================
 
 @app.get(
     "/evaluations",
     response_class=HTMLResponse,
 )
 def list_evaluations(
+
     request: Request,
-    user=Depends(require_login),
+
+    user=Depends(
+        require_login
+    ),
 ):
+
     conn = psycopg2.connect(
         **DB_CONFIG
     )
 
     try:
+
         cur = conn.cursor()
 
+        # IMPORTANT:
+        # This is your ORIGINAL working DB query.
+        # Do not add extra columns until we verify the DB schema.
         cur.execute(
             """
             SELECT
@@ -308,55 +483,91 @@ def list_evaluations(
         cur.close()
 
     finally:
+
         conn.close()
 
+
     evaluations = [
+
         {
-            "id": row[0],
-            "student_name": row[1],
-            "course": row[2],
-            "coverage_pct": row[3],
-            "recommended_status": row[4],
-            "final_decision": row[5],
+            "id":
+                row[0],
+
+            "student_name":
+                row[1],
+
+            "course":
+                row[2],
+
+            "coverage_pct":
+                row[3],
+
+            "recommended_status":
+                row[4],
+
+            "final_decision":
+                row[5],
         }
+
         for row in rows
     ]
 
-    return templates.TemplateResponse(
-    request=request,
-    name="review.html",
-    context={
-        "evaluations": evaluations,
-        "user": user,
-    },
-)
 
+    return templates.TemplateResponse(
+
+        request=request,
+
+        name="review.html",
+
+        context={
+
+            "evaluations":
+                evaluations,
+
+            "user":
+                user,
+        },
+    )
+
+
+# ============================================================
+# HOD FINAL DECISION
+# ============================================================
 
 @app.post(
     "/evaluations/{eval_id}/decision"
 )
 def set_decision(
+
     eval_id: int,
 
     decision: str = Form(...),
 
-    user=Depends(require_login),
+    user=Depends(
+        require_login
+    ),
 ):
+
     if decision not in (
+
         "accept",
         "partial",
         "redo",
+
     ):
+
         raise HTTPException(
             status_code=400,
             detail="Invalid decision.",
         )
+
 
     conn = psycopg2.connect(
         **DB_CONFIG
     )
 
     try:
+
         cur = conn.cursor()
 
         cur.execute(
@@ -371,11 +582,27 @@ def set_decision(
             ),
         )
 
+
+        if cur.rowcount == 0:
+
+            conn.rollback()
+
+            raise HTTPException(
+                status_code=404,
+                detail=(
+                    "Evaluation not found."
+                ),
+            )
+
+
         conn.commit()
+
         cur.close()
 
     finally:
+
         conn.close()
+
 
     return RedirectResponse(
         "/evaluations",
