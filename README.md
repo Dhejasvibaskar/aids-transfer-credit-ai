@@ -55,7 +55,7 @@ pytest tests/ -v
 ```
 
 87 tests, all offline/deterministic (embedding model calls are mocked in
-tests via hand-crafted vectors — no network or GPU needed to run the suite).
+tests via hand-crafted vectors — no network or GPU needed to run the suite ).
 
 ## Running the live demo (real model, needs internet)
 
